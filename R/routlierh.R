@@ -10,14 +10,24 @@
 #   Check Package:             'Ctrl + Shift + E'
 #   Test Package:              'Ctrl + Shift + T'
 #' Routlier: Outlier in Rhandsontable
-#' \if{html}{\figure{routlier_rh.png}{options: width=25\% alt="R logo"}}
-#' \if{latex}{\figure{routlier_rh.png}{options: width=0.5in}}
+#'
 #' The outlier will highlighted in green and the word 'Outlier' will replace the value in the cell.
+#'
+#' \if{html}{\figure{routlier_rh.png}{options: width=40\% alt="R logo"}}
+#' \if{latex}{\figure{routlier_rh.png}{options: width=0.5in}}
+#'
 #' @param data filepath to data
 #' @keywords routlierrh
 #' @return Return's an outlier dataset from the original dataset in a rhandonstable
 #' @name routlier_rh
 #' @title routlier_rh
+#' @examples
+#' Load the routlier library
+#'
+#' library(routlier)
+#'
+#'   routlier_rh(data = iris)
+#'
 #' @export
 #'
 

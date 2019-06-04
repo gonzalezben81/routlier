@@ -1,4 +1,4 @@
-# routlier
+# routlier_dt
 #
 # You can learn more about package authoring with RStudio at:
 #
@@ -10,13 +10,24 @@
 #   Check Package:             'Ctrl + Shift + E'
 #   Test Package:   'Ctrl + Shift + T'
 #' Routlier: Outlier in DT Table
+#'
+#' The outlier will highlighted in green and the word 'Outlier' will replace the value in the cell.
+#'
 #' \if{html}{\figure{routlier.png}{options: width=100\% alt="R logo"}}
 #' \if{latex}{\figure{routlier.png}{options: width=0.5in}}
+#'
 #' @param data filepath to data
-#' @keywords routlierdt
+#' @keywords routlier_dt
 #' @return Returns an outlier dataset from the original dataset in a DT table
 #' @name routlier_dt
 #' @title routlier_dt
+#' @examples
+#' Load the routlier library
+#'
+#' library(routlier)
+#'
+#'   routlier_dt(data = iris)
+#'
 #' @export
 
 

@@ -1,4 +1,4 @@
-# routlier
+# routlier_dt_sd
 #
 # You can learn more about package authoring with RStudio at:
 #
@@ -10,17 +10,32 @@
 #   Check Package:             'Ctrl + Shift + E'
 #   Test Package:   'Ctrl + Shift + T'
 #' Routlier: Outlier in DT Table
+#'
+#' The outlier will highlighted in green and the word 'Outlier' will replace the value in the cell.
+#'
 #' \if{html}{\figure{routlier.png}{options: width=100\% alt="R logo"}}
 #' \if{latex}{\figure{routlier.png}{options: width=0.5in}}
+#'
 #' @param data filepath to data
 #' @keywords routlierdt
 #' @return Returns an outlier dataset from the original dataset in a DT table. The user must specify the standard deviation to determine the outlier.
-#' @name routlier_dt
-#' @title routlier_dt
+#' @name routlier_dt_sd
+#' @title routlier_dt_sd
+#' @examples
+#' Load the routlier library
+#'
+#' library(routlier)
+#'
+#' Look at 2 SD outliers
+#'   routlier_dt_sd(data = iris, sd = 2)
+#'
+#' Look at 3 SD outliers
+#'
+#'   routlier_dt_sd(data = iris, sd = 3)
 #' @export
 
 
-routlier_dt <- function(data,sd){
+routlier_dt_sd <- function(data,sd){
 
   require(rhandsontable,quietly = TRUE)
   require(DT,quietly = TRUE)

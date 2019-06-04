@@ -1,4 +1,4 @@
-# routlierh
+# routlie_rh_sd
 #
 # You can learn more about package authoring with RStudio at:
 #
@@ -10,14 +10,28 @@
 #   Check Package:             'Ctrl + Shift + E'
 #   Test Package:              'Ctrl + Shift + T'
 #' Routlier: Outlier in Rhandsontable
-#' \if{html}{\figure{routlier_rh.png}{options: width=25\% alt="R logo"}}
-#' \if{latex}{\figure{routlier_rh.png}{options: width=0.5in}}
+#'
 #' The outlier will highlighted in green and the word 'Outlier' will replace the value in the cell.
+#'
+#' \if{html}{\figure{routlier_rh.png}{options: width=40\% alt="R logo"}}
+#' \if{latex}{\figure{routlier_rh.png}{options: width=0.5in}}
+#'
 #' @param data filepath to data
 #' @keywords routlier_rh_sd
 #' @return Return's an outlier dataset from the original dataset in a rhandonstable. The user must specify the standard deviation to determine the outlier.
-#' @name routlier_rh
-#' @title routlier_rh
+#' @name routlier_rh_sd
+#' @title routlier_rh_sd
+#' @examples
+#' Load the routlier library
+#'
+#' library(routlier)
+#'
+#' Look at 2 SD outliers
+#'   routlier_rh_sd(data = iris, sd = 2)
+#'
+#' Look at 3 SD outliers
+#'
+#'   routlier_rh_sd(data = iris, sd = 3)
 #' @export
 #'
 
@@ -28,7 +42,12 @@ routlier_rh_sd <- function(data,sd){
   require(dplyr,quietly = TRUE)
 
   ##Removes all columns that are not numeric from the dataset
+  original <- data[,order(names(data))]
+  datal<- data[, sapply(data, is.logical)]
+  dataf <- data[,sapply(data,is.factor)]
+  datac <- data[,sapply(data, is.character)]
   data<- data[, sapply(data, is.numeric)]
+  data <- round(data,digits = 2)
   ##Count the number of outliers in the dataset
   numout<- sum(abs(scale(data))>sd )
   if(TRUE%in%abs(scale(data)>sd)){
@@ -38,9 +57,12 @@ routlier_rh_sd <- function(data,sd){
       data[[i]][abs(scale(data[[i]]))>sd ] <- "Outlier"
 
     }
+    ##Bind the data back together
+    binded <- cbind(data,datac,dataf,datal)
+    final<- binded[,sort.list(names(original))]
     message(paste("You have ",numout," outliers in your dataset"))
     ##Create datatable with Outliers
-    dataset<- rhandsontable(data = data,width = "auto",height = "auto") %>%
+    dataset<- rhandsontable(data = final,width = "auto",height = "auto") %>%
       hot_cols(renderer = "
                function (instance, td, row, col, prop, value, cellProperties) {
                Handsontable.renderers.NumericRenderer.apply(this, arguments);
@@ -51,7 +73,7 @@ routlier_rh_sd <- function(data,sd){
     return(dataset)}else{
       message(paste("You have ",numout," outliers in your dataset"))
       ##Create datatable without Outliers
-      dataset<- rhandsontable(data = data,width = "auto",height = "auto") %>%
+      dataset<- rhandsontable(data = original,width = "auto",height = "auto") %>%
         hot_cols(renderer = "
                  function (instance, td, row, col, prop, value, cellProperties) {
                  Handsontable.renderers.NumericRenderer.apply(this, arguments);
