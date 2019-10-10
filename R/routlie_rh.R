@@ -1,4 +1,4 @@
-# routlierh
+# routlie_rh
 #
 # You can learn more about package authoring with RStudio at:
 #
@@ -17,25 +17,27 @@
 #' \if{latex}{\figure{routlier_rh.png}{options: width=0.5in}}
 #'
 #' @param data filepath to data
-#' @keywords routlierrh
+#' @aliases data
+#' @keywords routlier_rh
 #' @return Return's an outlier dataset from the original dataset in a rhandonstable
 #' @name routlier_rh
 #' @title routlier_rh
+#' @import dplyr
+#' @import DT
+#' @import rhandsontable
+#' @usage routlier_rh(data)
 #' @examples
-#' Load the routlier library
 #'
-#' library(routlier)
 #'
 #'   routlier_rh(data = iris)
 #'
 #' @export
-#'
 
 routlier_rh <- function(data){
 
-  require(rhandsontable,quietly = TRUE)
-  require(DT,quietly = TRUE)
-  require(dplyr,quietly = TRUE)
+  # require(rhandsontable,quietly = TRUE)
+  # require(DT,quietly = TRUE)
+  # require(dplyr,quietly = TRUE)
 
   ##Removes all columns that are not numeric from the dataset
   data<- data[, sapply(data, is.numeric)]

@@ -9,7 +9,7 @@ routlier_simple(data, sd)
 \arguments{
 \item{data}{filepath to data}
 
-\item{sd}{number of standard deviations}
+\item{sd}{number of standard deviations.}
 }
 \value{
 Return's an outlier dataset from the original dataset in a rhandonstable
@@ -23,15 +23,14 @@ The word 'Outlier' will replace the value that is an outlier in the respective c
 \if{html}{\figure{routlier_simple.png}{options: width=60\% alt="R logo"}}
 }
 \examples{
-Load the routlier library
+## Load the routlier library
 
-library(routlier)
 
-Look at 2 SD outliers
-  routlier_simple(data = iris, sd = 2)
+## Look at 2 SD outliers
+  routlier_simple(data = iris,sd = 2)
 
-Look at 3 SD outliers
+## Look at 3 SD outliers
 
-  routlier_simple(data = iris, sd = 3)
+  routlier_simple(data = iris,sd = 3)
 }
 \keyword{routlier_simple}

@@ -17,19 +17,22 @@
 #' \if{latex}{\figure{routlier_rh.png}{options: width=0.5in}}
 #'
 #' @param data filepath to data
+#' @param sd number of standard deviations.
 #' @keywords routlier_rh_sd
 #' @return Return's an outlier dataset from the original dataset in a rhandonstable. The user must specify the standard deviation to determine the outlier.
 #' @name routlier_rh_sd
 #' @title routlier_rh_sd
+#' @usage routlier_rh_sd(data, sd)
+#' @import dplyr
+#' @import DT
+#' @import rhandsontable
 #' @examples
-#' Load the routlier library
 #'
-#' library(routlier)
 #'
-#' Look at 2 SD outliers
-#'   routlier_rh_sd(data = iris, sd = 2)
+#' ## Look at 2 SD outliers
+#'   routlier_rh_sd(data = iris,sd = 2)
 #'
-#' Look at 3 SD outliers
+#' ## Look at 3 SD outliers
 #'
 #'   routlier_rh_sd(data = iris, sd = 3)
 #' @export
@@ -37,9 +40,9 @@
 
 routlier_rh_sd <- function(data,sd){
 
-  require(rhandsontable,quietly = TRUE)
-  require(DT,quietly = TRUE)
-  require(dplyr,quietly = TRUE)
+  # require(rhandsontable,quietly = TRUE)
+  # require(DT,quietly = TRUE)
+  # require(dplyr,quietly = TRUE)
 
   ##Removes all columns that are not numeric from the dataset
   original <- data[,order(names(data))]

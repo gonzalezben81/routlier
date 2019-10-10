@@ -11,20 +11,22 @@
 #   Test Package:   'Ctrl + Shift + T'
 #' Routlier: Outlier in DT Table
 #'
-#' The outlier will highlighted in green and the word 'Outlier' will replace the value in the cell.
+#' The outlier will be highlighted in green and the word 'Outlier' will replace the value in the cell.
 #'
 #' \if{html}{\figure{routlier.png}{options: width=100\% alt="R logo"}}
 #' \if{latex}{\figure{routlier.png}{options: width=0.5in}}
 #'
-#' @param data filepath to data
+#' @param data filepath to data.
 #' @keywords routlier_dt
 #' @return Returns an outlier dataset from the original dataset in a DT table
 #' @name routlier_dt
 #' @title routlier_dt
+#' @import dplyr
+#' @import DT
+#' @import rhandsontable
+#' @usage routlier_dt(data)
 #' @examples
-#' Load the routlier library
 #'
-#' library(routlier)
 #'
 #'   routlier_dt(data = iris)
 #'
@@ -33,9 +35,9 @@
 
 routlier_dt <- function(data){
 
-  require(rhandsontable,quietly = TRUE)
-  require(DT,quietly = TRUE)
-  require(dplyr,quietly = TRUE)
+  # require(rhandsontable,quietly = TRUE)
+  # require(DT,quietly = TRUE)
+  # require(dplyr,quietly = TRUE)
 
   ##Removes all columns that are not numeric from the dataset
   original <- data[,order(names(data))]

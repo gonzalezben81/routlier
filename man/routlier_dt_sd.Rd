@@ -7,7 +7,9 @@
 routlier_dt_sd(data, sd)
 }
 \arguments{
-\item{data}{filepath to data}
+\item{data}{filepath to data.}
+
+\item{sd}{number of standard deviations.}
 }
 \value{
 Returns an outlier dataset from the original dataset in a DT table. The user must specify the standard deviation to determine the outlier.
@@ -22,14 +24,11 @@ The outlier will highlighted in green and the word 'Outlier' will replace the va
 \if{latex}{\figure{routlier.png}{options: width=0.5in}}
 }
 \examples{
-Load the routlier library
 
-library(routlier)
+## Look at 2 SD outliers
+  routlier_dt_sd(data = iris,sd = 2)
 
-Look at 2 SD outliers
-  routlier_dt_sd(data = iris, sd = 2)
-
-Look at 3 SD outliers
+## Look at 3 SD outliers
 
   routlier_dt_sd(data = iris, sd = 3)
 }

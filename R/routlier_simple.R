@@ -18,29 +18,32 @@
 #'
 #'
 #' @param data filepath to data
-#' @param sd number of standard deviations
+#' @param sd number of standard deviations.
 #' @keywords routlier_simple
 #' @return Return's an outlier dataset from the original dataset in a rhandonstable
 #' @name routlier_simple
 #' @title routlier_simple
+#' @usage routlier_simple(data, sd)
+#' @import dplyr
+#' @import DT
+#' @import rhandsontable
 #' @examples
-#' Load the routlier library
+#' ## Load the routlier library
 #'
-#' library(routlier)
 #'
-#' Look at 2 SD outliers
-#'   routlier_simple(data = iris, sd = 2)
+#' ## Look at 2 SD outliers
+#'   routlier_simple(data = iris,sd = 2)
 #'
-#' Look at 3 SD outliers
+#' ## Look at 3 SD outliers
 #'
-#'   routlier_simple(data = iris, sd = 3)
+#'   routlier_simple(data = iris,sd = 3)
 #' @export
 
 routlier_simple <- function(data,sd){
 
-  require(rhandsontable,quietly = TRUE)
-  require(DT,quietly = TRUE)
-  require(dplyr,quietly = TRUE)
+  # require(rhandsontable,quietly = TRUE)
+  # require(DT,quietly = TRUE)
+  # require(dplyr,quietly = TRUE)
 
   ##Removes all columns that are not numeric from the dataset
   original <- data[,order(names(data))]
