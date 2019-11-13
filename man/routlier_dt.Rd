@@ -27,4 +27,7 @@ The outlier will be highlighted in green and the word 'Outlier' will replace the
   routlier_dt(data = iris)
 
 }
+\references{
+Hello
+}
 \keyword{routlier_dt}

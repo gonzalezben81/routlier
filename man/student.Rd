@@ -60,7 +60,7 @@ while G1 and G2 correspond to the 1st and 2nd period grades. It is more difficul
 \references{
 Citation Request:
 Please include this citation if you plan to use this database:
-P. Cortez and A. Silva. Using Data Mining to Predict Secondary School Student Performance. In A. Brito and J. Teixeira Eds., Proceedings of 5th FUture BUsiness TEChnology Conference (FUBUTEC 2008) pp. 5-12, Porto, Portugal, April, 2008, EUROSIS, ISBN 978-9077381-39-7.
+P. Cortez and A. Silva. Using Data Mining to Predict Secondary School Student Performance. In A. Brito and J. Teixeira Eds., Proceedings of 5th FUture BUsiness TEChnology Conference (FUBUTEC 2008) pp. 5-12, Porto, Portugal, April, 2008, EUROSIS, ISBN 978-9077381-39-7.\cr
 Available at: \url{http://www3.dsi.uminho.pt/pcortez/student.pdf}
 
 Relevant Papers:

@@ -25,6 +25,7 @@
 #' @import DT
 #' @import rhandsontable
 #' @usage routlier_dt(data)
+#' @references Hello
 #' @examples
 #'
 #'
