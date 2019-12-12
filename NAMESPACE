@@ -2,9 +2,11 @@
 
 export(routlier_dt)
 export(routlier_dt_sd)
+export(routlier_formattable)
 export(routlier_rh)
 export(routlier_rh_sd)
 export(routlier_simple)
 import(DT)
 import(dplyr)
+import(formattable)
 import(rhandsontable)

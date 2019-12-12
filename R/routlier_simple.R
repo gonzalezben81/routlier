@@ -97,7 +97,7 @@ routlier_simple <- function(data,sd){
  dataf <- data[,sapply(data,is.factor)]
  datac <- data[,sapply(data, is.character)]
  data<- data[, sapply(data, is.numeric)]
- data <- round(data,digits = 2)
+ # data <- round(data,digits = 2)
  ##Count the number of outliers in the dataset
  numout<- sum(abs(scale(data,center = TRUE,scale = TRUE))>sd )
  if(TRUE%in%abs(scale(data,center = TRUE,scale = TRUE)>sd)){
