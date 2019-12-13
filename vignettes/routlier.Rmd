@@ -72,6 +72,15 @@ routlier_rh_sd(data = detroit,sd = 1)
 ```
 
 
+
+#### routlier:: Using routlier_formattable() we can find the **Outliers** in a data set and have the **Outliers** highlighted in red and the non-outlier values highlighted in green.
+
+```{r}
+
+routlier_formattable(data = detroit,sd = 2)
+```
+
+
 ### Preloaded Datasets:
 
 ### Homicide in Detroit: The role of Firearms.
