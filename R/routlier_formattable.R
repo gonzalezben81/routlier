@@ -44,7 +44,6 @@ routlier_formattable <- function(data,sd){
   datal<- data[, sapply(data, is.logical)]
   dataf <- data[,sapply(data,is.factor)]
   datac <- data[,sapply(data, is.character)]
-  datai <- data[,sapply(data, is.integer)]
   data<- data[, sapply(data, is.numeric)]
   # data <- round(data,digits = 2)
   ##Count the number of outliers in the dataset
@@ -55,20 +54,21 @@ routlier_formattable <- function(data,sd){
       ##Calculates the abs of the z-score of the dataset using the scale function
       data[[i]][abs(scale(data[[i]],center = TRUE,scale = TRUE))>=sd ] <- 0
     }
-    # print("this")
-    # print(data)
     ##Bind the data back together
-    binded <- cbind(data,datac,dataf,datal,datai)
+    binded <- cbind(data,datac,dataf,datal)
     binded <- as.data.frame(binded)
     final<- binded[,sort.list(names(original))]
+    # original_set <- original_set[,sort.list(names(original))]
+    final <- final %>% select(sort(names(.)))
+    original_set <- original_set %>% select(sort(names(.)))
     message(paste("You have ",numout," outliers in your dataset"))
     ##Create datatable with Outliers
-    # print(str(final))
-    dataset <- formattable(original_set, list(area(col = c(1:length(original_set))) ~ formatter('span', style = x ~ style(color = ifelse(original_set == final, "green", ifelse(original_set != final, "red",NA))))))
+    print(names(final))
+    print(names(original_set))
+    dataset <- formattable(original_set, list(area(col = c(1:length(original_set))) ~ formatter('span', style = original_set ~ style(color= ifelse(original_set == final,'green', 'red')))))
     return(dataset)}else{
       message(paste("You have NO outliers in your dataset"))
       ##Create datatable without Outliers
       return(original)
     }
 }
-

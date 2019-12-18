@@ -118,3 +118,4 @@ routlier_simple <- function(data,sd){
      return(original)
    }
 }
+
