@@ -57,13 +57,18 @@ routlier_formattable <- function(data,sd){
     ##Bind the data back together
     binded <- cbind(data,datac,dataf,datal)
     binded <- as.data.frame(binded)
-    final<- binded[,sort.list(names(original))]
+    colnames(binded) <- c(names(original_set))
+    # final<- binded[,sort.list(names(original)decreasing = T)]
+    # colnames(final) <- c(names(original_set))
     # original_set <- original_set[,sort.list(names(original))]
-    final <- final %>% select(sort(names(.)))
-    original_set <- original_set %>% select(sort(names(.)))
+    final <- binded %>% select(sort(names(.),decreasing = T))
+    # colnames(original_set) <- c(names(original_set))
+    original_set <- original_set %>% select(sort(names(.),decreasing = T))
+
     message(paste("You have ",numout," outliers in your dataset"))
     ##Create datatable with Outliers
     print(names(final))
+    # print(final)
     print(names(original_set))
     dataset <- formattable(original_set, list(area(col = c(1:length(original_set))) ~ formatter('span', style = original_set ~ style(color= ifelse(original_set == final,'green', 'red')))))
     return(dataset)}else{
