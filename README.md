@@ -3,16 +3,14 @@ title: "roultier"
 author: "Ben Gonzalez"
 date: "11/21/2019"
 output: rmarkdown::html_vignette
-vignette: >
-  %\VignetteIndexEntry{Put the title of your vignette here}
-  %\VignetteEngine{knitr::rmarkdown}
-  \usepackage[utf8]{inputenc}
 ---
 
 
 ## routlier
 
 routlier is a package that is built to look for outliers in a dataset. The functions allow a user to look for outliers that are 'x' number of deviations away from the mean in the data for a particular column. The number of 'Outliers' in a dataset will be returned. Additionally any Outlier value will now be replaced with the word 'Outlier' in the dataset.
+
+There is also a function routlier_mad() that utilizes the MAD median absolute deviation approach to look for Outliers. The MAD approach is less susceptible to extreme outliers than the traditional Median & SD approach. See the following thesis for further explination.  [Thesis](http://d-scholarship.pitt.edu/7948/1/Seo.pdf)
 
 ```r
 library(routlier)
