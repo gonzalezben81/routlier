@@ -9,37 +9,12 @@ vignette: >
   \usepackage[utf8]{inputenc}
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-library(knitr)
-hook_output <- knit_hooks$get("output")
-knit_hooks$set(output = function(x, options) {
-  lines <- options$output.lines
-  if (is.null(lines)) {
-    return(hook_output(x, options))  # pass to default hook
-  }
-  x <- unlist(strsplit(x, "\n"))
-  more <- "..."
-  if (length(lines)==1) {        # first n lines
-    if (length(x) > lines) {
-      # truncate the output, but add ....
-      x <- c(head(x, lines), more)
-    }
-  } else {
-    x <- c(more, x[lines], more)
-  }
-  # paste these lines together
-  x <- paste(c(x, ""), collapse = "\n")
-  hook_output(x, options)
-})
-```
-
 
 ## routlier
 
 routlier is a package that is built to look for outliers in a dataset. The functions allow a user to look for outliers that are 'x' number of deviations away from the mean in the data for a particular column. The number of 'Outliers' in a dataset will be returned. Additionally any Outlier value will now be replaced with the word 'Outlier' in the dataset.
 
-```{r detroit}
+```r
 library(routlier)
 
 routlier::routlier_simple(data = detroit,sd = 1)
@@ -50,32 +25,33 @@ routlier::routlier_simple(data = detroit,sd = 1)
 
 Here we will utilize the student dataset that is included in the **routlier** package. This dataset has both quantitative and qualitative data in it. You can see we have **274 outliers** when we set the **sd** argument equal to **2**.
 
-```{r, output.lines=16}
+```r
 
 routlier_simple(data = student,sd = 2)
 
 ```
+![routlier_simple](./man/figures/routlier_simple_markers.png)
 
 #### routlier:: Using routlier_dt_sd() we can find the **Outliers** in a data set and have them highlighted with a green background to make them easier to find. Here we have an interactive DT::table that gets returned. This allows us to filter and sort out data much more easily.
 
-```{r}
+```r
 
-routlier_dt_sd(data = detroit,sd = 1)
+routlier_dt_sd(data = detroit,sd = 2)
 ```
-
+![routlier_mad](./man/figures/routlier_dt_sd.png)
 
 #### routlier:: Using routlier_rh_sd() we can find the **Outliers** in a data set and have them highlighted with a green background to make them easier to find.
 
-```{r}
+```r
 
 routlier_rh_sd(data = detroit,sd = 1)
 ```
-
+![routlier_mad](./man/figures/routlier_rh.png)
 
 
 #### routlier:: Using routlier_formattable() we can find the **Outliers** in a data set and have the **Outliers** highlighted in red and the non-outlier values highlighted in green.
 
-```{r}
+```r
 
 routlier_formattable(data = detroit,sd = 2)
 ```
@@ -83,10 +59,14 @@ routlier_formattable(data = detroit,sd = 2)
 
 #### routlier:: Using routlier_mad() we can find the **Outliers** in a data set and have the **Outliers** highlighted in red and the non-outlier values highlighted in green.
 
-```{r}
+```r
 
 routlier_mad(data = detroit,MAD = 3)
 ```
+
+![routlier_mad](./man/figures/routlier_mad_two.png)
+
+![routlier_mad](./man/figures/routlier_mad.png)
 
 
 ### Preloaded Datasets:
@@ -141,7 +121,9 @@ while G1 and G2 correspond to the 1st and 2nd period grades. It is more difficul
 
 * A data frame with 392 rows and 33 variables:
 
-\br
+ <br/>
+ <br/>
+
 * Attributes for both student-mat.csv (Math course) and student-por.csv (Portuguese language course) datasets:
 
  + school - student's school (binary: 'GP' - Gabriel Pereira or 'MS' - Mousinho da Silveira)
@@ -175,7 +157,9 @@ while G1 and G2 correspond to the 1st and 2nd period grades. It is more difficul
  + health - current health status (numeric: from 1 - very bad to 5 - very good)
  + absences - number of school absences (numeric: from 0 to 93)
 
-\br
+ <br/>
+ <br/>
+ 
 * These grades are related with the course subject, Math or Portuguese:
 
  + G1 - first period grade (numeric: from 0 to 20)
