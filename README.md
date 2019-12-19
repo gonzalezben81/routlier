@@ -25,10 +25,23 @@ Here we will utilize the student dataset that is included in the **routlier** pa
 
 ```r
 
+routlier_simple(data = detroit,sd = 2)
+
+```
+![routlier_simple: Detroit Data Set](./man/figures/routlier_simple_markers.png)
+
+<br/>
+
+```r
+
 routlier_simple(data = student,sd = 2)
 
 ```
-![routlier_simple](./man/figures/routlier_simple_markers.png)
+
+
+![routlier_simple: Student Data Set - Tail End](./man/figures/student_rh_tail.png)
+
+---
 
 #### routlier:: Using routlier_dt_sd() we can find the **Outliers** in a data set and have them highlighted with a green background to make them easier to find. Here we have an interactive DT::table that gets returned. This allows us to filter and sort out data much more easily.
 
@@ -42,7 +55,7 @@ routlier_dt_sd(data = detroit,sd = 2)
 
 ```r
 
-routlier_rh_sd(data = detroit,sd = 1)
+routlier_rh_sd(data = iris,sd = 3)
 ```
 ![routlier_mad](./man/figures/routlier_rh.png)
 
