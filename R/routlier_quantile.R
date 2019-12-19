@@ -18,7 +18,8 @@
 #'
 #'
 #' @param data filepath to data
-#' @param sd number of standard deviations.
+#' @param type select type of quatile method to use. Choices from 1 to 7.
+#' @param outlier_type select type of outlier selecting either "M" for mild or "E" for extreme.
 #' @keywords routlier_quantile
 #' @return Return's an outlier dataset from the original dataset in a formattable table. The data returned is currently the numeric data only from the dataset.
 #' @name routlier_quantile
@@ -27,6 +28,7 @@
 #' @import dplyr
 #' @import DT
 #' @import formattable
+#' @importFrom stats quantile
 #' @examples
 #' ## Load the routlier library
 #'

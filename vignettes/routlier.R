@@ -45,3 +45,7 @@ routlier_rh_sd(data = detroit,sd = 1)
 
 routlier_formattable(data = detroit,sd = 2)
 
+## ------------------------------------------------------------------------
+
+routlier_mad(data = detroit,MAD = 3)
+

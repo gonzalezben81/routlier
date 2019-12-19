@@ -4,10 +4,12 @@
 \alias{routlier_formattable}
 \title{routlier_formattable}
 \usage{
-routlier_formattable(data)
+routlier_formattable(data,sd)
 }
 \arguments{
 \item{data}{filepath to data.}
+
+\item{sd}{number of standard deviations to check the data against.}
 }
 \value{
 Returns an outlier dataset from the original dataset in a DT table
@@ -24,10 +26,7 @@ The outlier will be highlighted in green and the word 'Outlier' will replace the
 \examples{
 
 
-  routlier_formattable(data = iris)
+  routlier_formattable(data = iris,sd = 2)
 
-}
-\references{
-Hello
 }
 \keyword{routlier_formattable}

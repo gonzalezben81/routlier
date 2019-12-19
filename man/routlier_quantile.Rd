@@ -9,7 +9,9 @@ routlier_quantile(data,type,outlier_type)
 \arguments{
 \item{data}{filepath to data}
 
-\item{sd}{number of standard deviations.}
+\item{type}{select type of quatile method to use. Choices from 1 to 7.}
+
+\item{outlier_type}{select type of outlier selecting either "M" for mild or "E" for extreme.}
 }
 \value{
 Return's an outlier dataset from the original dataset in a formattable table. The data returned is currently the numeric data only from the dataset.

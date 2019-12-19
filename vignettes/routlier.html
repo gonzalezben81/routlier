@@ -188,642 +188,1283 @@ routlier<span class="op">::</span><span class="kw">routlier_simple</span>(<span 
 <h4>routlier:: Using routlier_dt_sd() we can find the <strong>Outliers</strong> in a data set and have them highlighted with a green background to make them easier to find. Here we have an interactive DT::table that gets returned. This allows us to filter and sort out data much more easily.</h4>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">routlier_dt_sd</span>(<span class="dt">data =</span> detroit,<span class="dt">sd =</span> <span class="dv">1</span>)</code></pre></div>
 <pre><code>## You have  66  outliers in your dataset</code></pre>
-<div id="htmlwidget-35cdddf09e5777c40e7d" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-35cdddf09e5777c40e7d">{"x":{"filter":"none","extensions":["Buttons"],"editable":{"target":"cell","disable":{"columns":null}},"data":[["1","2","3","4","5","6","7","8","9","10","11","12","13"],["260.35","269.8","272.04","272.96","272.51","261.34","268.89","295.99","319.87","341.43","Outlier","Outlier","Outlier"],["Outlier","7","5.2","4.3","3.5","Outlier","4.1","3.9","3.6","7.1","Outlier","7.7","6.3"],["Outlier","Outlier","Outlier","535.8","576","601.7","577.3","596.9","Outlier","569.3","548.8","563.4","Outlier"],["Outlier","Outlier","Outlier","222.1","301.92","391.22","665.56","Outlier","837.6","794.9","817.74","583.17","709.59"],["Outlier","Outlier","Outlier","Outlier","297.65","367.62","616.54","Outlier","786.23","713.77","750.43","Outlier","666.5"],["93.4","88.5","Outlier","92","91","87.4","88.3","86.1","79","73.9","Outlier","Outlier","Outlier"],["Outlier","Outlier","Outlier","500457","482418","465029","448267","432109","416533","401518","Outlier","Outlier","Outlier"],["Outlier","Outlier","Outlier","591","626.1","659.8","686.2","699.6","729.9","757.8","755.3","Outlier","Outlier"],["Outlier","Outlier","Outlier","150.3","164.3","179.5","187.5","195.4","210.3","Outlier","Outlier","Outlier","Outlier"],["Outlier","3.09","3.23","3.33","3.46","3.6","3.73","Outlier","4.25","4.47","Outlier","Outlier","Outlier"],["Outlier","134.02","141.68","147.98","159.85","157.19","155.29","131.75","178.74","178.3","209.54","Outlier","Outlier"],["Outlier","8.9","Outlier","8.89","13.07","14.57","21.36","28.03","31.49","37.39","Outlier","Outlier","Outlier"],["Outlier","Outlier","45.31","49.51","Outlier","Outlier","50.62","51.47","49.16","45.8","44.54","Outlier","44.17"],["306.18","315.16","277.53","Outlier","Outlier","Outlier","286.11","291.59","320.39","323.03","357.38","Outlier","Outlier"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>FTP<\/th>\n      <th>UEMP<\/th>\n      <th>MAN<\/th>\n      <th>LIC<\/th>\n      <th>GR<\/th>\n      <th>CLEAR<\/th>\n      <th>WM<\/th>\n      <th>NMAN<\/th>\n      <th>GOV<\/th>\n      <th>HE<\/th>\n      <th>WE<\/th>\n      <th>HOM<\/th>\n      <th>ACC<\/th>\n      <th>ASR<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"initComplete":"function(settings, json) {\n$(this.api().table().header()).css({'background-color': 'lightblue', 'color': 'black'});\n}","pageLength":10,"lengthMenu":[5,10,15,20,25,30,35,40,45,50],"dom":"lBftrip","keys":true,"buttons":["copy","csv","excel","pdf","print"],"extend":"excel","filename":"outlier.xls","order":[],"autoWidth":false,"orderClasses":false,"columnDefs":[{"orderable":false,"targets":0}],"rowCallback":"function(row, data) {\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : value});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : value});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : value});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : value});\nvar value=data[5]; $(this.api().cell(row, 5).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : value});\nvar value=data[6]; $(this.api().cell(row, 6).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : value});\nvar value=data[7]; $(this.api().cell(row, 7).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : value});\nvar value=data[8]; $(this.api().cell(row, 8).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : value});\nvar value=data[9]; $(this.api().cell(row, 9).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : value});\nvar value=data[10]; $(this.api().cell(row, 10).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : value});\nvar value=data[11]; $(this.api().cell(row, 11).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : value});\nvar value=data[12]; $(this.api().cell(row, 12).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : value});\nvar value=data[13]; $(this.api().cell(row, 13).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : value});\nvar value=data[14]; $(this.api().cell(row, 14).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : value});\n}"}},"evals":["options.initComplete","options.rowCallback"],"jsHooks":[]}</script>
+<div id="htmlwidget-5d68e0c115655b8ae05c" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-5d68e0c115655b8ae05c">{"x":{"filter":"none","extensions":["Buttons"],"editable":{"target":"cell","disable":{"columns":null}},"data":[["1","2","3","4","5","6","7","8","9","10","11","12","13"],["260.35","269.8","272.04","272.96","272.51","261.34","268.89","295.99","319.87","341.43","Outlier","Outlier","Outlier"],["Outlier","7","5.2","4.3","3.5","Outlier","4.1","3.9","3.6","7.1","Outlier","7.7","6.3"],["Outlier","Outlier","Outlier","535.8","576","601.7","577.3","596.9","Outlier","569.3","548.8","563.4","Outlier"],["Outlier","Outlier","Outlier","222.1","301.92","391.22","665.56","Outlier","837.6","794.9","817.74","583.17","709.59"],["Outlier","Outlier","Outlier","Outlier","297.65","367.62","616.54","Outlier","786.23","713.77","750.43","Outlier","666.5"],["93.4","88.5","Outlier","92","91","87.4","88.3","86.1","79","73.9","Outlier","Outlier","Outlier"],["Outlier","Outlier","Outlier","500457","482418","465029","448267","432109","416533","401518","Outlier","Outlier","Outlier"],["Outlier","Outlier","Outlier","591","626.1","659.8","686.2","699.6","729.9","757.8","755.3","Outlier","Outlier"],["Outlier","Outlier","Outlier","150.3","164.3","179.5","187.5","195.4","210.3","Outlier","Outlier","Outlier","Outlier"],["Outlier","3.09","3.23","3.33","3.46","3.6","3.73","Outlier","4.25","4.47","Outlier","Outlier","Outlier"],["Outlier","134.02","141.68","147.98","159.85","157.19","155.29","131.75","178.74","178.3","209.54","Outlier","Outlier"],["Outlier","8.9","Outlier","8.89","13.07","14.57","21.36","28.03","31.49","37.39","Outlier","Outlier","Outlier"],["Outlier","Outlier","45.31","49.51","Outlier","Outlier","50.62","51.47","49.16","45.8","44.54","Outlier","44.17"],["306.18","315.16","277.53","Outlier","Outlier","Outlier","286.11","291.59","320.39","323.03","357.38","Outlier","Outlier"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>FTP<\/th>\n      <th>UEMP<\/th>\n      <th>MAN<\/th>\n      <th>LIC<\/th>\n      <th>GR<\/th>\n      <th>CLEAR<\/th>\n      <th>WM<\/th>\n      <th>NMAN<\/th>\n      <th>GOV<\/th>\n      <th>HE<\/th>\n      <th>WE<\/th>\n      <th>HOM<\/th>\n      <th>ACC<\/th>\n      <th>ASR<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"initComplete":"function(settings, json) {\n$(this.api().table().header()).css({'background-color': 'lightblue', 'color': 'black'});\n}","pageLength":10,"lengthMenu":[5,10,15,20,25,30,35,40,45,50],"dom":"lBftrip","keys":true,"buttons":["copy","csv","excel","pdf","print"],"extend":"excel","filename":"outlier.xls","order":[],"autoWidth":false,"orderClasses":false,"columnDefs":[{"orderable":false,"targets":0}],"rowCallback":"function(row, data) {\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : value});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : value});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : value});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : value});\nvar value=data[5]; $(this.api().cell(row, 5).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : value});\nvar value=data[6]; $(this.api().cell(row, 6).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : value});\nvar value=data[7]; $(this.api().cell(row, 7).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : value});\nvar value=data[8]; $(this.api().cell(row, 8).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : value});\nvar value=data[9]; $(this.api().cell(row, 9).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : value});\nvar value=data[10]; $(this.api().cell(row, 10).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : value});\nvar value=data[11]; $(this.api().cell(row, 11).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : value});\nvar value=data[12]; $(this.api().cell(row, 12).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : value});\nvar value=data[13]; $(this.api().cell(row, 13).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : value});\nvar value=data[14]; $(this.api().cell(row, 14).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : value});\n}"}},"evals":["options.initComplete","options.rowCallback"],"jsHooks":[]}</script>
 </div>
 <div id="routlier-using-routlier_rh_sd-we-can-find-the-outliers-in-a-data-set-and-have-them-highlighted-with-a-green-background-to-make-them-easier-to-find." class="section level4">
 <h4>routlier:: Using routlier_rh_sd() we can find the <strong>Outliers</strong> in a data set and have them highlighted with a green background to make them easier to find.</h4>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">routlier_rh_sd</span>(<span class="dt">data =</span> detroit,<span class="dt">sd =</span> <span class="dv">1</span>)</code></pre></div>
 <pre><code>## You have  66  outliers in your dataset</code></pre>
-<div id="htmlwidget-9659bd8cb6bb61c4c7a7" style="width:auto;height:auto;" class="rhandsontable html-widget"></div>
-<script type="application/json" data-for="htmlwidget-9659bd8cb6bb61c4c7a7">{"x":{"data":[{"FTP":"260.35","UEMP":"Outlier","MAN":"Outlier","LIC":"Outlier","GR":"Outlier","CLEAR":"93.4","WM":"Outlier","NMAN":"Outlier","GOV":"Outlier","HE":"Outlier","WE":"Outlier","HOM":"Outlier","ACC":"Outlier","ASR":"306.18"},{"FTP":"269.8","UEMP":"7","MAN":"Outlier","LIC":"Outlier","GR":"Outlier","CLEAR":"88.5","WM":"Outlier","NMAN":"Outlier","GOV":"Outlier","HE":"3.09","WE":"134.02","HOM":"8.9","ACC":"Outlier","ASR":"315.16"},{"FTP":"272.04","UEMP":"5.2","MAN":"Outlier","LIC":"Outlier","GR":"Outlier","CLEAR":"Outlier","WM":"Outlier","NMAN":"Outlier","GOV":"Outlier","HE":"3.23","WE":"141.68","HOM":"Outlier","ACC":"45.31","ASR":"277.53"},{"FTP":"272.96","UEMP":"4.3","MAN":"535.8","LIC":"222.1","GR":"Outlier","CLEAR":"92","WM":"500457","NMAN":"591","GOV":"150.3","HE":"3.33","WE":"147.98","HOM":"8.89","ACC":"49.51","ASR":"Outlier"},{"FTP":"272.51","UEMP":"3.5","MAN":"576","LIC":"301.92","GR":"297.65","CLEAR":"91","WM":"482418","NMAN":"626.1","GOV":"164.3","HE":"3.46","WE":"159.85","HOM":"13.07","ACC":"Outlier","ASR":"Outlier"},{"FTP":"261.34","UEMP":"Outlier","MAN":"601.7","LIC":"391.22","GR":"367.62","CLEAR":"87.4","WM":"465029","NMAN":"659.8","GOV":"179.5","HE":"3.6","WE":"157.19","HOM":"14.57","ACC":"Outlier","ASR":"Outlier"},{"FTP":"268.89","UEMP":"4.1","MAN":"577.3","LIC":"665.56","GR":"616.54","CLEAR":"88.3","WM":"448267","NMAN":"686.2","GOV":"187.5","HE":"3.73","WE":"155.29","HOM":"21.36","ACC":"50.62","ASR":"286.11"},{"FTP":"295.99","UEMP":"3.9","MAN":"596.9","LIC":"Outlier","GR":"Outlier","CLEAR":"86.1","WM":"432109","NMAN":"699.6","GOV":"195.4","HE":"Outlier","WE":"131.75","HOM":"28.03","ACC":"51.47","ASR":"291.59"},{"FTP":"319.87","UEMP":"3.6","MAN":"Outlier","LIC":"837.6","GR":"786.23","CLEAR":"79","WM":"416533","NMAN":"729.9","GOV":"210.3","HE":"4.25","WE":"178.74","HOM":"31.49","ACC":"49.16","ASR":"320.39"},{"FTP":"341.43","UEMP":"7.1","MAN":"569.3","LIC":"794.9","GR":"713.77","CLEAR":"73.9","WM":"401518","NMAN":"757.8","GOV":"Outlier","HE":"4.47","WE":"178.3","HOM":"37.39","ACC":"45.8","ASR":"323.03"},{"FTP":"Outlier","UEMP":"Outlier","MAN":"548.8","LIC":"817.74","GR":"750.43","CLEAR":"Outlier","WM":"Outlier","NMAN":"755.3","GOV":"Outlier","HE":"Outlier","WE":"209.54","HOM":"Outlier","ACC":"44.54","ASR":"357.38"},{"FTP":"Outlier","UEMP":"7.7","MAN":"563.4","LIC":"583.17","GR":"Outlier","CLEAR":"Outlier","WM":"Outlier","NMAN":"Outlier","GOV":"Outlier","HE":"Outlier","WE":"Outlier","HOM":"Outlier","ACC":"Outlier","ASR":"Outlier"},{"FTP":"Outlier","UEMP":"6.3","MAN":"Outlier","LIC":"709.59","GR":"666.5","CLEAR":"Outlier","WM":"Outlier","NMAN":"Outlier","GOV":"Outlier","HE":"Outlier","WE":"Outlier","HOM":"Outlier","ACC":"44.17","ASR":"Outlier"}],"rClass":"data.frame","rColClasses":{"FTP":"character","UEMP":"character","MAN":"character","LIC":"character","GR":"character","CLEAR":"character","WM":"character","NMAN":"character","GOV":"character","HE":"character","WE":"character","HOM":"character","ACC":"character","ASR":"character"},"rColnames":["FTP","UEMP","MAN","LIC","GR","CLEAR","WM","NMAN","GOV","HE","WE","HOM","ACC","ASR"],"rColHeaders":["FTP","UEMP","MAN","LIC","GR","CLEAR","WM","NMAN","GOV","HE","WE","HOM","ACC","ASR"],"rRowHeaders":null,"rDataDim":[13,14],"selectCallback":false,"colHeaders":["FTP","UEMP","MAN","LIC","GR","CLEAR","WM","NMAN","GOV","HE","WE","HOM","ACC","ASR"],"rowHeaders":["1","2","3","4","5","6","7","8","9","10","11","12","13"],"columns":[{"type":"text","renderer":"\n               function (instance, td, row, col, prop, value, cellProperties) {\n               Handsontable.renderers.NumericRenderer.apply(this, arguments);\n               if (value == 'Outlier') {\n               td.style.background = 'lightgreen';\n               }\n               }","default":null},{"type":"text","renderer":"\n               function (instance, td, row, col, prop, value, cellProperties) {\n               Handsontable.renderers.NumericRenderer.apply(this, arguments);\n               if (value == 'Outlier') {\n               td.style.background = 'lightgreen';\n               }\n               }","default":null},{"type":"text","renderer":"\n               function (instance, td, row, col, prop, value, cellProperties) {\n               Handsontable.renderers.NumericRenderer.apply(this, arguments);\n               if (value == 'Outlier') {\n               td.style.background = 'lightgreen';\n               }\n               }","default":null},{"type":"text","renderer":"\n               function (instance, td, row, col, prop, value, cellProperties) {\n               Handsontable.renderers.NumericRenderer.apply(this, arguments);\n               if (value == 'Outlier') {\n               td.style.background = 'lightgreen';\n               }\n               }","default":null},{"type":"text","renderer":"\n               function (instance, td, row, col, prop, value, cellProperties) {\n               Handsontable.renderers.NumericRenderer.apply(this, arguments);\n               if (value == 'Outlier') {\n               td.style.background = 'lightgreen';\n               }\n               }","default":null},{"type":"text","renderer":"\n               function (instance, td, row, col, prop, value, cellProperties) {\n               Handsontable.renderers.NumericRenderer.apply(this, arguments);\n               if (value == 'Outlier') {\n               td.style.background = 'lightgreen';\n               }\n               }","default":null},{"type":"text","renderer":"\n               function (instance, td, row, col, prop, value, cellProperties) {\n               Handsontable.renderers.NumericRenderer.apply(this, arguments);\n               if (value == 'Outlier') {\n               td.style.background = 'lightgreen';\n               }\n               }","default":null},{"type":"text","renderer":"\n               function (instance, td, row, col, prop, value, cellProperties) {\n               Handsontable.renderers.NumericRenderer.apply(this, arguments);\n               if (value == 'Outlier') {\n               td.style.background = 'lightgreen';\n               }\n               }","default":null},{"type":"text","renderer":"\n               function (instance, td, row, col, prop, value, cellProperties) {\n               Handsontable.renderers.NumericRenderer.apply(this, arguments);\n               if (value == 'Outlier') {\n               td.style.background = 'lightgreen';\n               }\n               }","default":null},{"type":"text","renderer":"\n               function (instance, td, row, col, prop, value, cellProperties) {\n               Handsontable.renderers.NumericRenderer.apply(this, arguments);\n               if (value == 'Outlier') {\n               td.style.background = 'lightgreen';\n               }\n               }","default":null},{"type":"text","renderer":"\n               function (instance, td, row, col, prop, value, cellProperties) {\n               Handsontable.renderers.NumericRenderer.apply(this, arguments);\n               if (value == 'Outlier') {\n               td.style.background = 'lightgreen';\n               }\n               }","default":null},{"type":"text","renderer":"\n               function (instance, td, row, col, prop, value, cellProperties) {\n               Handsontable.renderers.NumericRenderer.apply(this, arguments);\n               if (value == 'Outlier') {\n               td.style.background = 'lightgreen';\n               }\n               }","default":null},{"type":"text","renderer":"\n               function (instance, td, row, col, prop, value, cellProperties) {\n               Handsontable.renderers.NumericRenderer.apply(this, arguments);\n               if (value == 'Outlier') {\n               td.style.background = 'lightgreen';\n               }\n               }","default":null},{"type":"text","renderer":"\n               function (instance, td, row, col, prop, value, cellProperties) {\n               Handsontable.renderers.NumericRenderer.apply(this, arguments);\n               if (value == 'Outlier') {\n               td.style.background = 'lightgreen';\n               }\n               }","default":null}],"width":"auto","height":"auto","debug":0,"search":false,"stretchH":"none","comments":false,"contextMenu":{"items":{"row_above":[],"row_below":[],"remove_row":[],"hsep3":{"name":"---------"},"undo":[],"redo":[],"hsep4":{"name":"---------"},"alignment":[]}}},"evals":["columns.0.renderer","columns.1.renderer","columns.2.renderer","columns.3.renderer","columns.4.renderer","columns.5.renderer","columns.6.renderer","columns.7.renderer","columns.8.renderer","columns.9.renderer","columns.10.renderer","columns.11.renderer","columns.12.renderer","columns.13.renderer"],"jsHooks":[]}</script>
+<div id="htmlwidget-7e3ab496c4b9e02ae550" style="width:auto;height:auto;" class="rhandsontable html-widget"></div>
+<script type="application/json" data-for="htmlwidget-7e3ab496c4b9e02ae550">{"x":{"data":[{"FTP":"260.35","UEMP":"Outlier","MAN":"Outlier","LIC":"Outlier","GR":"Outlier","CLEAR":"93.4","WM":"Outlier","NMAN":"Outlier","GOV":"Outlier","HE":"Outlier","WE":"Outlier","HOM":"Outlier","ACC":"Outlier","ASR":"306.18"},{"FTP":"269.8","UEMP":"7","MAN":"Outlier","LIC":"Outlier","GR":"Outlier","CLEAR":"88.5","WM":"Outlier","NMAN":"Outlier","GOV":"Outlier","HE":"3.09","WE":"134.02","HOM":"8.9","ACC":"Outlier","ASR":"315.16"},{"FTP":"272.04","UEMP":"5.2","MAN":"Outlier","LIC":"Outlier","GR":"Outlier","CLEAR":"Outlier","WM":"Outlier","NMAN":"Outlier","GOV":"Outlier","HE":"3.23","WE":"141.68","HOM":"Outlier","ACC":"45.31","ASR":"277.53"},{"FTP":"272.96","UEMP":"4.3","MAN":"535.8","LIC":"222.1","GR":"Outlier","CLEAR":"92","WM":"500457","NMAN":"591","GOV":"150.3","HE":"3.33","WE":"147.98","HOM":"8.89","ACC":"49.51","ASR":"Outlier"},{"FTP":"272.51","UEMP":"3.5","MAN":"576","LIC":"301.92","GR":"297.65","CLEAR":"91","WM":"482418","NMAN":"626.1","GOV":"164.3","HE":"3.46","WE":"159.85","HOM":"13.07","ACC":"Outlier","ASR":"Outlier"},{"FTP":"261.34","UEMP":"Outlier","MAN":"601.7","LIC":"391.22","GR":"367.62","CLEAR":"87.4","WM":"465029","NMAN":"659.8","GOV":"179.5","HE":"3.6","WE":"157.19","HOM":"14.57","ACC":"Outlier","ASR":"Outlier"},{"FTP":"268.89","UEMP":"4.1","MAN":"577.3","LIC":"665.56","GR":"616.54","CLEAR":"88.3","WM":"448267","NMAN":"686.2","GOV":"187.5","HE":"3.73","WE":"155.29","HOM":"21.36","ACC":"50.62","ASR":"286.11"},{"FTP":"295.99","UEMP":"3.9","MAN":"596.9","LIC":"Outlier","GR":"Outlier","CLEAR":"86.1","WM":"432109","NMAN":"699.6","GOV":"195.4","HE":"Outlier","WE":"131.75","HOM":"28.03","ACC":"51.47","ASR":"291.59"},{"FTP":"319.87","UEMP":"3.6","MAN":"Outlier","LIC":"837.6","GR":"786.23","CLEAR":"79","WM":"416533","NMAN":"729.9","GOV":"210.3","HE":"4.25","WE":"178.74","HOM":"31.49","ACC":"49.16","ASR":"320.39"},{"FTP":"341.43","UEMP":"7.1","MAN":"569.3","LIC":"794.9","GR":"713.77","CLEAR":"73.9","WM":"401518","NMAN":"757.8","GOV":"Outlier","HE":"4.47","WE":"178.3","HOM":"37.39","ACC":"45.8","ASR":"323.03"},{"FTP":"Outlier","UEMP":"Outlier","MAN":"548.8","LIC":"817.74","GR":"750.43","CLEAR":"Outlier","WM":"Outlier","NMAN":"755.3","GOV":"Outlier","HE":"Outlier","WE":"209.54","HOM":"Outlier","ACC":"44.54","ASR":"357.38"},{"FTP":"Outlier","UEMP":"7.7","MAN":"563.4","LIC":"583.17","GR":"Outlier","CLEAR":"Outlier","WM":"Outlier","NMAN":"Outlier","GOV":"Outlier","HE":"Outlier","WE":"Outlier","HOM":"Outlier","ACC":"Outlier","ASR":"Outlier"},{"FTP":"Outlier","UEMP":"6.3","MAN":"Outlier","LIC":"709.59","GR":"666.5","CLEAR":"Outlier","WM":"Outlier","NMAN":"Outlier","GOV":"Outlier","HE":"Outlier","WE":"Outlier","HOM":"Outlier","ACC":"44.17","ASR":"Outlier"}],"rClass":"data.frame","rColClasses":{"FTP":"character","UEMP":"character","MAN":"character","LIC":"character","GR":"character","CLEAR":"character","WM":"character","NMAN":"character","GOV":"character","HE":"character","WE":"character","HOM":"character","ACC":"character","ASR":"character"},"rColnames":["FTP","UEMP","MAN","LIC","GR","CLEAR","WM","NMAN","GOV","HE","WE","HOM","ACC","ASR"],"rColHeaders":["FTP","UEMP","MAN","LIC","GR","CLEAR","WM","NMAN","GOV","HE","WE","HOM","ACC","ASR"],"rRowHeaders":null,"rDataDim":[13,14],"selectCallback":false,"colHeaders":["FTP","UEMP","MAN","LIC","GR","CLEAR","WM","NMAN","GOV","HE","WE","HOM","ACC","ASR"],"rowHeaders":["1","2","3","4","5","6","7","8","9","10","11","12","13"],"columns":[{"type":"text","renderer":"\n               function (instance, td, row, col, prop, value, cellProperties) {\n               Handsontable.renderers.NumericRenderer.apply(this, arguments);\n               if (value == 'Outlier') {\n               td.style.background = 'lightgreen';\n               }\n               }","default":null},{"type":"text","renderer":"\n               function (instance, td, row, col, prop, value, cellProperties) {\n               Handsontable.renderers.NumericRenderer.apply(this, arguments);\n               if (value == 'Outlier') {\n               td.style.background = 'lightgreen';\n               }\n               }","default":null},{"type":"text","renderer":"\n               function (instance, td, row, col, prop, value, cellProperties) {\n               Handsontable.renderers.NumericRenderer.apply(this, arguments);\n               if (value == 'Outlier') {\n               td.style.background = 'lightgreen';\n               }\n               }","default":null},{"type":"text","renderer":"\n               function (instance, td, row, col, prop, value, cellProperties) {\n               Handsontable.renderers.NumericRenderer.apply(this, arguments);\n               if (value == 'Outlier') {\n               td.style.background = 'lightgreen';\n               }\n               }","default":null},{"type":"text","renderer":"\n               function (instance, td, row, col, prop, value, cellProperties) {\n               Handsontable.renderers.NumericRenderer.apply(this, arguments);\n               if (value == 'Outlier') {\n               td.style.background = 'lightgreen';\n               }\n               }","default":null},{"type":"text","renderer":"\n               function (instance, td, row, col, prop, value, cellProperties) {\n               Handsontable.renderers.NumericRenderer.apply(this, arguments);\n               if (value == 'Outlier') {\n               td.style.background = 'lightgreen';\n               }\n               }","default":null},{"type":"text","renderer":"\n               function (instance, td, row, col, prop, value, cellProperties) {\n               Handsontable.renderers.NumericRenderer.apply(this, arguments);\n               if (value == 'Outlier') {\n               td.style.background = 'lightgreen';\n               }\n               }","default":null},{"type":"text","renderer":"\n               function (instance, td, row, col, prop, value, cellProperties) {\n               Handsontable.renderers.NumericRenderer.apply(this, arguments);\n               if (value == 'Outlier') {\n               td.style.background = 'lightgreen';\n               }\n               }","default":null},{"type":"text","renderer":"\n               function (instance, td, row, col, prop, value, cellProperties) {\n               Handsontable.renderers.NumericRenderer.apply(this, arguments);\n               if (value == 'Outlier') {\n               td.style.background = 'lightgreen';\n               }\n               }","default":null},{"type":"text","renderer":"\n               function (instance, td, row, col, prop, value, cellProperties) {\n               Handsontable.renderers.NumericRenderer.apply(this, arguments);\n               if (value == 'Outlier') {\n               td.style.background = 'lightgreen';\n               }\n               }","default":null},{"type":"text","renderer":"\n               function (instance, td, row, col, prop, value, cellProperties) {\n               Handsontable.renderers.NumericRenderer.apply(this, arguments);\n               if (value == 'Outlier') {\n               td.style.background = 'lightgreen';\n               }\n               }","default":null},{"type":"text","renderer":"\n               function (instance, td, row, col, prop, value, cellProperties) {\n               Handsontable.renderers.NumericRenderer.apply(this, arguments);\n               if (value == 'Outlier') {\n               td.style.background = 'lightgreen';\n               }\n               }","default":null},{"type":"text","renderer":"\n               function (instance, td, row, col, prop, value, cellProperties) {\n               Handsontable.renderers.NumericRenderer.apply(this, arguments);\n               if (value == 'Outlier') {\n               td.style.background = 'lightgreen';\n               }\n               }","default":null},{"type":"text","renderer":"\n               function (instance, td, row, col, prop, value, cellProperties) {\n               Handsontable.renderers.NumericRenderer.apply(this, arguments);\n               if (value == 'Outlier') {\n               td.style.background = 'lightgreen';\n               }\n               }","default":null}],"width":"auto","height":"auto","debug":0,"search":false,"stretchH":"none","comments":false,"contextMenu":{"items":{"row_above":[],"row_below":[],"remove_row":[],"hsep3":{"name":"---------"},"undo":[],"redo":[],"hsep4":{"name":"---------"},"alignment":[]}}},"evals":["columns.0.renderer","columns.1.renderer","columns.2.renderer","columns.3.renderer","columns.4.renderer","columns.5.renderer","columns.6.renderer","columns.7.renderer","columns.8.renderer","columns.9.renderer","columns.10.renderer","columns.11.renderer","columns.12.renderer","columns.13.renderer"],"jsHooks":[]}</script>
 </div>
 <div id="routlier-using-routlier_formattable-we-can-find-the-outliers-in-a-data-set-and-have-the-outliers-highlighted-in-red-and-the-non-outlier-values-highlighted-in-green." class="section level4">
 <h4>routlier:: Using routlier_formattable() we can find the <strong>Outliers</strong> in a data set and have the <strong>Outliers</strong> highlighted in red and the non-outlier values highlighted in green.</h4>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">routlier_formattable</span>(<span class="dt">data =</span> detroit,<span class="dt">sd =</span> <span class="dv">2</span>)</code></pre></div>
 <pre><code>## You have  4  outliers in your dataset</code></pre>
-<pre><code>##  [1] &quot;ACC&quot;   &quot;ASR&quot;   &quot;CLEAR&quot; &quot;FTP&quot;   &quot;GOV&quot;   &quot;GR&quot;    &quot;HE&quot;    &quot;HOM&quot;  
-##  [9] &quot;LIC&quot;   &quot;MAN&quot;   &quot;NMAN&quot;  &quot;UEMP&quot;  &quot;WE&quot;    &quot;WM&quot;   
-##  [1] &quot;ACC&quot;   &quot;ASR&quot;   &quot;CLEAR&quot; &quot;FTP&quot;   &quot;GOV&quot;   &quot;GR&quot;    &quot;HE&quot;    &quot;HOM&quot;  
-##  [9] &quot;LIC&quot;   &quot;MAN&quot;   &quot;NMAN&quot;  &quot;UEMP&quot;  &quot;WE&quot;    &quot;WM&quot;</code></pre>
+<pre><code>##  [1] &quot;WM&quot;    &quot;WE&quot;    &quot;UEMP&quot;  &quot;NMAN&quot;  &quot;MAN&quot;   &quot;LIC&quot;   &quot;HOM&quot;   &quot;HE&quot;   
+##  [9] &quot;GR&quot;    &quot;GOV&quot;   &quot;FTP&quot;   &quot;CLEAR&quot; &quot;ASR&quot;   &quot;ACC&quot;  
+##  [1] &quot;WM&quot;    &quot;WE&quot;    &quot;UEMP&quot;  &quot;NMAN&quot;  &quot;MAN&quot;   &quot;LIC&quot;   &quot;HOM&quot;   &quot;HE&quot;   
+##  [9] &quot;GR&quot;    &quot;GOV&quot;   &quot;FTP&quot;   &quot;CLEAR&quot; &quot;ASR&quot;   &quot;ACC&quot;</code></pre>
 <table class="table table-condensed">
 <thead>
 <tr>
 <th style="text-align:right;">
-ACC
-</th>
-<th style="text-align:right;">
-ASR
-</th>
-<th style="text-align:right;">
-CLEAR
-</th>
-<th style="text-align:right;">
-FTP
-</th>
-<th style="text-align:right;">
-GOV
-</th>
-<th style="text-align:right;">
-GR
-</th>
-<th style="text-align:right;">
-HE
-</th>
-<th style="text-align:right;">
-HOM
-</th>
-<th style="text-align:right;">
-LIC
-</th>
-<th style="text-align:right;">
-MAN
-</th>
-<th style="text-align:right;">
-NMAN
-</th>
-<th style="text-align:right;">
-UEMP
+WM
 </th>
 <th style="text-align:right;">
 WE
 </th>
 <th style="text-align:right;">
-WM
+UEMP
+</th>
+<th style="text-align:right;">
+NMAN
+</th>
+<th style="text-align:right;">
+MAN
+</th>
+<th style="text-align:right;">
+LIC
+</th>
+<th style="text-align:right;">
+HOM
+</th>
+<th style="text-align:right;">
+HE
+</th>
+<th style="text-align:right;">
+GR
+</th>
+<th style="text-align:right;">
+GOV
+</th>
+<th style="text-align:right;">
+FTP
+</th>
+<th style="text-align:right;">
+CLEAR
+</th>
+<th style="text-align:right;">
+ASR
+</th>
+<th style="text-align:right;">
+ACC
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align:right;">
-<span style="color: green">39.17</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">306.18</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">93.40</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">260.35</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">133.90</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">215.98</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">2.98</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">8.60</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">178.50</span>
-</td>
-<td style="text-align:right;">
-<span style="color: red">455.50</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">538.10</span>
-</td>
-<td style="text-align:right;">
-<span style="color: red">11.00</span>
+<span style="color: green">558724.00</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">117.18</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">558724.00</span>
+<span style="color: red">11.00</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">538.10</span>
+</td>
+<td style="text-align:right;">
+<span style="color: red">455.50</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">178.50</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">8.60</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">2.98</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">215.98</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">133.90</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">260.35</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">93.40</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">306.18</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">39.17</span>
 </td>
 </tr>
 <tr>
+<td style="text-align:right;">
+<span style="color: green">538584.00</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">134.02</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">7.00</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">547.60</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">480.20</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">156.41</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">8.90</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">3.09</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">180.48</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">137.60</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">269.80</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">88.50</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">315.16</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">40.27</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+<span style="color: green">519171.00</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">141.68</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">5.20</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">562.80</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">506.10</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">198.02</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">8.52</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">3.23</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">209.57</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">143.60</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">272.04</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">94.40</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">277.53</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">45.31</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+<span style="color: green">500457.00</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">147.98</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">4.30</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">591.00</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">535.80</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">222.10</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">8.89</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">3.33</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">231.67</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">150.30</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">272.96</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">92.00</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">234.07</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">49.51</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+<span style="color: green">482418.00</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">159.85</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">3.50</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">626.10</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">576.00</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">301.92</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">13.07</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">3.46</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">297.65</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">164.30</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">272.51</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">91.00</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">230.84</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">55.05</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+<span style="color: green">465029.00</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">157.19</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">3.20</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">659.80</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">601.70</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">391.22</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">14.57</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">3.60</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">367.62</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">179.50</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">261.34</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">87.40</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">217.99</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">53.90</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+<span style="color: green">448267.00</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">155.29</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">4.10</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">686.20</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">577.30</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">665.56</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">21.36</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">3.73</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">616.54</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">187.50</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">268.89</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">88.30</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">286.11</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">50.62</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+<span style="color: green">432109.00</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">131.75</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">3.90</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">699.60</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">596.90</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">1131.21</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">28.03</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">2.91</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">1029.75</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">195.40</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">295.99</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">86.10</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">291.59</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">51.47</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+<span style="color: green">416533.00</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">178.74</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">3.60</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">729.90</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">613.50</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">837.60</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">31.49</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">4.25</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">786.23</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">210.30</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">319.87</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">79.00</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">320.39</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">49.16</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+<span style="color: green">401518.00</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">178.30</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">7.10</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">757.80</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">569.30</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">794.90</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">37.39</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">4.47</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">713.77</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">223.80</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">341.43</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">73.90</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">323.03</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">45.80</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+<span style="color: green">387046.00</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">209.54</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">8.40</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">755.30</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">548.80</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">817.74</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">46.26</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">5.04</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">750.43</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">227.70</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">356.59</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">63.40</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">357.38</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">44.54</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+<span style="color: green">373095.00</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">240.05</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">7.70</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">787.00</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">563.40</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">583.17</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">47.24</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">5.47</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">1027.38</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">230.90</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">376.69</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">62.50</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">422.07</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">41.03</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+<span style="color: green">359647.00</span>
+</td>
+<td style="text-align:right;">
+<span style="color: red">258.05</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">6.30</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">819.80</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">609.30</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">709.59</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">52.33</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">5.76</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">666.50</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">230.20</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">390.19</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">58.90</span>
+</td>
+<td style="text-align:right;">
+<span style="color: red">473.01</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">44.17</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="routlier-using-routlier_mad-we-can-find-the-outliers-in-a-data-set-and-have-the-outliers-highlighted-in-red-and-the-non-outlier-values-highlighted-in-green." class="section level4">
+<h4>routlier:: Using routlier_mad() we can find the <strong>Outliers</strong> in a data set and have the <strong>Outliers</strong> highlighted in red and the non-outlier values highlighted in green.</h4>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">routlier_mad</span>(<span class="dt">data =</span> detroit,<span class="dt">MAD =</span> <span class="dv">3</span>)</code></pre></div>
+<pre><code>## [1] &quot;The MAD for column 1 is from: 329.046758 : 216.873242 and the overall MAD range is: 112.173516&quot;
+## [1] &quot;The MAD for column 2 is from: 12.76126 : -2.36126 and the overall MAD range is: 15.12252&quot;
+## [1] &quot;The MAD for column 3 is from: 713.40872 : 425.19128 and the overall MAD range is: 288.217440000001&quot;
+## [1] &quot;The MAD for column 4 is from: 1714.823754 : -548.483754 and the overall MAD range is: 2263.307508&quot;
+## [1] &quot;The MAD for column 5 is from: 2034.898942 : -801.818942 and the overall MAD range is: 2836.717884&quot;
+## [1] &quot;The MAD for column 6 is from: 114.0868 : 60.7132 and the overall MAD range is: 53.3736&quot;
+## [1] &quot;The MAD for column 7 is from: 680397.682 : 216136.318 and the overall MAD range is: 464261.364&quot;
+## [1] &quot;The MAD for column 8 is from: 1004.66248 : 367.73752 and the overall MAD range is: 636.924959999999&quot;
+## [1] &quot;The MAD for column 9 is from: 352.95816 : 22.0418400000001 and the overall MAD range is: 330.91632&quot;
+## [1] &quot;The MAD for column 10 is from: 6.357636 : 0.842363999999999 and the overall MAD range is: 5.515272&quot;
+## [1] &quot;The MAD for column 11 is from: 253.04009 : 61.3399099999999 and the overall MAD range is: 191.70018&quot;
+## [1] &quot;The MAD for column 12 is from: 76.824066 : -34.104066 and the overall MAD range is: 110.928132&quot;
+## [1] &quot;The MAD for column 13 is from: 67.016006 : 24.583994 and the overall MAD range is: 42.432012&quot;
+## [1] &quot;The MAD for column 14 is from: 433.60947 : 178.75053 and the overall MAD range is: 254.85894&quot;
+## [1] &quot;You have a total of 7 Outliers in your dataset&quot;</code></pre>
+<table class="table table-condensed">
+<thead>
+<tr>
+<th style="text-align:right;">
+FTP
+</th>
+<th style="text-align:right;">
+UEMP
+</th>
+<th style="text-align:right;">
+MAN
+</th>
+<th style="text-align:right;">
+LIC
+</th>
+<th style="text-align:right;">
+GR
+</th>
+<th style="text-align:right;">
+CLEAR
+</th>
+<th style="text-align:right;">
+WM
+</th>
+<th style="text-align:right;">
+NMAN
+</th>
+<th style="text-align:right;">
+GOV
+</th>
+<th style="text-align:right;">
+HE
+</th>
+<th style="text-align:right;">
+WE
+</th>
+<th style="text-align:right;">
+HOM
+</th>
+<th style="text-align:right;">
+ACC
+</th>
+<th style="text-align:right;">
+ASR
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+<span style="color: green">260.35</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">11.00</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">455.50</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">178.50</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">215.98</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">93.40</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">558724.00</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">538.10</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">133.90</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">2.98</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">117.18</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">8.60</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">39.17</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">306.18</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+<span style="color: green">269.80</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">7.00</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">480.20</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">156.41</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">180.48</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">88.50</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">538584.00</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">547.60</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">137.60</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">3.09</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">134.02</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">8.90</span>
+</td>
 <td style="text-align:right;">
 <span style="color: green">40.27</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">315.16</span>
 </td>
-<td style="text-align:right;">
-<span style="color: green">88.50</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">269.80</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">137.60</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">180.48</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">3.09</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">8.90</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">156.41</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">480.20</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">547.60</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">7.00</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">134.02</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">538584.00</span>
-</td>
 </tr>
 <tr>
+<td style="text-align:right;">
+<span style="color: green">272.04</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">5.20</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">506.10</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">198.02</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">209.57</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">94.40</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">519171.00</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">562.80</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">143.60</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">3.23</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">141.68</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">8.52</span>
+</td>
 <td style="text-align:right;">
 <span style="color: green">45.31</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">277.53</span>
 </td>
-<td style="text-align:right;">
-<span style="color: green">94.40</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">272.04</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">143.60</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">209.57</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">3.23</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">8.52</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">198.02</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">506.10</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">562.80</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">5.20</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">141.68</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">519171.00</span>
-</td>
 </tr>
 <tr>
+<td style="text-align:right;">
+<span style="color: green">272.96</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">4.30</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">535.80</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">222.10</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">231.67</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">92.00</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">500457.00</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">591.00</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">150.30</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">3.33</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">147.98</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">8.89</span>
+</td>
 <td style="text-align:right;">
 <span style="color: green">49.51</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">234.07</span>
 </td>
-<td style="text-align:right;">
-<span style="color: green">92.00</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">272.96</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">150.30</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">231.67</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">3.33</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">8.89</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">222.10</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">535.80</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">591.00</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">4.30</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">147.98</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">500457.00</span>
-</td>
 </tr>
 <tr>
+<td style="text-align:right;">
+<span style="color: green">272.51</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">3.50</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">576.00</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">301.92</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">297.65</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">91.00</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">482418.00</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">626.10</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">164.30</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">3.46</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">159.85</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">13.07</span>
+</td>
 <td style="text-align:right;">
 <span style="color: green">55.05</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">230.84</span>
 </td>
-<td style="text-align:right;">
-<span style="color: green">91.00</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">272.51</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">164.30</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">297.65</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">3.46</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">13.07</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">301.92</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">576.00</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">626.10</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">3.50</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">159.85</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">482418.00</span>
-</td>
 </tr>
 <tr>
+<td style="text-align:right;">
+<span style="color: green">261.34</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">3.20</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">601.70</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">391.22</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">367.62</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">87.40</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">465029.00</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">659.80</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">179.50</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">3.60</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">157.19</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">14.57</span>
+</td>
 <td style="text-align:right;">
 <span style="color: green">53.90</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">217.99</span>
 </td>
-<td style="text-align:right;">
-<span style="color: green">87.40</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">261.34</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">179.50</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">367.62</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">3.60</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">14.57</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">391.22</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">601.70</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">659.80</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">3.20</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">157.19</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">465029.00</span>
-</td>
 </tr>
 <tr>
+<td style="text-align:right;">
+<span style="color: green">268.89</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">4.10</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">577.30</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">665.56</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">616.54</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">88.30</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">448267.00</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">686.20</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">187.50</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">3.73</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">155.29</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">21.36</span>
+</td>
 <td style="text-align:right;">
 <span style="color: green">50.62</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">286.11</span>
 </td>
-<td style="text-align:right;">
-<span style="color: green">88.30</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">268.89</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">187.50</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">616.54</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">3.73</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">21.36</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">665.56</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">577.30</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">686.20</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">4.10</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">155.29</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">448267.00</span>
-</td>
 </tr>
 <tr>
+<td style="text-align:right;">
+<span style="color: green">295.99</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">3.90</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">596.90</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">1131.21</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">1029.75</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">86.10</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">432109.00</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">699.60</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">195.40</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">2.91</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">131.75</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">28.03</span>
+</td>
 <td style="text-align:right;">
 <span style="color: green">51.47</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">291.59</span>
 </td>
-<td style="text-align:right;">
-<span style="color: green">86.10</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">295.99</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">195.40</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">1029.75</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">2.91</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">28.03</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">1131.21</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">596.90</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">699.60</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">3.90</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">131.75</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">432109.00</span>
-</td>
 </tr>
 <tr>
+<td style="text-align:right;">
+<span style="color: green">319.87</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">3.60</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">613.50</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">837.60</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">786.23</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">79.00</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">416533.00</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">729.90</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">210.30</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">4.25</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">178.74</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">31.49</span>
+</td>
 <td style="text-align:right;">
 <span style="color: green">49.16</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">320.39</span>
 </td>
-<td style="text-align:right;">
-<span style="color: green">79.00</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">319.87</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">210.30</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">786.23</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">4.25</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">31.49</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">837.60</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">613.50</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">729.90</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">3.60</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">178.74</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">416533.00</span>
-</td>
 </tr>
 <tr>
+<td style="text-align:right;">
+<span style="color: red">341.43</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">7.10</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">569.30</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">794.90</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">713.77</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">73.90</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">401518.00</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">757.80</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">223.80</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">4.47</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">178.30</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">37.39</span>
+</td>
 <td style="text-align:right;">
 <span style="color: green">45.80</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">323.03</span>
 </td>
-<td style="text-align:right;">
-<span style="color: green">73.90</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">341.43</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">223.80</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">713.77</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">4.47</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">37.39</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">794.90</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">569.30</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">757.80</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">7.10</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">178.30</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">401518.00</span>
-</td>
 </tr>
 <tr>
+<td style="text-align:right;">
+<span style="color: red">356.59</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">8.40</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">548.80</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">817.74</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">750.43</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">63.40</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">387046.00</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">755.30</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">227.70</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">5.04</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">209.54</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">46.26</span>
+</td>
 <td style="text-align:right;">
 <span style="color: green">44.54</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">357.38</span>
 </td>
-<td style="text-align:right;">
-<span style="color: green">63.40</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">356.59</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">227.70</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">750.43</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">5.04</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">46.26</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">817.74</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">548.80</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">755.30</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">8.40</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">209.54</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">387046.00</span>
-</td>
 </tr>
 <tr>
+<td style="text-align:right;">
+<span style="color: red">376.69</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">7.70</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">563.40</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">583.17</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">1027.38</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">62.50</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">373095.00</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">787.00</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">230.90</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">5.47</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">240.05</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">47.24</span>
+</td>
 <td style="text-align:right;">
 <span style="color: green">41.03</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">422.07</span>
 </td>
-<td style="text-align:right;">
-<span style="color: green">62.50</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">376.69</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">230.90</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">1027.38</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">5.47</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">47.24</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">583.17</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">563.40</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">787.00</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">7.70</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">240.05</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">373095.00</span>
-</td>
 </tr>
 <tr>
 <td style="text-align:right;">
-<span style="color: green">44.17</span>
-</td>
-<td style="text-align:right;">
-<span style="color: red">473.01</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">58.90</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">390.19</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">230.20</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">666.50</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">5.76</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">52.33</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">709.59</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">609.30</span>
-</td>
-<td style="text-align:right;">
-<span style="color: green">819.80</span>
+<span style="color: red">390.19</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">6.30</span>
 </td>
 <td style="text-align:right;">
-<span style="color: red">258.05</span>
+<span style="color: green">609.30</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">709.59</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">666.50</span>
+</td>
+<td style="text-align:right;">
+<span style="color: red">58.90</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">359647.00</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">819.80</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">230.20</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">5.76</span>
+</td>
+<td style="text-align:right;">
+<span style="color: red">258.05</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">52.33</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">44.17</span>
+</td>
+<td style="text-align:right;">
+<span style="color: red">473.01</span>
 </td>
 </tr>
 </tbody>

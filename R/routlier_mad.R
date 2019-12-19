@@ -11,20 +11,27 @@
 #   Test Package:   'Ctrl + Shift + T'
 #' Routlier: Outlier in DT Table
 #'
-#' The outlier will be highlighted in green and the word 'Outlier' will replace the value in the cell.
+#' The Outlier(s) wil be highlighted red in the table and the other values will be highlighted greeen.
 #'
-#' \if{html}{\figure{routlier.png}{options: width=100\% alt="R logo"}}
-#' \if{latex}{\figure{routlier.png}{options: width=0.5in}}
+#' \if{html}{\figure{routlier_mad.png}{options: width=100\% alt="R logo"}}
+#' \if{latex}{\figure{routlier_mad.png}{options: width=0.5in}}
+#'
+#' There is also a printout of the data and the columns giving the upper and lower MAD and the overall range of the MAD.
+#'
+#'
+#' \if{html}{\figure{routlier_mad_two.png}{options: width=100\% alt="R logo"}}
+#' \if{latex}{\figure{routlier_mad_two.png}{options: width=0.5in}}
 #'
 #' @param data filepath to data.
+#' @param MAD number of MAD standard deviations.
 #' @keywords routlier_mad
-#' @return Returns an outlier dataset from the original dataset in a DT table
+#' @return Returns a numeric dataset from the original dataset and the outliers are highlighted in red.
 #' @name routlier_mad
 #' @title routlier_mad
 #' @import dplyr
 #' @import DT
 #' @import formattable
-#' @usage routlier_mad(data)
+#' @usage routlier_mad(data,MAD)
 #' @examples
 #'
 #'

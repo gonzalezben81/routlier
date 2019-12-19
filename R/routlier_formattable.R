@@ -17,6 +17,7 @@
 #' \if{latex}{\figure{routlier.png}{options: width=0.5in}}
 #'
 #' @param data filepath to data.
+#' @param sd number of standard deviations to check the data against.
 #' @keywords routlier_formattable
 #' @return Returns an outlier dataset from the original dataset in a DT table
 #' @name routlier_formattable
@@ -24,15 +25,14 @@
 #' @import dplyr
 #' @import DT
 #' @import formattable
-#' @usage routlier_formattable(data)
-#' @references Hello
+#' @usage routlier_formattable(data,sd)
 #' @examples
 #'
 #'
-#'   routlier_formattable(data = iris)
+#'   routlier_formattable(data = iris,sd = 2)
 #'
 #' @export
-
+utils::globalVariables(c("."))
 
 routlier_formattable <- function(data,sd){
   # require(rhandsontable,quietly = TRUE)
