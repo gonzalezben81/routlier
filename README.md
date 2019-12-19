@@ -84,7 +84,7 @@ routlier_mad(data = mtcars,MAD = 2)
 
 ### Homicide in Detroit: The role of Firearms.
 
->This is the data set called `DETROIT' in the book 'Subset selection in
+>This is the data set called 'DETROIT' in the book 'Subset selection in
 regression' by Alan J. Miller published in the Chapman & Hall series of
 monographs on Statistics & Applied Probability, no. 40.   The data are
 unusual in that a subset of three predictors can be found which gives a
