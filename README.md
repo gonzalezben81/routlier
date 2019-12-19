@@ -68,11 +68,11 @@ routlier_formattable(data = detroit,sd = 2)
 ```
 
 
-#### routlier:: Using routlier_mad() we can find the **Outliers** in a data set and have the **Outliers** highlighted in red and the non-outlier values highlighted in green.
+#### routlier:: Using routlier_mad() we can find the **Outliers** in a data set and have the **Outliers** highlighted in red and the non-outlier values highlighted in green. The print out also tells us how many **Outliers** are present in the data. 
 
 ```r
 
-routlier_mad(data = detroit,MAD = 3)
+routlier_mad(data = mtcars,MAD = 2)
 ```
 
 ![routlier_mad](./man/figures/routlier_mad_two.png)
