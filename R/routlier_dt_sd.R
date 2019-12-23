@@ -56,7 +56,7 @@ routlier_dt_sd <- function(data,sd){
     for(i in seq_along(data)){
       #if(sum(scale(data[,i])>1)){data[,i][scale(data[,i])>1] <- "Outlier"}
       ##Calculates the abs of the z-score of the dataset using the scale function
-      data[[i]][abs(scale(data[[i]]))>=sd ] <- "Outlier"
+      data[[i]][abs(scale(data[[i]],center = TRUE,scale = TRUE))>=sd ] <- "Outlier"
 
     }
     ##Bind the data back together

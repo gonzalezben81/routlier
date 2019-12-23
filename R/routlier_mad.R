@@ -95,18 +95,6 @@ routlier_mad <- function(data,MAD){
 }
 
 
-routlier_mad(data = mtcars,MAD = 3)
 
 
 
-data <- mtcars
-for (i in seq_along(data)){
-  ###Calculates the upper_quartile range of the data
-  # upper_quartile<- quantile(data[[i]],probs = 0.75,type = type)
-  median<- median(data[[i]])
-  print(paste0("Median: ",median))
-  ###Calculates the lower_quartile range of the data
-  # lower_quartile <- quantile(data[[i]],probs = 0.25,type = type)
-  mad<- mad(data[[i]])
-  print(paste0("MAD: ",mad))
-}
