@@ -137,7 +137,7 @@ while G1 and G2 correspond to the 1st and 2nd period grades. It is more difficul
 
 * Attributes for both student-mat.csv (Math course) and student-por.csv (Portuguese language course) datasets:
 
- + school - student's school (binary: 'GP' - Gabriel Pereira or 'MS' - Mousinho da Silveira)
+> + school - student's school (binary: 'GP' - Gabriel Pereira or 'MS' - Mousinho da Silveira)
  + sex - student's sex (binary: 'F' - female or 'M' - male)
  + age - student's age (numeric: from 15 to 22)
  + address - student's home address type (binary: 'U' - urban or 'R' - rural)
@@ -173,7 +173,7 @@ while G1 and G2 correspond to the 1st and 2nd period grades. It is more difficul
  
 * These grades are related with the course subject, Math or Portuguese:
 
- + G1 - first period grade (numeric: from 0 to 20)
+> + G1 - first period grade (numeric: from 0 to 20)
  + G2 - second period grade (numeric: from 0 to 20)
  + G3 - final grade (numeric: from 0 to 20, output target)
 
@@ -183,18 +183,18 @@ while G1 and G2 correspond to the 1st and 2nd period grades. It is more difficul
 
 
 
-@references{
+References: 
+
 Citation Request:
 Please include this citation if you plan to use this database:
 P. Cortez and A. Silva. Using Data Mining to Predict Secondary School Student Performance. In A. Brito and J. Teixeira Eds., Proceedings of 5th FUture BUsiness TEChnology Conference (FUBUTEC 2008) pp. 5-12, Porto, Portugal, April, 2008, EUROSIS, ISBN 978-9077381-39-7.\cr
-Available at: [](http://www3.dsi.uminho.pt/pcortez/student.pdf)
+Available at: [http://www3.dsi.uminho.pt/pcortez/student.pdf](http://www3.dsi.uminho.pt/pcortez/student.pdf)
 
 Relevant Papers:
 
 P. Cortez and A. Silva. Using Data Mining to Predict Secondary School Student Performance. In A. Brito and J. Teixeira Eds., Proceedings of 5th FUture BUsiness TEChnology Conference (FUBUTEC 2008) pp. 5-12, Porto, Portugal, April, 2008, EUROSIS, ISBN 978-9077381-39-7.
-Available at: [](http://www3.dsi.uminho.pt/pcortez/student.pdf)
+Available at: [http://www3.dsi.uminho.pt/pcortez/student.pdf](http://www3.dsi.uminho.pt/pcortez/student.pdf)
 
-[](http://www3.dsi.uminho.pt/pcortez/Home.html})
-}
+[http://www3.dsi.uminho.pt/pcortez/Home.html](http://www3.dsi.uminho.pt/pcortez/Home.html)
 
 
