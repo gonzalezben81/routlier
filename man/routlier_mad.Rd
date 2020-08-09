@@ -25,6 +25,7 @@ The Outlier(s) wil be highlighted red in the table and the other values will be 
 
 There is also a printout of the data and the columns giving the upper and lower MAD and the overall range of the MAD.
 
+
 \if{html}{\figure{routlier_mad_two.png}{options: width=100\% alt="R logo"}}
 \if{latex}{\figure{routlier_mad_two.png}{options: width=0.5in}}
 }

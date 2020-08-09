@@ -1,5 +1,5 @@
 ---
-title: "roultier"
+title: "routlier"
 author: "Ben Gonzalez"
 date: "11/21/2019"
 output: rmarkdown::html_vignette

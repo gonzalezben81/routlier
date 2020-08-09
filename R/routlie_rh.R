@@ -17,7 +17,6 @@
 #' \if{latex}{\figure{routlier_rh.png}{options: width=0.5in}}
 #'
 #' @param data filepath to data
-#' @aliases data
 #' @keywords routlier_rh
 #' @return Return's an outlier dataset from the original dataset in a rhandonstable
 #' @name routlier_rh
