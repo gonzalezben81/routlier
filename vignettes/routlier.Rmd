@@ -1,8 +1,10 @@
 ---
 title: "routlier"
 author: "Ben Gonzalez"
-date: "11/21/2019"
-output: rmarkdown::html_vignette
+date: "`r Sys.Date()`"
+output: 
+  rmarkdown::html_vignette:
+  html_document:
 vignette: >
   %\VignetteIndexEntry{routlier}
   %\VignetteEngine{knitr::rmarkdown}

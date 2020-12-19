@@ -1,11 +1,3 @@
----
-title: "roultier"
-author: "Ben Gonzalez"
-date: "11/21/2019"
-output: rmarkdown::html_vignette
----
-
-
 ## routlier
 
 routlier is a package that is built to look for outliers in a dataset. The functions allow a user to look for outliers that are 'x' number of deviations away from the mean in the data for a particular column. The number of 'Outliers' in a dataset will be returned. Additionally any Outlier value will now be replaced with the word 'Outlier' in the dataset.
