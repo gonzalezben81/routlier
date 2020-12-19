@@ -46,4 +46,7 @@ library(routlier)
   routlier_dt(data = iris)
 
 }
+\references{
+Hello
+}
 \keyword{routlier_dt}

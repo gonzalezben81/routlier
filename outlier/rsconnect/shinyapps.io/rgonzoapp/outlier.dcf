@@ -1,0 +1,12 @@
+name: outlier
+title: outlier
+username:
+account: rgonzoapp
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 1617231
+bundleId: 2688320
+url: https://rgonzoapp.shinyapps.io/outlier/
+when: 1577126655.86048
+asMultiple: FALSE
+asStatic: FALSE

@@ -4,7 +4,8 @@
 \name{student}
 \alias{student}
 \title{Student Performance Data Set .}
-\format{A data frame with 392 rows and 33 variables:
+\format{
+A data frame with 392 rows and 33 variables:
 \itemize{
 Attributes for both student-mat.csv (Math course) and student-por.csv (Portuguese language course) datasets:
 \item school - student's school (binary: 'GP' - Gabriel Pereira or 'MS' - Mousinho da Silveira)
@@ -42,7 +43,8 @@ These grades are related with the course subject, Math or Portuguese:
 \item G1 - first period grade (numeric: from 0 to 20)
 \item G2 - second period grade (numeric: from 0 to 20)
 \item G3 - final grade (numeric: from 0 to 20, output target)
-}}
+}
+}
 \source{
 \url{http://archive.ics.uci.edu/ml/datasets/Student+Performance}
 }
@@ -60,7 +62,7 @@ while G1 and G2 correspond to the 1st and 2nd period grades. It is more difficul
 \references{
 Citation Request:
 Please include this citation if you plan to use this database:
-P. Cortez and A. Silva. Using Data Mining to Predict Secondary School Student Performance. In A. Brito and J. Teixeira Eds., Proceedings of 5th FUture BUsiness TEChnology Conference (FUBUTEC 2008) pp. 5-12, Porto, Portugal, April, 2008, EUROSIS, ISBN 978-9077381-39-7.
+P. Cortez and A. Silva. Using Data Mining to Predict Secondary School Student Performance. In A. Brito and J. Teixeira Eds., Proceedings of 5th FUture BUsiness TEChnology Conference (FUBUTEC 2008) pp. 5-12, Porto, Portugal, April, 2008, EUROSIS, ISBN 978-9077381-39-7.\cr
 Available at: \url{http://www3.dsi.uminho.pt/pcortez/student.pdf}
 
 Relevant Papers:

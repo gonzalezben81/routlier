@@ -2,7 +2,6 @@
 % Please edit documentation in R/routlie_rh.R, R/routlierh.R
 \name{routlier_rh}
 \alias{routlier_rh}
-\alias{data}
 \title{routlier_rh}
 \usage{
 routlier_rh(data)

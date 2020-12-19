@@ -4,7 +4,8 @@
 \name{detroit}
 \alias{detroit}
 \title{Homicide in Detroit: The role of Firearms.}
-\format{A data frame with 13 rows and 14 variables:
+\format{
+A data frame with 13 rows and 14 variables:
 \itemize{
   \item FTP: Full-time police per 100,000 population
   \item UEMP: UEMP - \% unemployed in the population
@@ -20,7 +21,8 @@
   \item HOM: HOM - Number of homicides per 100,000 of population
   \item ACC: ACC - Death rate in accidents per 100,000 population
   \item ASR: ASR - Number of assaults per 100,000 population
-}}
+}
+}
 \source{
 \url{http://lib.stat.cmu.edu/datasets/detroit}
 }

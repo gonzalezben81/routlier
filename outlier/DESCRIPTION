@@ -1,0 +1,15 @@
+Package: outlier
+Type: Package
+Title: outlier
+Version: 1.0
+Date: 2019-12-23
+Author: Ben Gonzalez
+Maintainer: <gonzalezben81@gmail.com>
+Description: Application for detecting outliers
+License: MIT
+LazyData: TRUE
+RoxygenNote: 5.0.0
+Suggests: testthat
+Imports: shiny, rhandsontable, dplyr, DT, formattable
+Depends: routlier
+Remotes: https://github.com/gonzalezben81/routlier.git
