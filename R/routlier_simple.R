@@ -20,7 +20,7 @@
 #' @param data filepath to data
 #' @param sd number of standard deviations.
 #' @keywords routlier_simple
-#' @return Return's an outlier dataset from the original dataset in a rhandonstable
+#' @return Return's an outlier dataset from the original dataset provided by the user.
 #' @name routlier_simple
 #' @title routlier_simple
 #' @usage routlier_simple(data, sd)

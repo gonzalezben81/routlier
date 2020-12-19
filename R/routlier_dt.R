@@ -1,5 +1,3 @@
-# routlier_dt
-#
 # You can learn more about package authoring with RStudio at:
 #
 #   http://r-pkgs.had.co.nz/
@@ -25,9 +23,8 @@
 #' @import dplyr
 #' @import DT
 #' @import rhandsontable
-#' @references Hello
+#' @references
 #' @examples
-#'
 #'
 #'   routlier_dt(data = iris)
 #'

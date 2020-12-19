@@ -12,7 +12,7 @@ routlier_simple(data, sd)
 \item{sd}{number of standard deviations.}
 }
 \value{
-Return's an outlier dataset from the original dataset in a rhandonstable
+Return's an outlier dataset from the original dataset provided by the user.
 }
 \description{
 Routlier: Simple data frame from routlier:
