@@ -9,8 +9,6 @@ routlier_dt(data)
 routlier_dt(data)
 }
 \arguments{
-\item{data}{filepath to data}
-
 \item{data}{filepath to data.}
 }
 \value{

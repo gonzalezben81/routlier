@@ -10,8 +10,6 @@ routlier_rh(data)
 }
 \arguments{
 \item{data}{filepath to data}
-
-\item{data}{filepath to data}
 }
 \value{
 Return's an outlier dataset from the original dataset in a rhandonstable
