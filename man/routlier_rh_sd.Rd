@@ -15,7 +15,7 @@ routlier_rh_sd(data, sd)
 Return's an outlier dataset from the original dataset in a rhandonstable. The user must specify the standard deviation to determine the outlier.
 }
 \description{
-Routlier: Outlier in Rhandsontable
+Routlier: Outlier detection that returns an Rhandsontable
 }
 \details{
 The outlier will highlighted in green and the word 'Outlier' will replace the value in the cell.

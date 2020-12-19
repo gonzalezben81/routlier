@@ -4,8 +4,7 @@
 \name{student}
 \alias{student}
 \title{Student Performance Data Set .}
-\format{
-A data frame with 392 rows and 33 variables:
+\format{A data frame with 392 rows and 33 variables:
 \itemize{
 Attributes for both student-mat.csv (Math course) and student-por.csv (Portuguese language course) datasets:
 \item school - student's school (binary: 'GP' - Gabriel Pereira or 'MS' - Mousinho da Silveira)
@@ -43,8 +42,7 @@ These grades are related with the course subject, Math or Portuguese:
 \item G1 - first period grade (numeric: from 0 to 20)
 \item G2 - second period grade (numeric: from 0 to 20)
 \item G3 - final grade (numeric: from 0 to 20, output target)
-}
-}
+}}
 \source{
 \url{http://archive.ics.uci.edu/ml/datasets/Student+Performance}
 }

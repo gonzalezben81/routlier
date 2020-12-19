@@ -9,7 +9,7 @@
 #   Build and Reload Package:  'Ctrl + Shift + B'
 #   Check Package:             'Ctrl + Shift + E'
 #   Test Package:              'Ctrl + Shift + T'
-#' Routlier: Outlier in Rhandsontable
+#' Routlier: Outlier detection that returns an Rhandsontable
 #'
 #' The outlier will highlighted in green and the word 'Outlier' will replace the value in the cell.
 #'

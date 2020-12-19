@@ -21,10 +21,10 @@
 #' @return Returns an outlier dataset from the original dataset in a DT table
 #' @name routlier_dt
 #' @title routlier_dt
+#' @usage routlier_dt(data)
 #' @import dplyr
 #' @import DT
 #' @import rhandsontable
-#' @usage routlier_dt(data)
 #' @references Hello
 #' @examples
 #'
