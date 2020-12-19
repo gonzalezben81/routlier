@@ -31,7 +31,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">routlier</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.1</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.2</span>
       </span>
     </div>
 
@@ -42,6 +42,9 @@
     <span class="fas fa fas fa-home fa-lg"></span>
      
   </a>
+</li>
+<li>
+  <a href="articles/routlier.html">Get started</a>
 </li>
 <li>
   <a href="reference/index.html">Reference</a>
@@ -59,14 +62,179 @@
 
       </header><div class="row">
   <div class="contents col-md-9">
-Allows an individual to highlight outliers in a dataset. The outliers are highlighted in green and replaced with the word outlier. This allows an individual to easily identify an outlier and continue or correct the problem. The outlier that is detected is 3 standard deviations from the mean of the data that is being utilized.
+
+<hr>
+<p>title: “roultier” author: “Ben Gonzalez” date: “11/21/2019” output: rmarkdown::html_vignette —</p>
+<div id="routlier" class="section level2">
+<h2 class="hasAnchor">
+<a href="#routlier" class="anchor"></a>routlier</h2>
+<p>routlier is a package that is built to look for outliers in a dataset. The functions allow a user to look for outliers that are ‘x’ number of deviations away from the mean in the data for a particular column. The number of ‘Outliers’ in a dataset will be returned. Additionally any Outlier value will now be replaced with the word ‘Outlier’ in the dataset.</p>
+<p>There is also a function routlier_mad() that utilizes the MAD median absolute deviation approach to look for Outliers. The MAD approach is less susceptible to extreme outliers than the traditional Median &amp; SD approach. See the following thesis for further explination. <a href="http://d-scholarship.pitt.edu/7948/1/Seo.pdf">Thesis</a></p>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va">routlier</span><span class="op">)</span>
+
+<span class="fu">routlier</span><span class="fu">::</span><span class="fu"><a href="reference/routlier_simple.html">routlier_simple</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">detroit</span>,sd <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></code></pre></div>
+</div>
+<div id="routlier-example-with-both-quantitative-and-qualitative-data" class="section level2">
+<h2 class="hasAnchor">
+<a href="#routlier-example-with-both-quantitative-and-qualitative-data" class="anchor"></a>routlier:: Example with both quantitative and qualitative data</h2>
+<p>Here we will utilize the student dataset that is included in the <strong>routlier</strong> package. This dataset has both quantitative and qualitative data in it. You can see we have <strong>274 outliers</strong> when we set the <strong>sd</strong> argument equal to <strong>2</strong>.</p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R">
+<span class="fu"><a href="reference/routlier_simple.html">routlier_simple</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">detroit</span>,sd <span class="op">=</span> <span class="fl">2</span><span class="op">)</span></code></pre></div>
+<p><img src="./man/figures/routlier_simple_markers.png" alt="routlier_simple: Detroit Data Set"></p>
+<p><br></p>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R">
+<span class="fu"><a href="reference/routlier_simple.html">routlier_simple</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">student</span>,sd <span class="op">=</span> <span class="fl">2</span><span class="op">)</span></code></pre></div>
+<p><img src="./man/figures/student_rh_tail.png" alt="routlier_simple: Student Data Set - Tail End"></p>
+<hr>
+<div id="routlier-using-routlier_dt_sd-we-can-find-the-outliers-in-a-data-set-and-have-them-highlighted-with-a-green-background-to-make-them-easier-to-find-here-we-have-an-interactive-dttable-that-gets-returned-this-allows-us-to-filter-and-sort-out-data-much-more-easily" class="section level4">
+<h4 class="hasAnchor">
+<a href="#routlier-using-routlier_dt_sd-we-can-find-the-outliers-in-a-data-set-and-have-them-highlighted-with-a-green-background-to-make-them-easier-to-find-here-we-have-an-interactive-dttable-that-gets-returned-this-allows-us-to-filter-and-sort-out-data-much-more-easily" class="anchor"></a>routlier:: Using routlier_dt_sd() we can find the <strong>Outliers</strong> in a data set and have them highlighted with a green background to make them easier to find. Here we have an interactive DT::table that gets returned. This allows us to filter and sort out data much more easily.</h4>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R">
+<span class="fu"><a href="reference/routlier_dt_sd.html">routlier_dt_sd</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">detroit</span>,sd <span class="op">=</span> <span class="fl">2</span><span class="op">)</span></code></pre></div>
+<p><img src="./man/figures/routlier_dt_sd.png" alt="routlier_mad"></p>
+</div>
+<div id="routlier-using-routlier_rh_sd-we-can-find-the-outliers-in-a-data-set-and-have-them-highlighted-with-a-green-background-to-make-them-easier-to-find" class="section level4">
+<h4 class="hasAnchor">
+<a href="#routlier-using-routlier_rh_sd-we-can-find-the-outliers-in-a-data-set-and-have-them-highlighted-with-a-green-background-to-make-them-easier-to-find" class="anchor"></a>routlier:: Using routlier_rh_sd() we can find the <strong>Outliers</strong> in a data set and have them highlighted with a green background to make them easier to find.</h4>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<code class="sourceCode R">
+<span class="fu"><a href="reference/routlier_rh_sd.html">routlier_rh_sd</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">iris</span>,sd <span class="op">=</span> <span class="fl">3</span><span class="op">)</span></code></pre></div>
+<p><img src="./man/figures/routlier_rh.png" alt="routlier_mad"></p>
+</div>
+<div id="routlier-using-routlier_formattable-we-can-find-the-outliers-in-a-data-set-and-have-the-outliers-highlighted-in-red-and-the-non-outlier-values-highlighted-in-green" class="section level4">
+<h4 class="hasAnchor">
+<a href="#routlier-using-routlier_formattable-we-can-find-the-outliers-in-a-data-set-and-have-the-outliers-highlighted-in-red-and-the-non-outlier-values-highlighted-in-green" class="anchor"></a>routlier:: Using routlier_formattable() we can find the <strong>Outliers</strong> in a data set and have the <strong>Outliers</strong> highlighted in red and the non-outlier values highlighted in green.</h4>
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
+<code class="sourceCode R">
+<span class="fu"><a href="reference/routlier_formattable.html">routlier_formattable</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">detroit</span>,sd <span class="op">=</span> <span class="fl">2</span><span class="op">)</span></code></pre></div>
+</div>
+<div id="routlier-using-routlier_mad-we-can-find-the-outliers-in-a-data-set-and-have-the-outliers-highlighted-in-red-and-the-non-outlier-values-highlighted-in-green-the-print-out-also-tells-us-how-many-outliers-are-present-in-the-data" class="section level4">
+<h4 class="hasAnchor">
+<a href="#routlier-using-routlier_mad-we-can-find-the-outliers-in-a-data-set-and-have-the-outliers-highlighted-in-red-and-the-non-outlier-values-highlighted-in-green-the-print-out-also-tells-us-how-many-outliers-are-present-in-the-data" class="anchor"></a>routlier:: Using routlier_mad() we can find the <strong>Outliers</strong> in a data set and have the <strong>Outliers</strong> highlighted in red and the non-outlier values highlighted in green. The print out also tells us how many <strong>Outliers</strong> are present in the data.</h4>
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
+<code class="sourceCode R">
+<span class="fu"><a href="reference/routlier_mad.html">routlier_mad</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">mtcars</span>,MAD <span class="op">=</span> <span class="fl">2</span><span class="op">)</span></code></pre></div>
+<p><img src="./man/figures/routlier_mad_two.png" alt="routlier_mad"></p>
+<p><img src="./man/figures/routlier_mad.png" alt="routlier_mad"></p>
+</div>
+<div id="preloaded-datasets" class="section level3">
+<h3 class="hasAnchor">
+<a href="#preloaded-datasets" class="anchor"></a>Preloaded Datasets:</h3>
+</div>
+<div id="homicide-in-detroit-the-role-of-firearms" class="section level3">
+<h3 class="hasAnchor">
+<a href="#homicide-in-detroit-the-role-of-firearms" class="anchor"></a>Homicide in Detroit: The role of Firearms.</h3>
+<blockquote>
+<p>This is the data set called ‘DETROIT’ in the book ‘Subset selection in regression’ by Alan J. Miller published in the Chapman &amp; Hall series of monographs on Statistics &amp; Applied Probability, no. 40. The data are unusual in that a subset of three predictors can be found which gives a very much better fit to the data than the subsets found from the Efroymson stepwise algorithm, or from forward selection or backward elimination. The original data were given in appendix A of `Regression analysis and its application: A data-oriented approach’ by Gunst &amp; Mason, Statistics textbooks and monographs no. 24, Marcel Dekker. It has caused problems because some copies of the Gunst &amp; Mason book do not contain all of the data, and because Miller does not say which variables he used as predictors and which is the dependent variable. (HOM was the dependent variable, and the predictors were FTP … WE)</p>
+</blockquote>
+<p>A data frame with 13 rows and 14 variables:</p>
+<ul>
+<li>Detroit Dataset:
+<ul>
+<li>FTP: Full-time police per 100,000 population</li>
+<li>UEMP: UEMP - % unemployed in the population</li>
+<li>MAN: MAN - number of manufacturing workers in thousands</li>
+<li>LIC: LIC - Number of handgun licences per 100,000 population</li>
+<li>GR: GR - Number of handgun registrations per 100,000 population</li>
+<li>CLEAR: CLEAR - % homicides cleared by arrests</li>
+<li>WM: WM - Number of white males in the population</li>
+<li>NMAN: NMAN - Number of non-manufacturing workers in thousands</li>
+<li>GOV: GOV - Number of government workers in thousands</li>
+<li>HE: HE - Average hourly earnings</li>
+<li>WE: WE - Average weekly earnings:</li>
+<li>HOM: HOM - Number of homicides per 100,000 of population</li>
+<li>ACC: ACC - Death rate in accidents per 100,000 population</li>
+<li>ASR: ASR - Number of assaults per 100,000 population</li>
+</ul>
+</li>
+</ul>
+<p><a href="http://lib.stat.cmu.edu/datasets/detroit">Detroit Dataset</a></p>
+</div>
+<div id="student-performance-dataset" class="section level3">
+<h3 class="hasAnchor">
+<a href="#student-performance-dataset" class="anchor"></a>Student Performance Dataset:</h3>
+<ul>
+<li>Student Performance Data Set</li>
+</ul>
+<blockquote>
+<p>This data approach student achievement in secondary education of two Portuguese schools. The data attributes include student grades, demographic, social and school related features) and it was collected by using school reports and questionnaires. Two datasets are provided regarding the performance in two distinct subjects: Mathematics (mat) and Portuguese language (por). In [Cortez and Silva, 2008], the two datasets were modeled under binary/five-level classification and regression tasks. Important note: the target attribute G3 has a strong correlation with attributes G2 and G1. This occurs because G3 is the final year grade (issued at the 3rd period), while G1 and G2 correspond to the 1st and 2nd period grades. It is more difficult to predict G3 without G2 and G1, but such prediction is much more useful (see paper source for more details)</p>
+</blockquote>
+<ul>
+<li>A data frame with 392 rows and 33 variables:</li>
+</ul>
+<p><br><br></p>
+<ul>
+<li>Attributes for both student-mat.csv (Math course) and student-por.csv (Portuguese language course) datasets:</li>
+</ul>
+<blockquote>
+<ul>
+<li>school - student’s school (binary: ‘GP’ - Gabriel Pereira or ‘MS’ - Mousinho da Silveira)</li>
+</ul>
+</blockquote>
+<ul>
+<li>sex - student’s sex (binary: ‘F’ - female or ‘M’ - male)</li>
+<li>age - student’s age (numeric: from 15 to 22)</li>
+<li>address - student’s home address type (binary: ‘U’ - urban or ‘R’ - rural)</li>
+<li>famsize - family size (binary: ‘LE3’ - less or equal to 3 or ‘GT3’ - greater than 3)</li>
+<li>Pstatus - parent’s cohabitation status (binary: ‘T’ - living together or ‘A’ - apart)</li>
+<li>Medu - mother’s education (numeric: 0 - none, 1 - primary education (4th grade), 2 â€“ 5th to 9th grade, 3 â€“ secondary education or 4 â€“ higher education)</li>
+<li>Fedu - father’s education (numeric: 0 - none, 1 - primary education (4th grade), 2 â€“ 5th to 9th grade, 3 â€“ secondary education or 4 â€“ higher education)</li>
+<li>Mjob - mother’s job (nominal: ‘teacher’, ‘health’ care related, civil ‘services’ (e.g. administrative or police), ‘at_home’ or ‘other’)</li>
+<li>Fjob - father’s job (nominal: ‘teacher’, ‘health’ care related, civil ‘services’ (e.g. administrative or police), ‘at_home’ or ‘other’)</li>
+<li>reason - reason to choose this school (nominal: close to ‘home’, school ‘reputation’, ‘course’ preference or ‘other’)</li>
+<li>guardian - student’s guardian (nominal: ‘mother’, ‘father’ or ‘other’)</li>
+<li>traveltime - home to school travel time (numeric: 1 - &lt;15 min., 2 - 15 to 30 min., 3 - 30 min. to 1 hour, or 4 - &gt;1 hour)</li>
+<li>studytime - weekly study time (numeric: 1 - &lt;2 hours, 2 - 2 to 5 hours, 3 - 5 to 10 hours, or 4 - &gt;10 hours)</li>
+<li>failures - number of past class failures (numeric: n if 1&lt;=n&lt;3, else 4)</li>
+<li>schoolsup - extra educational support (binary: yes or no)</li>
+<li>famsup - family educational support (binary: yes or no)</li>
+<li>paid - extra paid classes within the course subject (Math or Portuguese) (binary: yes or no)</li>
+<li>activities - extra-curricular activities (binary: yes or no)</li>
+<li>nursery - attended nursery school (binary: yes or no)</li>
+<li>higher - wants to take higher education (binary: yes or no)</li>
+<li>internet - Internet access at home (binary: yes or no)</li>
+<li>romantic - with a romantic relationship (binary: yes or no)</li>
+<li>famrel - quality of family relationships (numeric: from 1 - very bad to 5 - excellent)</li>
+<li>freetime - free time after school (numeric: from 1 - very low to 5 - very high)</li>
+<li>goout - going out with friends (numeric: from 1 - very low to 5 - very high)</li>
+<li>Dalc - workday alcohol consumption (numeric: from 1 - very low to 5 - very high)</li>
+<li>Walc - weekend alcohol consumption (numeric: from 1 - very low to 5 - very high)</li>
+<li>health - current health status (numeric: from 1 - very bad to 5 - very good)</li>
+<li>absences - number of school absences (numeric: from 0 to 93)</li>
+</ul>
+<p><br><br></p>
+<ul>
+<li>These grades are related with the course subject, Math or Portuguese:</li>
+</ul>
+<blockquote>
+<ul>
+<li>G1 - first period grade (numeric: from 0 to 20)</li>
+</ul>
+</blockquote>
+<ul>
+<li>G2 - second period grade (numeric: from 0 to 20)</li>
+<li>G3 - final grade (numeric: from 0 to 20, output target)</li>
+</ul>
+<p><a href="http://archive.ics.uci.edu/ml/datasets/Student+Performance">Student Dataset</a></p>
+<p>References:</p>
+<p>Citation Request: Please include this citation if you plan to use this database: P. Cortez and A. Silva. Using Data Mining to Predict Secondary School Student Performance. In A. Brito and J. Teixeira Eds., Proceedings of 5th FUture BUsiness TEChnology Conference (FUBUTEC 2008) pp. 5-12, Porto, Portugal, April, 2008, EUROSIS, ISBN 978-9077381-39-7.\cr Available at: <a href="http://www3.dsi.uminho.pt/pcortez/student.pdf">http://www3.dsi.uminho.pt/pcortez/student.pdf</a></p>
+<p>Relevant Papers:</p>
+<p>P. Cortez and A. Silva. Using Data Mining to Predict Secondary School Student Performance. In A. Brito and J. Teixeira Eds., Proceedings of 5th FUture BUsiness TEChnology Conference (FUBUTEC 2008) pp. 5-12, Porto, Portugal, April, 2008, EUROSIS, ISBN 978-9077381-39-7. Available at: <a href="http://www3.dsi.uminho.pt/pcortez/student.pdf">http://www3.dsi.uminho.pt/pcortez/student.pdf</a></p>
+<p><a href="http://www3.dsi.uminho.pt/pcortez/Home.html">http://www3.dsi.uminho.pt/pcortez/Home.html</a></p>
+</div>
+</div>
+
   </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <div class="license">
 <h2>License</h2>
 <ul class="list-unstyled">
-<li>GPL (&gt;= 2)</li>
+<li>GPL </li>
 </ul>
 </div>
 <div class="developers">
