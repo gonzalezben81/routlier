@@ -10,7 +10,7 @@ routlier_rh(data)
 \item{data}{filepath to data}
 }
 \value{
-Return's an outlier dataset from the original dataset in a rhandonstable
+Return's an outlier dataset from the original dataset in an rhandonstable.
 }
 \description{
 Routlier: Outlier in Rhandsontable

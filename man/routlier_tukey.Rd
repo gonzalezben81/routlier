@@ -22,14 +22,14 @@ Routlier: Finds the Outliers in a data set utilizing the Tukey's Method:
 \details{
 The word 'Outlier' will replace the value that is an outlier in the respective cell.
 
-\if{html}{\figure{routlier_tukey.png}{options: width=60\% alt="R logo"}}
+\if{html}{\figure{routlier_tukey_detroit.png}{options: width=60\% alt="R logo"}}
 }
 \examples{
 ## Load the routlier library
-
+   library(routlier)
 
 ## Look at outliers utilizng the Tukey method
-  routlier_tukey(data = iris,type = 7,outlier_type="M")
+  routlier_tukey(data = detroit,type = 7,outlier_type="M")
 
 }
 \keyword{routlier_tukey}

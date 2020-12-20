@@ -9,7 +9,7 @@ routlier_quantile(data,type,outlier_type)
 \arguments{
 \item{data}{filepath to data}
 
-\item{type}{select type of quatile method to use. Choices from 1 to 7.}
+\item{type}{select type of quantile method to use. Choices from 1 to 7.}
 
 \item{outlier_type}{select type of outlier selecting either "M" for mild or "E" for extreme.}
 }
@@ -17,12 +17,12 @@ routlier_quantile(data,type,outlier_type)
 Return's an outlier dataset from the original dataset in a formattable table. The data returned is currently the numeric data only from the dataset.
 }
 \description{
-Routlier: Simple data frame from routlier:
+Routlier: Formattable data frame that highlights the outliers utilizing the quantile methdod:
 }
 \details{
 The word 'Outlier' will replace the value that is an outlier in the respective cell.
 
-\if{html}{\figure{routlier_simple.png}{options: width=60\% alt="R logo"}}
+\if{html}{\figure{routlier_quantile_detroit.png}{options: width=60\% alt="R logo"}}
 }
 \examples{
 ## Load the routlier library

@@ -18,7 +18,7 @@
 #'
 #' @param data filepath to data
 #' @keywords routlier_rh
-#' @return Return's an outlier dataset from the original dataset in a rhandonstable
+#' @return Return's an outlier dataset from the original dataset in an rhandonstable.
 #' @name routlier_rh
 #' @title routlier_rh
 #' @import dplyr

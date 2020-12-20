@@ -13,7 +13,7 @@
 #'
 #' The word 'Outlier' will replace the value that is an outlier in the respective cell.
 #'
-#' \if{html}{\figure{routlier_tukey.png}{options: width=60\% alt="R logo"}}
+#' \if{html}{\figure{routlier_tukey_detroit.png}{options: width=60\% alt="R logo"}}
 #'
 #'
 #'
@@ -31,10 +31,10 @@
 #' @importFrom stats quantile
 #' @examples
 #' ## Load the routlier library
-#'
+#'    library(routlier)
 #'
 #' ## Look at outliers utilizng the Tukey method
-#'   routlier_tukey(data = iris,type = 7,outlier_type="M")
+#'   routlier_tukey(data = detroit,type = 7,outlier_type="M")
 #'
 #' @export
 #'

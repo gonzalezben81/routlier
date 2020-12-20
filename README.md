@@ -136,7 +136,7 @@ while G1 and G2 correspond to the 1st and 2nd period grades. It is more difficul
  + address - student's home address type (binary: 'U' - urban or 'R' - rural)
  + famsize - family size (binary: 'LE3' - less or equal to 3 or 'GT3' - greater than 3)
  + Pstatus - parent's cohabitation status (binary: 'T' - living together or 'A' - apart)
- + Medu - mother's education (numeric: 0 - none, 1 - primary education (4th grade), 2 â€“ 5th to 9th grade, 3 â€“ secondary education or 4 â€“  higher education)
+ + Medu - mother's education (numeric: 0 - none, 1 - primary education (4th grade), 2 - 5th to 9th grade, 3 - secondary education or 4 -  higher education)
  + Fedu - father's education (numeric: 0 - none, 1 - primary education (4th grade), 2 â€“ 5th to 9th grade, 3 â€“ secondary education or 4 â€“  higher education)
  + Mjob - mother's job (nominal: 'teacher', 'health' care related, civil 'services' (e.g. administrative or police), 'at_home' or 'other')
  + Fjob - father's job (nominal: 'teacher', 'health' care related, civil 'services' (e.g. administrative or police), 'at_home' or 'other')
@@ -166,7 +166,8 @@ while G1 and G2 correspond to the 1st and 2nd period grades. It is more difficul
  
 * These grades are related with the course subject, Math or Portuguese:
 
-> + G1 - first period grade (numeric: from 0 to 20)
+> Grades: 
+ + G1 - first period grade (numeric: from 0 to 20)
  + G2 - second period grade (numeric: from 0 to 20)
  + G3 - final grade (numeric: from 0 to 20, output target)
 

@@ -140,18 +140,28 @@
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
     <p>The word 'Outlier' will replace the value that is an outlier in the respective cell.</p>
-<p><img src='figures/routlier_tukey.png' width=60% alt="R logo" /></p>
+<p><img src='figures/routlier_tukey_detroit.png' width=60% alt="R logo" /></p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='co'>## Load the routlier library</span>
-
+   <span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'>routlier</span><span class='op'>)</span>
 
 <span class='co'>## Look at outliers utilizng the Tukey method</span>
-  <span class='fu'>routlier_tukey</span><span class='op'>(</span>data <span class='op'>=</span> <span class='va'>iris</span>,type <span class='op'>=</span> <span class='fl'>7</span>,outlier_type<span class='op'>=</span><span class='st'>"M"</span><span class='op'>)</span>
-</div><div class='output co'>#&gt; [1] "The IQR for column 1 is from: 8.35 : 3.15 and the overall IQR range is: 5.2"
-#&gt; [1] "The IQR for column 2 is from: 4.05 : 2.05 and the overall IQR range is: 2"
-#&gt; [1] "The IQR for column 3 is from: 10.35 : -3.65 and the overall IQR range is: 14"
-#&gt; [1] "The IQR for column 4 is from: 4.05 : -1.95 and the overall IQR range is: 6"
+  <span class='fu'>routlier_tukey</span><span class='op'>(</span>data <span class='op'>=</span> <span class='va'>detroit</span>,type <span class='op'>=</span> <span class='fl'>7</span>,outlier_type<span class='op'>=</span><span class='st'>"M"</span><span class='op'>)</span>
+</div><div class='output co'>#&gt; [1] "The IQR for column 1 is from: 448.875 : 162.355 and the overall IQR range is: 286.52"
+#&gt; [1] "The IQR for column 2 is from: 11.9 : -0.9 and the overall IQR range is: 12.8"
+#&gt; [1] "The IQR for column 3 is from: 688.55 : 444.15 and the overall IQR range is: 244.4"
+#&gt; [1] "The IQR for column 4 is from: 1654.1 : -637.1 and the overall IQR range is: 2291.2"
+#&gt; [1] "The IQR for column 5 is from: 1528.57 : -546.47 and the overall IQR range is: 2075.04"
+#&gt; [1] "The IQR for column 6 is from: 116.65 : 48.25 and the overall IQR range is: 68.4"
+#&gt; [1] "The IQR for column 7 is from: 648865.5 : 253109.5 and the overall IQR range is: 395756"
+#&gt; [1] "The IQR for column 8 is from: 1001.75 : 344.55 and the overall IQR range is: 657.2"
+#&gt; [1] "The IQR for column 9 is from: 334.05 : 40.05 and the overall IQR range is: 294"
+#&gt; [1] "The IQR for column 10 is from: 6.33 : 1.37 and the overall IQR range is: 4.96"
+#&gt; [1] "The IQR for column 11 is from: 234.33 : 86.09 and the overall IQR range is: 148.24"
+#&gt; [1] "The IQR for column 12 is from: 80.125 : -33.835 and the overall IQR range is: 113.96"
+#&gt; [1] "The IQR for column 13 is from: 60.295 : 34.495 and the overall IQR range is: 25.8"
+#&gt; [1] "The IQR for column 14 is from: 391.28 : 209.28 and the overall IQR range is: 182"
 #&gt; [1] "You have a total of 4 Outliers in your dataset"</div><div class='input'>
 </div></pre>
   </div>

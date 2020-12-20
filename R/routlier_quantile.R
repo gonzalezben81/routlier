@@ -9,16 +9,16 @@
 #   Build and Reload Package:  'Ctrl + Shift + B'
 #   Check Package:             'Ctrl + Shift + E'
 #   Test Package:              'Ctrl + Shift + T'
-#' Routlier: Simple data frame from routlier:
+#' Routlier: Formattable data frame that highlights the outliers utilizing the quantile methdod:
 #'
 #' The word 'Outlier' will replace the value that is an outlier in the respective cell.
 #'
-#' \if{html}{\figure{routlier_simple.png}{options: width=60\% alt="R logo"}}
+#' \if{html}{\figure{routlier_quantile_detroit.png}{options: width=60\% alt="R logo"}}
 #'
 #'
 #'
 #' @param data filepath to data
-#' @param type select type of quatile method to use. Choices from 1 to 7.
+#' @param type select type of quantile method to use. Choices from 1 to 7.
 #' @param outlier_type select type of outlier selecting either "M" for mild or "E" for extreme.
 #' @keywords routlier_quantile
 #' @return Return's an outlier dataset from the original dataset in a formattable table. The data returned is currently the numeric data only from the dataset.
