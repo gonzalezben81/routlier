@@ -32,7 +32,7 @@ There is also a printout of the data and the columns giving the upper and lower 
 \examples{
 
 
-  routlier_mad(data = iris,MAD = 2)
+  routlier_mad(data = mtcars,MAD = 2)
 
 }
 \keyword{routlier_mad}

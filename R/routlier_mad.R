@@ -35,7 +35,7 @@
 #' @examples
 #'
 #'
-#'   routlier_mad(data = iris,MAD = 2)
+#'   routlier_mad(data = mtcars,MAD = 2)
 #'
 #' @export
 

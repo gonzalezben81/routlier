@@ -13,8 +13,8 @@
 #'
 #' The outlier will be highlighted in green and the word 'Outlier' will replace the value in the cell.
 #'
-#' \if{html}{\figure{routlier.png}{options: width=100\% alt="R logo"}}
-#' \if{latex}{\figure{routlier.png}{options: width=0.5in}}
+#' \if{html}{\figure{routlier_formattable_two.png}{options: width=100\% alt="R logo"}}
+#' \if{latex}{\figure{routlier_fromattable_two.png}{options: width=0.5in}}
 #'
 #' @param data filepath to data.
 #' @param sd number of standard deviations to check the data against.
@@ -29,7 +29,7 @@
 #' @examples
 #'
 #'
-#'   routlier_formattable(data = iris,sd = 2)
+#'   routlier_formattable(data = detroit,sd = 2)
 #'
 #' @export
 utils::globalVariables(c("."))

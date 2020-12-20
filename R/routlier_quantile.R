@@ -31,7 +31,7 @@
 #' @importFrom stats quantile
 #' @examples
 #' ## Load the routlier library
-#'
+#'    library(routlier)
 #'
 #' ## Look at outliers utilizng the Tukey method
 #'   routlier_quantile(data = iris,type = 7,outlier_type="M")
