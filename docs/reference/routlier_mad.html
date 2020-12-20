@@ -132,7 +132,8 @@
 
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <p>Returns a numeric dataset from the original dataset and the outliers are highlighted in red.</p>
+    <p>Returns a numeric dataset from the original dataset and the outliers are highlighted in red.The outlier table and the
+number of outliers are returned as a list object.</p>
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
     <p>The Outlier(s) wil be highlighted red in the table and the other values will be highlighted greeen.</p>
@@ -144,7 +145,7 @@
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
 
-  <span class='fu'>routlier_mad</span><span class='op'>(</span>data <span class='op'>=</span> <span class='va'>mtcars</span>,MAD <span class='op'>=</span> <span class='fl'>2</span><span class='op'>)</span>
+  <span class='va'>data</span><span class='op'>&lt;-</span> <span class='fu'>routlier_mad</span><span class='op'>(</span>data <span class='op'>=</span> <span class='va'>mtcars</span>,MAD <span class='op'>=</span> <span class='fl'>2</span><span class='op'>)</span>
 </div><div class='output co'>#&gt; [1] "The MAD for column 1 is from: 30.02298 : 8.37702 and the overall MAD range is: 21.64596"
 #&gt; [1] "The MAD for column 2 is from: 11.9304 : 0.0696000000000003 and the overall MAD range is: 11.8608"
 #&gt; [1] "The MAD for column 3 is from: 477.2527 : -84.6527 and the overall MAD range is: 561.9054"
@@ -157,6 +158,9 @@
 #&gt; [1] "The MAD for column 10 is from: 6.9652 : 1.0348 and the overall MAD range is: 5.9304"
 #&gt; [1] "The MAD for column 11 is from: 4.9652 : -0.9652 and the overall MAD range is: 5.9304"
 #&gt; [1] "You have a total of 15 Outliers in your dataset"</div><div class='input'>
+  <span class='fu'><a href='https://rdrr.io/r/base/print.html'>print</a></span><span class='op'>(</span><span class='va'>data</span><span class='op'>$</span><span class='va'>outliers</span><span class='op'>)</span>
+</div><div class='output co'>#&gt; [1] 15</div><div class='input'>
+
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">

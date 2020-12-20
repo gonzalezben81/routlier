@@ -35,7 +35,7 @@ routlier_simple(data = student,sd = 2)
 
 ---
 
-#### routlier:: Using routlier_dt_sd() we can find the **Outliers** in a data set and have them highlighted with a green background to make them easier to find. Here we have an interactive DT::table that gets returned. This allows us to filter and sort out data much more easily.
+#### routlier:: Using routlier_dt_sd() we can find the **Outliers** in a data set and have them highlighted with a green background to make them easier to find. Here we have an interactive DT::table that gets returned. This allows us to filter and sort data much more easily.
 
 ```r
 
@@ -57,10 +57,11 @@ routlier_rh_sd(data = iris,sd = 3)
 ```r
 
 routlier_formattable(data = detroit,sd = 2)
+
 ```
+![routlier_mad](./man/figures/routlier_formattable_two.png)
 
-
-#### routlier:: Using routlier_mad() we can find the **Outliers** in a data set and have the **Outliers** highlighted in red and the non-outlier values highlighted in green. The print out also tells us how many **Outliers** are present in the data. 
+#### routlier:: Using routlier_mad() we can find the **Outliers** in a data set and have the **Outliers** highlighted in red and the non-outlier values highlighted in green. The printout also tells us how many **Outliers** are present in the data. 
 
 ```r
 

@@ -25,7 +25,8 @@
 #' @param data filepath to data.
 #' @param MAD number of MAD standard deviations.
 #' @keywords routlier_mad
-#' @return Returns a numeric dataset from the original dataset and the outliers are highlighted in red.
+#' @return Returns a numeric dataset from the original dataset and the outliers are highlighted in red.The outlier table and the
+#' number of outliers are returned as a list object.
 #' @name routlier_mad
 #' @title routlier_mad
 #' @import dplyr
@@ -35,7 +36,10 @@
 #' @examples
 #'
 #'
-#'   routlier_mad(data = mtcars,MAD = 2)
+#'   data<- routlier_mad(data = mtcars,MAD = 2)
+#'
+#'   print(data$outliers)
+#'
 #'
 #' @export
 
@@ -91,7 +95,9 @@ routlier_mad <- function(data,MAD){
   #
   final_table<- formattable(original, list(area(col = c(1:length(original))) ~ formatter('span', style = original ~ style(color= ifelse(original == big_data,'green','red')))))
 
-  return(final_table)
+  final_outliers <- list("outliers"=total_outliers,"outlier_table"=final_table)
+
+  return(final_outliers)
 }
 
 

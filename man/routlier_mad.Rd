@@ -12,7 +12,8 @@ routlier_mad(data,MAD)
 \item{MAD}{number of MAD standard deviations.}
 }
 \value{
-Returns a numeric dataset from the original dataset and the outliers are highlighted in red.
+Returns a numeric dataset from the original dataset and the outliers are highlighted in red.The outlier table and the
+number of outliers are returned as a list object.
 }
 \description{
 Routlier: Outlier in DT Table
@@ -32,7 +33,10 @@ There is also a printout of the data and the columns giving the upper and lower 
 \examples{
 
 
-  routlier_mad(data = mtcars,MAD = 2)
+  data<- routlier_mad(data = mtcars,MAD = 2)
+
+  print(data$outliers)
+
 
 }
 \keyword{routlier_mad}
