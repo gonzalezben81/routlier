@@ -191,4 +191,4 @@ Available at: [http://www3.dsi.uminho.pt/pcortez/student.pdf](http://www3.dsi.um
 
 [http://www3.dsi.uminho.pt/pcortez/Home.html](http://www3.dsi.uminho.pt/pcortez/Home.html)
 
-
+[![Build Status](https://travis-ci.org/user/pkg.svg?branch=master)](https://travis-ci.org/gonzalezben81/routlier)
