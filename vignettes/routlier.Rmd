@@ -7,6 +7,7 @@ output:
   html_document:
 vignette: >
   %\VignetteIndexEntry{routlier}
+  %\VignetteIndexEntry{Using rhandsontable}
   %\VignetteEngine{knitr::rmarkdown}
   \usepackage[utf8]{inputenc}
 ---
