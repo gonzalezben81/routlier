@@ -2,7 +2,7 @@
 % Please edit documentation in R/routlier_simple.R
 \name{routlier_simple}
 \alias{routlier_simple}
-\title{routlier_simple}
+\title{Returns outlier(s) in a simple data frame from routlier}
 \usage{
 routlier_simple(data, sd)
 }
@@ -15,9 +15,6 @@ routlier_simple(data, sd)
 Return's an outlier dataset from the original dataset provided by the user.
 }
 \description{
-Routlier: Simple data frame from routlier:
-}
-\details{
 The word 'Outlier' will replace the value that is an outlier in the respective cell.
 
 \if{html}{\figure{routlier_simple.png}{options: width=60\% alt="R logo"}}

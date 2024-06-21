@@ -2,7 +2,7 @@
 % Please edit documentation in R/routlier_dt.R
 \name{routlier_dt}
 \alias{routlier_dt}
-\title{routlier_dt}
+\title{Returns outlier(s) in a DT table}
 \usage{
 routlier_dt(data)
 }
@@ -13,9 +13,6 @@ routlier_dt(data)
 Returns an outlier dataset from the original dataset in a DT table
 }
 \description{
-Routlier: Outlier in DT Table
-}
-\details{
 The outlier will be highlighted in green and the word 'Outlier' will replace the value in the cell.
 
 \if{html}{\figure{routlier.png}{options: width=100\% alt="R logo"}}
@@ -24,9 +21,6 @@ The outlier will be highlighted in green and the word 'Outlier' will replace the
 \examples{
 
   routlier_dt(data = iris)
-
-}
-\references{
 
 }
 \keyword{routlier_dt}

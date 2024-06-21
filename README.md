@@ -1,8 +1,14 @@
+<!-- badges: start -->
+
+[![License](https://img.shields.io/badge/License-GPL--3.0-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![R-CMD-check](https://github.com/gonzalezben81/routlier/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/gonzalezben81/routlier/actions/workflows/R-CMD-check.yaml)
+<!-- badges: end -->
+
 ## routlier
 
 routlier is a package that is built to look for outliers in a dataset. The functions allow a user to look for outliers that are 'x' number of deviations away from the mean in the data for a particular column. The number of 'Outliers' in a dataset will be returned. Additionally any Outlier value will now be replaced with the word 'Outlier' in the dataset.
 
-There is also a function routlier_mad() that utilizes the MAD median absolute deviation approach to look for Outliers. The MAD approach is less susceptible to extreme outliers than the traditional Median & SD approach. See the following thesis for further explination.  [Thesis](http://d-scholarship.pitt.edu/7948/1/Seo.pdf)
+There is also a function routlier_mad() that utilizes the MAD median absolute deviation approach to look for Outliers. The MAD approach is less susceptible to extreme outliers than the traditional Median & SD approach. See the following thesis for further explanation.  [Thesis](http://d-scholarship.pitt.edu/7948/1/Seo.pdf)
 
 ```r
 library(routlier)
@@ -13,16 +19,18 @@ routlier::routlier_simple(data = detroit,sd = 1)
 
 ## routlier:: Example with both quantitative and qualitative data
 
-Here we will utilize the student dataset that is included in the **routlier** package. This dataset has both quantitative and qualitative data in it. You can see we have **274 outliers** when we set the **sd** argument equal to **2**.
+<!---# Here we will utilize the student dataset that is included in the **routlier** package. This dataset has both quantitative and qualitative data in it. You can see we have **274 outliers** when we set the **sd** argument equal to **2** for the student dataset.--->
 
 ```r
 
 routlier_simple(data = detroit,sd = 2)
 
 ```
-![routlier_simple: Detroit Data Set](./man/figures/routlier_simple_markers.png)
+![routlier_simple: Detroit dataset](./man/figures/routlier_simple_markers.png)
 
 <br/>
+
+Here we will utilize the student dataset that is included in the **routlier** package. This dataset has both quantitative and qualitative data in it. You can see we have **274 outliers** when we set the **sd** argument equal to **2** for the student dataset.
 
 ```r
 
@@ -31,11 +39,11 @@ routlier_simple(data = student,sd = 2)
 ```
 
 
-![routlier_simple: Student Data Set - Tail End](./man/figures/student_rh_tail.png)
+![routlier_simple: Student dataset - Tail End](./man/figures/student_rh_tail.png)
 
 ---
 
-#### routlier:: Using routlier_dt_sd() we can find the **Outliers** in a data set and have them highlighted with a green background to make them easier to find. Here we have an interactive DT::table that gets returned. This allows us to filter and sort data much more easily.
+#### routlier:: Using routlier_dt_sd() we can find the **Outliers** in a dataset and have them highlighted with a green background to make them easier to find. Here we have an interactive DT::table that gets returned. This allows us to filter and sort data much more easily.
 
 ```r
 
@@ -43,7 +51,7 @@ routlier_dt_sd(data = detroit,sd = 2)
 ```
 ![routlier_mad](./man/figures/routlier_dt_sd.png)
 
-#### routlier:: Using routlier_rh_sd() we can find the **Outliers** in a data set and have them highlighted with a green background to make them easier to find.
+#### routlier:: Using routlier_rh_sd() we can find the **Outliers** in a dataset and have them highlighted with a green background to make them easier to find.
 
 ```r
 
@@ -52,7 +60,7 @@ routlier_rh_sd(data = iris,sd = 3)
 ![routlier_mad](./man/figures/routlier_rh.png)
 
 
-#### routlier:: Using routlier_formattable() we can find the **Outliers** in a data set and have the **Outliers** highlighted in red and the non-outlier values highlighted in green.
+#### routlier:: Using routlier_formattable() we can find the **Outliers** in a dataset and have the **Outliers** highlighted in red and the non-outlier values highlighted in green.
 
 ```r
 
@@ -61,7 +69,7 @@ routlier_formattable(data = detroit,sd = 2)
 ```
 ![routlier_mad](./man/figures/routlier_formattable_two.png)
 
-#### routlier:: Using routlier_mad() we can find the **Outliers** in a data set and have the **Outliers** highlighted in red and the non-outlier values highlighted in green. The printout also tells us how many **Outliers** are present in the data. 
+#### routlier:: Using routlier_mad() we can find the **Outliers** in a dataset and have the **Outliers** highlighted in red and the non-outlier values highlighted in green. The printout also tells us how many **Outliers** are present in the data. 
 
 ```r
 
@@ -73,11 +81,11 @@ routlier_mad(data = mtcars,MAD = 2)
 ![routlier_mad](./man/figures/routlier_mad.png)
 
 
-### Preloaded Datasets:
+### Preloaded datasets:
 
 ### Homicide in Detroit: The role of Firearms.
 
->This is the data set called 'DETROIT' in the book 'Subset selection in
+>This is the dataset called 'DETROIT' in the book 'Subset selection in
 regression' by Alan J. Miller published in the Chapman & Hall series of
 monographs on Statistics & Applied Probability, no. 40.   The data are
 unusual in that a subset of three predictors can be found which gives a
@@ -93,7 +101,7 @@ predictors were FTP ... WE)
 
 A data frame with 13 rows and 14 variables:
 
-* Detroit Dataset:
+* Detroit dataset:
   + FTP: Full-time police per 100,000 population
   + UEMP: UEMP - \% unemployed in the population
   + MAN: MAN - number of manufacturing workers in thousands
@@ -109,12 +117,12 @@ A data frame with 13 rows and 14 variables:
   + ACC: ACC - Death rate in accidents per 100,000 population
   + ASR: ASR - Number of assaults per 100,000 population
 
-[Detroit Dataset](http://lib.stat.cmu.edu/datasets/detroit)
+[Detroit dataset](http://lib.stat.cmu.edu/datasets/detroit)
 
-### Student Performance Dataset:
+### Student Performance dataset:
 
 
-* Student Performance Data Set
+* Student Performance dataset
 
 >This data approach student achievement in secondary education of two Portuguese schools.
 The data attributes include student grades, demographic, social and school related features) and it was collected by using school reports and questionnaires.
@@ -172,7 +180,7 @@ while G1 and G2 correspond to the 1st and 2nd period grades. It is more difficul
  + G3 - final grade (numeric: from 0 to 20, output target)
 
 
-[Student Dataset](http://archive.ics.uci.edu/ml/datasets/Student+Performance)
+[Student dataset](http://archive.ics.uci.edu/ml/datasets/Student+Performance)
 
 
 
@@ -181,12 +189,12 @@ References:
 
 Citation Request:
 Please include this citation if you plan to use this database:
-P. Cortez and A. Silva. Using Data Mining to Predict Secondary School Student Performance. In A. Brito and J. Teixeira Eds., Proceedings of 5th FUture BUsiness TEChnology Conference (FUBUTEC 2008) pp. 5-12, Porto, Portugal, April, 2008, EUROSIS, ISBN 978-9077381-39-7.\cr
+P. Cortez and A. Silva. Using Data Mining to Predict Secondary School Student Performance. In A. Brito and J. Teixeira Eds., Proceedings of 5th Future Business Technology Conference (FUBUTEC 2008) pp. 5-12, Porto, Portugal, April, 2008, EUROSIS, ISBN 978-9077381-39-7.\cr
 Available at: [http://www3.dsi.uminho.pt/pcortez/student.pdf](http://www3.dsi.uminho.pt/pcortez/student.pdf)
 
 Relevant Papers:
 
-P. Cortez and A. Silva. Using Data Mining to Predict Secondary School Student Performance. In A. Brito and J. Teixeira Eds., Proceedings of 5th FUture BUsiness TEChnology Conference (FUBUTEC 2008) pp. 5-12, Porto, Portugal, April, 2008, EUROSIS, ISBN 978-9077381-39-7.
+P. Cortez and A. Silva. Using Data Mining to Predict Secondary School Student Performance. In A. Brito and J. Teixeira Eds., Proceedings of 5th Future Business Technology Conference (FUBUTEC 2008) pp. 5-12, Porto, Portugal, April, 2008, EUROSIS, ISBN 978-9077381-39-7.
 Available at: [http://www3.dsi.uminho.pt/pcortez/student.pdf](http://www3.dsi.uminho.pt/pcortez/student.pdf)
 
 [http://www3.dsi.uminho.pt/pcortez/Home.html](http://www3.dsi.uminho.pt/pcortez/Home.html)

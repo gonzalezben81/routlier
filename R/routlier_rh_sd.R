@@ -9,8 +9,9 @@
 #   Build and Reload Package:  'Ctrl + Shift + B'
 #   Check Package:             'Ctrl + Shift + E'
 #   Test Package:              'Ctrl + Shift + T'
-#' Routlier: Outlier detection that returns an Rhandsontable
+#' @title Outlier detection that returns an Rhandsontable data frame
 #'
+#' @description
 #' The outlier will highlighted in green and the word 'Outlier' will replace the value in the cell.
 #'
 #' \if{html}{\figure{routlier_rh.png}{options: width=40\% alt="R logo"}}

@@ -4,174 +4,200 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="routlier">
 <title>routlier • routlier</title>
-<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Bootstrap --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><!-- bootstrap-toc --><link rel="stylesheet" href="../bootstrap-toc.css">
-<script src="../bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
+<script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="../deps/bootstrap-5.3.1/bootstrap.min.css" rel="stylesheet">
+<script src="../deps/bootstrap-5.3.1/bootstrap.bundle.min.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
-<!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="../pkgdown.css" rel="stylesheet">
-<script src="../pkgdown.js"></script><meta property="og:title" content="routlier">
+<!-- bootstrap-toc --><script src="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@v1.0.1/dist/bootstrap-toc.min.js" integrity="sha256-4veVQbu7//Lk5TSmc7YV48MxtMy98e26cf5MrgZYnwo=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js" integrity="sha512-7O5pXpc0oCRrxk8RUfDYFgn0nO1t+jLuIOQdOMRp4APB7uZ4vSjspzp5y6YDtDs4VzUSTbWzBFZ/LKJhnyFOKw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="../pkgdown.js"></script><meta property="og:title" content="routlier">
 <meta property="og:description" content="routlier">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<![endif]-->
-</head>
-<body data-spy="scroll" data-target="#toc">
-    <div class="container template-article">
-      <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <span class="navbar-brand">
-        <a class="navbar-link" href="../index.html">routlier</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.2</span>
-      </span>
-    </div>
+<![endif]--><script defer data-domain="pkgdown.r-lib.org,all.tidyverse.org" src="https://plausible.io/js/plausible.js"></script><!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-VRFTY69MGY"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-<li>
-  <a href="../index.html">
-    <span class="fas fa-home fa-lg"></span>
+  gtag('config', 'G-VRFTY69MGY');
+</script>
+</head>
+<body>
+    <a href="#main" class="visually-hidden-focusable">Skip to contents</a>
+    
+
+    <nav class="navbar fixed-top navbar-light navbar-expand-lg bg-light" data-bs-theme="light"><div class="container">
+    
+    <a class="navbar-brand me-2" href="../index.html">routlier</a>
+
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.2</small>
+
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="navbar" class="collapse navbar-collapse ms-3">
+      <ul class="navbar-nav me-auto">
+<li class="active nav-item">
+  <a class="nav-link" href="../articles/routlier.html">Get started</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="../reference/index.html">Reference</a>
+</li>
+      </ul>
+<form class="form-inline my-2 my-lg-0" role="search">
+        <input type="search" class="form-control me-sm-2" aria-label="Toggle navigation" name="search-input" data-search-index="../search.json" id="search-input" placeholder="Search for" autocomplete="off">
+</form>
+
+      <ul class="navbar-nav">
+<li class="nav-item">
+  <a class="external-link nav-link" href="https://github.com/gonzalezben81/routlier/" aria-label="github">
+    <span class="fab fa fab fa-github fa-lg"></span>
      
   </a>
 </li>
-<li>
-  <a href="../articles/routlier.html">Get started</a>
-</li>
-<li>
-  <a href="../reference/index.html">Reference</a>
-</li>
       </ul>
-<ul class="nav navbar-nav navbar-right"></ul>
 </div>
-<!--/.nav-collapse -->
+
+    
   </div>
-<!--/.container -->
-</div>
-<!--/.navbar -->
+</nav><div class="container template-article">
 
-      
 
-      </header><script src="routlier_files/htmlwidgets-1.5.3/htmlwidgets.js"></script><script src="routlier_files/jquery-3.2.1/jquery.min.js"></script><link href="routlier_files/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet">
-<script src="routlier_files/datatables-binding-0.16/datatables.js"></script><link href="routlier_files/dt-core-1.10.20/css/jquery.dataTables.min.css" rel="stylesheet">
-<link href="routlier_files/dt-core-1.10.20/css/jquery.dataTables.extra.css" rel="stylesheet">
-<script src="routlier_files/dt-core-1.10.20/js/jquery.dataTables.min.js"></script><script src="routlier_files/jszip-1.10.20/jszip.min.js"></script><script src="routlier_files/pdfmake-1.10.20/pdfmake.js"></script><script src="routlier_files/pdfmake-1.10.20/vfs_fonts.js"></script><link href="routlier_files/dt-ext-buttons-1.10.20/css/buttons.dataTables.min.css" rel="stylesheet">
-<script src="routlier_files/dt-ext-buttons-1.10.20/js/dataTables.buttons.min.js"></script><script src="routlier_files/dt-ext-buttons-1.10.20/js/buttons.flash.min.js"></script><script src="routlier_files/dt-ext-buttons-1.10.20/js/buttons.html5.min.js"></script><script src="routlier_files/dt-ext-buttons-1.10.20/js/buttons.colVis.min.js"></script><script src="routlier_files/dt-ext-buttons-1.10.20/js/buttons.print.min.js"></script><link href="routlier_files/crosstalk-1.1.0.1/css/crosstalk.css" rel="stylesheet">
-<script src="routlier_files/crosstalk-1.1.0.1/js/crosstalk.min.js"></script><link href="routlier_files/handsontable-6.1.1/handsontable.full.min.css" rel="stylesheet">
-<script src="routlier_files/handsontable-6.1.1/handsontable.full.min.js"></script><script src="routlier_files/handsontable-6.1.1/all.min.js"></script><script src="routlier_files/numbro.languages-2.0.6/languages.min.js"></script><script src="routlier_files/chroma-1.3.3/chroma.min.js"></script><script src="routlier_files/sparkline-2.1.2/jquery.sparkline.min.js"></script><link href="routlier_files/rhandsontable-0.3.7/rhandsontable.css" rel="stylesheet">
-<script src="routlier_files/rhandsontable-binding-0.3.7/rhandsontable.js"></script><div class="row">
-  <div class="col-md-9 contents">
-    <div class="page-header toc-ignore">
-      <h1 data-toc-skip>routlier</h1>
-                        <h4 class="author">Ben Gonzalez</h4>
+
+<link href="routlier_files/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+<script src="routlier_files/htmlwidgets-1.6.4/htmlwidgets.js"></script><link href="routlier_files/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet">
+<script src="routlier_files/datatables-binding-0.33/datatables.js"></script><link href="routlier_files/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet">
+<link href="routlier_files/dt-core-1.13.6/css/jquery.dataTables.extra.css" rel="stylesheet">
+<script src="routlier_files/dt-core-1.13.6/js/jquery.dataTables.min.js"></script><script src="routlier_files/jszip-1.13.6/jszip.min.js"></script><script src="routlier_files/pdfmake-1.13.6/pdfmake.js"></script><script src="routlier_files/pdfmake-1.13.6/vfs_fonts.js"></script><link href="routlier_files/dt-ext-buttons-1.13.6/css/buttons.dataTables.min.css" rel="stylesheet">
+<script src="routlier_files/dt-ext-buttons-1.13.6/js/dataTables.buttons.min.js"></script><script src="routlier_files/dt-ext-buttons-1.13.6/js/buttons.html5.min.js"></script><script src="routlier_files/dt-ext-buttons-1.13.6/js/buttons.colVis.min.js"></script><script src="routlier_files/dt-ext-buttons-1.13.6/js/buttons.print.min.js"></script><link href="routlier_files/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet">
+<script src="routlier_files/crosstalk-1.2.1/js/crosstalk.min.js"></script><link href="routlier_files/handsontable-6.2.2/handsontable.full.min.css" rel="stylesheet">
+<script src="routlier_files/handsontable-6.2.2/handsontable.full.min.js"></script><script src="routlier_files/handsontable-6.2.2/all.min.js"></script><script src="routlier_files/numbro.languages-2.0.6/languages.min.js"></script><script src="routlier_files/chroma-1.3.3/chroma.min.js"></script><script src="routlier_files/sparkline-2.1.2/jquery.sparkline.min.js"></script><link href="routlier_files/rhandsontable-0.3.7/rhandsontable.css" rel="stylesheet">
+<script src="routlier_files/rhandsontable-binding-0.3.8/rhandsontable.js"></script><div class="row">
+  <main id="main" class="col-md-9"><div class="page-header">
+      <img src="" class="logo" alt=""><h1>routlier</h1>
+                        <h4 data-toc-skip class="author">Ben
+Gonzalez</h4>
             
-            <h4 class="date">2020-12-20</h4>
+            <h4 data-toc-skip class="date">2024-06-21</h4>
       
-      
-      <div class="hidden name"><code>routlier.Rmd</code></div>
-
+      <small class="dont-index">Source: <a href="https://github.com/gonzalezben81/routlier/blob/HEAD/vignettes/routlier.Rmd" class="external-link"><code>vignettes/routlier.Rmd</code></a></small>
+      <div class="d-none name"><code>routlier.Rmd</code></div>
     </div>
 
     
     
-<div id="routlier" class="section level2">
-<h2 class="hasAnchor">
-<a href="#routlier" class="anchor"></a>routlier</h2>
-<p>routlier is a package that is built to look for outliers in a dataset. The functions allow a user to look for outliers that are ‘x’ number of deviations away from the mean in the data for a particular column. The number of ‘Outliers’ in a dataset will be returned. Additionally any Outlier value will now be replaced with the word ‘Outlier’ in the dataset.</p>
+<div class="section level2">
+<h2 id="routlier">routlier<a class="anchor" aria-label="anchor" href="#routlier"></a>
+</h2>
+<p>routlier is a package that is built to look for outliers in a
+dataset. The functions allow a user to look for outliers that are ‘x’
+number of deviations away from the mean in the data for a particular
+column. The number of ‘Outliers’ in a dataset will be returned.
+Additionally any Outlier value will now be replaced with the word
+‘Outlier’ in the dataset.</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va">routlier</span><span class="op">)</span>
-
-<span class="fu">routlier</span><span class="fu">::</span><span class="fu"><a href="../reference/routlier_simple.html">routlier_simple</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">detroit</span>,sd <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></code></pre></div>
-<pre><code>## You have  66  outliers in your dataset</code></pre>
-<pre><code>##        FTP    UEMP     MAN     LIC      GR   CLEAR      WM    NMAN     GOV
-## 1   260.35 Outlier Outlier Outlier Outlier    93.4 Outlier Outlier Outlier
-## 2    269.8       7 Outlier Outlier Outlier    88.5 Outlier Outlier Outlier
-## 3   272.04     5.2 Outlier Outlier Outlier Outlier Outlier Outlier Outlier
-## 4   272.96     4.3   535.8   222.1 Outlier      92  500457     591   150.3
-## 5   272.51     3.5     576  301.92  297.65      91  482418   626.1   164.3
-## 6   261.34 Outlier   601.7  391.22  367.62    87.4  465029   659.8   179.5
-## 7   268.89     4.1   577.3  665.56  616.54    88.3  448267   686.2   187.5
-## 8   295.99     3.9   596.9 Outlier Outlier    86.1  432109   699.6   195.4
-## 9   319.87     3.6 Outlier   837.6  786.23      79  416533   729.9   210.3
-## 10  341.43     7.1   569.3   794.9  713.77    73.9  401518   757.8 Outlier
-## 11 Outlier Outlier   548.8  817.74  750.43 Outlier Outlier   755.3 Outlier
-## 12 Outlier     7.7   563.4  583.17 Outlier Outlier Outlier Outlier Outlier
-## 13 Outlier     6.3 Outlier  709.59   666.5 Outlier Outlier Outlier Outlier
-##         HE      WE     HOM     ACC     ASR
-## 1  Outlier Outlier Outlier Outlier  306.18
-## 2     3.09  134.02     8.9 Outlier  315.16
-## 3     3.23  141.68 Outlier   45.31  277.53
-## 4     3.33  147.98    8.89   49.51 Outlier
-## 5     3.46  159.85   13.07 Outlier Outlier
-## 6      3.6  157.19   14.57 Outlier Outlier
-## 7     3.73  155.29   21.36   50.62  286.11
-## 8  Outlier  131.75   28.03   51.47  291.59
-## 9     4.25  178.74   31.49   49.16  320.39
-## 10    4.47   178.3   37.39    45.8  323.03
-## 11 Outlier  209.54 Outlier   44.54  357.38
-## 12 Outlier Outlier Outlier Outlier Outlier
-## 13 Outlier Outlier Outlier   44.17 Outlier</code></pre>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/gonzalezben81/routlier" class="external-link">routlier</a></span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu">routlier</span><span class="fu">::</span><span class="fu"><a href="../reference/routlier_simple.html">routlier_simple</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">detroit</span>,sd <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></span></code></pre></div>
+<pre><code><span><span class="co">## You have  66  outliers in your dataset</span></span></code></pre>
+<pre><code><span><span class="co">##        FTP    UEMP     MAN     LIC      GR   CLEAR      WM    NMAN     GOV</span></span>
+<span><span class="co">## 1   260.35 Outlier Outlier Outlier Outlier    93.4 Outlier Outlier Outlier</span></span>
+<span><span class="co">## 2    269.8       7 Outlier Outlier Outlier    88.5 Outlier Outlier Outlier</span></span>
+<span><span class="co">## 3   272.04     5.2 Outlier Outlier Outlier Outlier Outlier Outlier Outlier</span></span>
+<span><span class="co">## 4   272.96     4.3   535.8   222.1 Outlier      92  500457     591   150.3</span></span>
+<span><span class="co">## 5   272.51     3.5     576  301.92  297.65      91  482418   626.1   164.3</span></span>
+<span><span class="co">## 6   261.34 Outlier   601.7  391.22  367.62    87.4  465029   659.8   179.5</span></span>
+<span><span class="co">## 7   268.89     4.1   577.3  665.56  616.54    88.3  448267   686.2   187.5</span></span>
+<span><span class="co">## 8   295.99     3.9   596.9 Outlier Outlier    86.1  432109   699.6   195.4</span></span>
+<span><span class="co">## 9   319.87     3.6 Outlier   837.6  786.23      79  416533   729.9   210.3</span></span>
+<span><span class="co">## 10  341.43     7.1   569.3   794.9  713.77    73.9  401518   757.8 Outlier</span></span>
+<span><span class="co">## 11 Outlier Outlier   548.8  817.74  750.43 Outlier Outlier   755.3 Outlier</span></span>
+<span><span class="co">## 12 Outlier     7.7   563.4  583.17 Outlier Outlier Outlier Outlier Outlier</span></span>
+<span><span class="co">## 13 Outlier     6.3 Outlier  709.59   666.5 Outlier Outlier Outlier Outlier</span></span>
+<span><span class="co">##         HE      WE     HOM     ACC     ASR</span></span>
+<span><span class="co">## 1  Outlier Outlier Outlier Outlier  306.18</span></span>
+<span><span class="co">## 2     3.09  134.02     8.9 Outlier  315.16</span></span>
+<span><span class="co">## 3     3.23  141.68 Outlier   45.31  277.53</span></span>
+<span><span class="co">## 4     3.33  147.98    8.89   49.51 Outlier</span></span>
+<span><span class="co">## 5     3.46  159.85   13.07 Outlier Outlier</span></span>
+<span><span class="co">## 6      3.6  157.19   14.57 Outlier Outlier</span></span>
+<span><span class="co">## 7     3.73  155.29   21.36   50.62  286.11</span></span>
+<span><span class="co">## 8  Outlier  131.75   28.03   51.47  291.59</span></span>
+<span><span class="co">## 9     4.25  178.74   31.49   49.16  320.39</span></span>
+<span><span class="co">## 10    4.47   178.3   37.39    45.8  323.03</span></span>
+<span><span class="co">## 11 Outlier  209.54 Outlier   44.54  357.38</span></span>
+<span><span class="co">## 12 Outlier Outlier Outlier Outlier Outlier</span></span>
+<span><span class="co">## 13 Outlier Outlier Outlier   44.17 Outlier</span></span></code></pre>
 </div>
-<div id="routlier-example-with-both-quantitative-and-qualitative-data" class="section level2">
-<h2 class="hasAnchor">
-<a href="#routlier-example-with-both-quantitative-and-qualitative-data" class="anchor"></a>routlier:: Example with both quantitative and qualitative data</h2>
-<p>Here we will utilize the student dataset that is included in the <strong>routlier</strong> package. This dataset has both quantitative and qualitative data in it. You can see we have <strong>274 outliers</strong> when we set the <strong>sd</strong> argument equal to <strong>2</strong>.</p>
+<div class="section level2">
+<h2 id="routlier-example-with-both-quantitative-and-qualitative-data">routlier:: Example with both quantitative and qualitative data<a class="anchor" aria-label="anchor" href="#routlier-example-with-both-quantitative-and-qualitative-data"></a>
+</h2>
+<p>Here we will utilize the student dataset that is included in the
+<strong>routlier</strong> package. This dataset has both quantitative
+and qualitative data in it. You can see we have <strong>274
+outliers</strong> when we set the <strong>sd</strong> argument equal to
+<strong>2</strong>.</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="../reference/routlier_simple.html">routlier_simple</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">student</span>,sd <span class="op">=</span> <span class="fl">2</span><span class="op">)</span></code></pre></div>
-<pre><code>## You have  274  outliers in your dataset</code></pre>
-<pre><code>##         age    Medu    Fedu traveltime studytime failures  famrel freetime
-## 1        18       4       4          2         2        0       4        3
-## 2        17       1       1          1         2        0       5        3
-## 3        15       1       1          1         2  Outlier       4        3
-## 4        15       4       2          1         3        0       3        2
-## 5        16       3       3          1         2        0       4        3
-## 6        16       4       3          1         2        0       5        4
-## 7        16       2       2          1         2        0       4        4
-## 8        17       4       4          2         2        0       4  Outlier
-## 9        15       3       2          1         2        0       4        2
-## 10       15       3       4          1         2        0       5        5
-## 11       15       4       4          1         2        0       3        3
-## 12       15       2       1    Outlier         3        0       5        2
-## 13       15       4       4          1         1        0       4        3
-## 14       15       4       3          2         2        0       5        4
-## 15       15       2       2          1         3        0       4        5
-...</code></pre>
-<div id="routlier-using-routlier_dt_sd-we-can-find-the-outliers-in-a-data-set-and-have-them-highlighted-with-a-green-background-to-make-them-easier-to-find--here-we-have-an-interactive-dttable-that-gets-returned--this-allows-us-to-filter-and-sort-out-data-much-more-easily-" class="section level4">
-<h4 class="hasAnchor">
-<a href="#routlier-using-routlier_dt_sd-we-can-find-the-outliers-in-a-data-set-and-have-them-highlighted-with-a-green-background-to-make-them-easier-to-find--here-we-have-an-interactive-dttable-that-gets-returned--this-allows-us-to-filter-and-sort-out-data-much-more-easily-" class="anchor"></a>routlier:: Using routlier_dt_sd() we can find the <strong>Outliers</strong> in a data set and have them highlighted with a green background to make them easier to find. Here we have an interactive DT::table that gets returned. This allows us to filter and sort out data much more easily.</h4>
+<code class="sourceCode R"><span><span class="fu"><a href="../reference/routlier_simple.html">routlier_simple</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">student</span>,sd <span class="op">=</span> <span class="fl">2</span><span class="op">)</span></span></code></pre></div>
+<pre><code><span><span class="co">## You have  274  outliers in your dataset</span></span></code></pre>
+<pre><code><span><span class="co">##         age    Medu    Fedu traveltime studytime failures  famrel freetime</span></span>
+<span><span class="co">## 1        18       4       4          2         2        0       4        3</span></span>
+<span><span class="co">## 2        17       1       1          1         2        0       5        3</span></span>
+<span><span class="co">## 3        15       1       1          1         2  Outlier       4        3</span></span>
+<span><span class="co">## 4        15       4       2          1         3        0       3        2</span></span>
+<span><span class="co">## 5        16       3       3          1         2        0       4        3</span></span>
+<span><span class="co">## 6        16       4       3          1         2        0       5        4</span></span>
+<span><span class="co">## 7        16       2       2          1         2        0       4        4</span></span>
+<span><span class="co">## 8        17       4       4          2         2        0       4  Outlier</span></span>
+<span><span class="co">## 9        15       3       2          1         2        0       4        2</span></span>
+<span><span class="co">## 10       15       3       4          1         2        0       5        5</span></span>
+<span><span class="co">## 11       15       4       4          1         2        0       3        3</span></span>
+<span><span class="co">## 12       15       2       1    Outlier         3        0       5        2</span></span>
+<span><span class="co">## 13       15       4       4          1         1        0       4        3</span></span>
+<span><span class="co">## 14       15       4       3          2         2        0       5        4</span></span>
+<span><span class="co">## 15       15       2       2          1         3        0       4        5</span></span>
+<span><span class="va">...</span></span></code></pre>
+<div class="section level4">
+<h4 id="routlier-using-routlier_dt_sd-we-can-find-the-outliers-in-a-dataset-and-have-them-highlighted-with-a-green-background-to-make-them-easier-to-find--here-we-have-an-interactive-dttable-that-gets-returned--this-allows-us-to-filter-and-sort-out-data-much-more-easily-">routlier:: Using routlier_dt_sd() we can find the
+<strong>Outliers</strong> in a dataset and have them highlighted with a
+green background to make them easier to find. Here we have an
+interactive DT::table that gets returned. This allows us to filter and
+sort out data much more easily.<a class="anchor" aria-label="anchor" href="#routlier-using-routlier_dt_sd-we-can-find-the-outliers-in-a-dataset-and-have-them-highlighted-with-a-green-background-to-make-them-easier-to-find--here-we-have-an-interactive-dttable-that-gets-returned--this-allows-us-to-filter-and-sort-out-data-much-more-easily-"></a>
+</h4>
 <div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="../reference/routlier_dt_sd.html">routlier_dt_sd</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">detroit</span>,sd <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></code></pre></div>
-<pre><code>## You have  66  outliers in your dataset</code></pre>
-<div id="htmlwidget-626eca161a693c57054b" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-626eca161a693c57054b">{"x":{"filter":"none","extensions":["Buttons"],"editable":{"target":"cell","disable":{"columns":null}},"data":[["1","2","3","4","5","6","7","8","9","10","11","12","13"],["260.35","269.8","272.04","272.96","272.51","261.34","268.89","295.99","319.87","341.43","Outlier","Outlier","Outlier"],["Outlier","7","5.2","4.3","3.5","Outlier","4.1","3.9","3.6","7.1","Outlier","7.7","6.3"],["Outlier","Outlier","Outlier","535.8","576","601.7","577.3","596.9","Outlier","569.3","548.8","563.4","Outlier"],["Outlier","Outlier","Outlier","222.1","301.92","391.22","665.56","Outlier","837.6","794.9","817.74","583.17","709.59"],["Outlier","Outlier","Outlier","Outlier","297.65","367.62","616.54","Outlier","786.23","713.77","750.43","Outlier","666.5"],["93.4","88.5","Outlier","92","91","87.4","88.3","86.1","79","73.9","Outlier","Outlier","Outlier"],["Outlier","Outlier","Outlier","500457","482418","465029","448267","432109","416533","401518","Outlier","Outlier","Outlier"],["Outlier","Outlier","Outlier","591","626.1","659.8","686.2","699.6","729.9","757.8","755.3","Outlier","Outlier"],["Outlier","Outlier","Outlier","150.3","164.3","179.5","187.5","195.4","210.3","Outlier","Outlier","Outlier","Outlier"],["Outlier","3.09","3.23","3.33","3.46","3.6","3.73","Outlier","4.25","4.47","Outlier","Outlier","Outlier"],["Outlier","134.02","141.68","147.98","159.85","157.19","155.29","131.75","178.74","178.3","209.54","Outlier","Outlier"],["Outlier","8.9","Outlier","8.89","13.07","14.57","21.36","28.03","31.49","37.39","Outlier","Outlier","Outlier"],["Outlier","Outlier","45.31","49.51","Outlier","Outlier","50.62","51.47","49.16","45.8","44.54","Outlier","44.17"],["306.18","315.16","277.53","Outlier","Outlier","Outlier","286.11","291.59","320.39","323.03","357.38","Outlier","Outlier"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>FTP<\/th>\n      <th>UEMP<\/th>\n      <th>MAN<\/th>\n      <th>LIC<\/th>\n      <th>GR<\/th>\n      <th>CLEAR<\/th>\n      <th>WM<\/th>\n      <th>NMAN<\/th>\n      <th>GOV<\/th>\n      <th>HE<\/th>\n      <th>WE<\/th>\n      <th>HOM<\/th>\n      <th>ACC<\/th>\n      <th>ASR<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"initComplete":"function(settings, json) {\n$(this.api().table().header()).css({'background-color': 'lightblue', 'color': 'black'});\n}","pageLength":10,"lengthMenu":[5,10,15,20,25,30,35,40,45,50],"dom":"lBftrip","keys":true,"buttons":["copy","csv","excel","pdf","print"],"extend":"excel","filename":"outlier.xls","order":[],"autoWidth":false,"orderClasses":false,"columnDefs":[{"orderable":false,"targets":0}],"rowCallback":"function(row, data) {\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : null});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : null});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : null});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : null});\nvar value=data[5]; $(this.api().cell(row, 5).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : null});\nvar value=data[6]; $(this.api().cell(row, 6).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : null});\nvar value=data[7]; $(this.api().cell(row, 7).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : null});\nvar value=data[8]; $(this.api().cell(row, 8).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : null});\nvar value=data[9]; $(this.api().cell(row, 9).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : null});\nvar value=data[10]; $(this.api().cell(row, 10).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : null});\nvar value=data[11]; $(this.api().cell(row, 11).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : null});\nvar value=data[12]; $(this.api().cell(row, 12).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : null});\nvar value=data[13]; $(this.api().cell(row, 13).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : null});\nvar value=data[14]; $(this.api().cell(row, 14).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : null});\n}"}},"evals":["options.initComplete","options.rowCallback"],"jsHooks":[]}</script>
+<code class="sourceCode R"><span><span class="fu"><a href="../reference/routlier_dt_sd.html">routlier_dt_sd</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">detroit</span>,sd <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></span></code></pre></div>
+<pre><code><span><span class="co">## You have  66  outliers in your dataset</span></span></code></pre>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-ac96cb3ee4656e2e9ec3" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-ac96cb3ee4656e2e9ec3">{"x":{"filter":"none","vertical":false,"extensions":["Buttons"],"editable":{"target":"cell","disable":{"columns":null},"numeric":[],"date":[]},"data":[["1","2","3","4","5","6","7","8","9","10","11","12","13"],["260.35","269.8","272.04","272.96","272.51","261.34","268.89","295.99","319.87","341.43","Outlier","Outlier","Outlier"],["Outlier","7","5.2","4.3","3.5","Outlier","4.1","3.9","3.6","7.1","Outlier","7.7","6.3"],["Outlier","Outlier","Outlier","535.8","576","601.7","577.3","596.9","Outlier","569.3","548.8","563.4","Outlier"],["Outlier","Outlier","Outlier","222.1","301.92","391.22","665.56","Outlier","837.6","794.9","817.74","583.17","709.59"],["Outlier","Outlier","Outlier","Outlier","297.65","367.62","616.54","Outlier","786.23","713.77","750.43","Outlier","666.5"],["93.4","88.5","Outlier","92","91","87.4","88.3","86.1","79","73.9","Outlier","Outlier","Outlier"],["Outlier","Outlier","Outlier","500457","482418","465029","448267","432109","416533","401518","Outlier","Outlier","Outlier"],["Outlier","Outlier","Outlier","591","626.1","659.8","686.2","699.6","729.9","757.8","755.3","Outlier","Outlier"],["Outlier","Outlier","Outlier","150.3","164.3","179.5","187.5","195.4","210.3","Outlier","Outlier","Outlier","Outlier"],["Outlier","3.09","3.23","3.33","3.46","3.6","3.73","Outlier","4.25","4.47","Outlier","Outlier","Outlier"],["Outlier","134.02","141.68","147.98","159.85","157.19","155.29","131.75","178.74","178.3","209.54","Outlier","Outlier"],["Outlier","8.9","Outlier","8.89","13.07","14.57","21.36","28.03","31.49","37.39","Outlier","Outlier","Outlier"],["Outlier","Outlier","45.31","49.51","Outlier","Outlier","50.62","51.47","49.16","45.8","44.54","Outlier","44.17"],["306.18","315.16","277.53","Outlier","Outlier","Outlier","286.11","291.59","320.39","323.03","357.38","Outlier","Outlier"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>FTP<\/th>\n      <th>UEMP<\/th>\n      <th>MAN<\/th>\n      <th>LIC<\/th>\n      <th>GR<\/th>\n      <th>CLEAR<\/th>\n      <th>WM<\/th>\n      <th>NMAN<\/th>\n      <th>GOV<\/th>\n      <th>HE<\/th>\n      <th>WE<\/th>\n      <th>HOM<\/th>\n      <th>ACC<\/th>\n      <th>ASR<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"initComplete":"function(settings, json) {\n$(this.api().table().header()).css({'background-color': 'lightblue', 'color': 'black'});\n}","pageLength":10,"lengthMenu":[5,10,15,20,25,30,35,40,45,50],"dom":"lBftrip","keys":true,"buttons":["copy","csv","excel","pdf","print"],"extend":"excel","filename":"outlier.xls","columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"FTP","targets":1},{"name":"UEMP","targets":2},{"name":"MAN","targets":3},{"name":"LIC","targets":4},{"name":"GR","targets":5},{"name":"CLEAR","targets":6},{"name":"WM","targets":7},{"name":"NMAN","targets":8},{"name":"GOV","targets":9},{"name":"HE","targets":10},{"name":"WE","targets":11},{"name":"HOM","targets":12},{"name":"ACC","targets":13},{"name":"ASR","targets":14}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : null});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : null});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : null});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : null});\nvar value=data[5]; $(this.api().cell(row, 5).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : null});\nvar value=data[6]; $(this.api().cell(row, 6).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : null});\nvar value=data[7]; $(this.api().cell(row, 7).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : null});\nvar value=data[8]; $(this.api().cell(row, 8).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : null});\nvar value=data[9]; $(this.api().cell(row, 9).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : null});\nvar value=data[10]; $(this.api().cell(row, 10).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : null});\nvar value=data[11]; $(this.api().cell(row, 11).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : null});\nvar value=data[12]; $(this.api().cell(row, 12).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : null});\nvar value=data[13]; $(this.api().cell(row, 13).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : null});\nvar value=data[14]; $(this.api().cell(row, 14).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : null});\n}"},"selection":{"mode":"multiple","selected":null,"target":"row","selectable":null}},"evals":["options.initComplete","options.rowCallback"],"jsHooks":[]}</script>
 </div>
-<div id="routlier-using-routlier_rh_sd-we-can-find-the-outliers-in-a-data-set-and-have-them-highlighted-with-a-green-background-to-make-them-easier-to-find-" class="section level4">
-<h4 class="hasAnchor">
-<a href="#routlier-using-routlier_rh_sd-we-can-find-the-outliers-in-a-data-set-and-have-them-highlighted-with-a-green-background-to-make-them-easier-to-find-" class="anchor"></a>routlier:: Using routlier_rh_sd() we can find the <strong>Outliers</strong> in a data set and have them highlighted with a green background to make them easier to find.</h4>
+<div class="section level4">
+<h4 id="routlier-using-routlier_rh_sd-we-can-find-the-outliers-in-a-dataset-and-have-them-highlighted-with-a-green-background-to-make-them-easier-to-find-">routlier:: Using routlier_rh_sd() we can find the
+<strong>Outliers</strong> in a dataset and have them highlighted with a
+green background to make them easier to find.<a class="anchor" aria-label="anchor" href="#routlier-using-routlier_rh_sd-we-can-find-the-outliers-in-a-dataset-and-have-them-highlighted-with-a-green-background-to-make-them-easier-to-find-"></a>
+</h4>
 <div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="../reference/routlier_rh_sd.html">routlier_rh_sd</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">detroit</span>,sd <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></code></pre></div>
-<pre><code>## You have  66  outliers in your dataset</code></pre>
-<div id="htmlwidget-1493ec0b7f5088fcf74a" style="width:auto;height:auto;" class="rhandsontable html-widget"></div>
-<script type="application/json" data-for="htmlwidget-1493ec0b7f5088fcf74a">{"x":{"data":[{"FTP":"260.35","UEMP":"Outlier","MAN":"Outlier","LIC":"Outlier","GR":"Outlier","CLEAR":"93.4","WM":"Outlier","NMAN":"Outlier","GOV":"Outlier","HE":"Outlier","WE":"Outlier","HOM":"Outlier","ACC":"Outlier","ASR":"306.18"},{"FTP":"269.8","UEMP":"7","MAN":"Outlier","LIC":"Outlier","GR":"Outlier","CLEAR":"88.5","WM":"Outlier","NMAN":"Outlier","GOV":"Outlier","HE":"3.09","WE":"134.02","HOM":"8.9","ACC":"Outlier","ASR":"315.16"},{"FTP":"272.04","UEMP":"5.2","MAN":"Outlier","LIC":"Outlier","GR":"Outlier","CLEAR":"Outlier","WM":"Outlier","NMAN":"Outlier","GOV":"Outlier","HE":"3.23","WE":"141.68","HOM":"Outlier","ACC":"45.31","ASR":"277.53"},{"FTP":"272.96","UEMP":"4.3","MAN":"535.8","LIC":"222.1","GR":"Outlier","CLEAR":"92","WM":"500457","NMAN":"591","GOV":"150.3","HE":"3.33","WE":"147.98","HOM":"8.89","ACC":"49.51","ASR":"Outlier"},{"FTP":"272.51","UEMP":"3.5","MAN":"576","LIC":"301.92","GR":"297.65","CLEAR":"91","WM":"482418","NMAN":"626.1","GOV":"164.3","HE":"3.46","WE":"159.85","HOM":"13.07","ACC":"Outlier","ASR":"Outlier"},{"FTP":"261.34","UEMP":"Outlier","MAN":"601.7","LIC":"391.22","GR":"367.62","CLEAR":"87.4","WM":"465029","NMAN":"659.8","GOV":"179.5","HE":"3.6","WE":"157.19","HOM":"14.57","ACC":"Outlier","ASR":"Outlier"},{"FTP":"268.89","UEMP":"4.1","MAN":"577.3","LIC":"665.56","GR":"616.54","CLEAR":"88.3","WM":"448267","NMAN":"686.2","GOV":"187.5","HE":"3.73","WE":"155.29","HOM":"21.36","ACC":"50.62","ASR":"286.11"},{"FTP":"295.99","UEMP":"3.9","MAN":"596.9","LIC":"Outlier","GR":"Outlier","CLEAR":"86.1","WM":"432109","NMAN":"699.6","GOV":"195.4","HE":"Outlier","WE":"131.75","HOM":"28.03","ACC":"51.47","ASR":"291.59"},{"FTP":"319.87","UEMP":"3.6","MAN":"Outlier","LIC":"837.6","GR":"786.23","CLEAR":"79","WM":"416533","NMAN":"729.9","GOV":"210.3","HE":"4.25","WE":"178.74","HOM":"31.49","ACC":"49.16","ASR":"320.39"},{"FTP":"341.43","UEMP":"7.1","MAN":"569.3","LIC":"794.9","GR":"713.77","CLEAR":"73.9","WM":"401518","NMAN":"757.8","GOV":"Outlier","HE":"4.47","WE":"178.3","HOM":"37.39","ACC":"45.8","ASR":"323.03"},{"FTP":"Outlier","UEMP":"Outlier","MAN":"548.8","LIC":"817.74","GR":"750.43","CLEAR":"Outlier","WM":"Outlier","NMAN":"755.3","GOV":"Outlier","HE":"Outlier","WE":"209.54","HOM":"Outlier","ACC":"44.54","ASR":"357.38"},{"FTP":"Outlier","UEMP":"7.7","MAN":"563.4","LIC":"583.17","GR":"Outlier","CLEAR":"Outlier","WM":"Outlier","NMAN":"Outlier","GOV":"Outlier","HE":"Outlier","WE":"Outlier","HOM":"Outlier","ACC":"Outlier","ASR":"Outlier"},{"FTP":"Outlier","UEMP":"6.3","MAN":"Outlier","LIC":"709.59","GR":"666.5","CLEAR":"Outlier","WM":"Outlier","NMAN":"Outlier","GOV":"Outlier","HE":"Outlier","WE":"Outlier","HOM":"Outlier","ACC":"44.17","ASR":"Outlier"}],"rClass":"data.frame","rColClasses":{"FTP":"character","UEMP":"character","MAN":"character","LIC":"character","GR":"character","CLEAR":"character","WM":"character","NMAN":"character","GOV":"character","HE":"character","WE":"character","HOM":"character","ACC":"character","ASR":"character"},"rColnames":["FTP","UEMP","MAN","LIC","GR","CLEAR","WM","NMAN","GOV","HE","WE","HOM","ACC","ASR"],"rColHeaders":["FTP","UEMP","MAN","LIC","GR","CLEAR","WM","NMAN","GOV","HE","WE","HOM","ACC","ASR"],"rRowHeaders":null,"rDataDim":[13,14],"selectCallback":false,"colHeaders":["FTP","UEMP","MAN","LIC","GR","CLEAR","WM","NMAN","GOV","HE","WE","HOM","ACC","ASR"],"rowHeaders":["1","2","3","4","5","6","7","8","9","10","11","12","13"],"columns":[{"type":"text","renderer":"\n               function (instance, td, row, col, prop, value, cellProperties) {\n               Handsontable.renderers.NumericRenderer.apply(this, arguments);\n               if (value == 'Outlier') {\n               td.style.background = 'lightgreen';\n               }\n               }","default":null},{"type":"text","renderer":"\n               function (instance, td, row, col, prop, value, cellProperties) {\n               Handsontable.renderers.NumericRenderer.apply(this, arguments);\n               if (value == 'Outlier') {\n               td.style.background = 'lightgreen';\n               }\n               }","default":null},{"type":"text","renderer":"\n               function (instance, td, row, col, prop, value, cellProperties) {\n               Handsontable.renderers.NumericRenderer.apply(this, arguments);\n               if (value == 'Outlier') {\n               td.style.background = 'lightgreen';\n               }\n               }","default":null},{"type":"text","renderer":"\n               function (instance, td, row, col, prop, value, cellProperties) {\n               Handsontable.renderers.NumericRenderer.apply(this, arguments);\n               if (value == 'Outlier') {\n               td.style.background = 'lightgreen';\n               }\n               }","default":null},{"type":"text","renderer":"\n               function (instance, td, row, col, prop, value, cellProperties) {\n               Handsontable.renderers.NumericRenderer.apply(this, arguments);\n               if (value == 'Outlier') {\n               td.style.background = 'lightgreen';\n               }\n               }","default":null},{"type":"text","renderer":"\n               function (instance, td, row, col, prop, value, cellProperties) {\n               Handsontable.renderers.NumericRenderer.apply(this, arguments);\n               if (value == 'Outlier') {\n               td.style.background = 'lightgreen';\n               }\n               }","default":null},{"type":"text","renderer":"\n               function (instance, td, row, col, prop, value, cellProperties) {\n               Handsontable.renderers.NumericRenderer.apply(this, arguments);\n               if (value == 'Outlier') {\n               td.style.background = 'lightgreen';\n               }\n               }","default":null},{"type":"text","renderer":"\n               function (instance, td, row, col, prop, value, cellProperties) {\n               Handsontable.renderers.NumericRenderer.apply(this, arguments);\n               if (value == 'Outlier') {\n               td.style.background = 'lightgreen';\n               }\n               }","default":null},{"type":"text","renderer":"\n               function (instance, td, row, col, prop, value, cellProperties) {\n               Handsontable.renderers.NumericRenderer.apply(this, arguments);\n               if (value == 'Outlier') {\n               td.style.background = 'lightgreen';\n               }\n               }","default":null},{"type":"text","renderer":"\n               function (instance, td, row, col, prop, value, cellProperties) {\n               Handsontable.renderers.NumericRenderer.apply(this, arguments);\n               if (value == 'Outlier') {\n               td.style.background = 'lightgreen';\n               }\n               }","default":null},{"type":"text","renderer":"\n               function (instance, td, row, col, prop, value, cellProperties) {\n               Handsontable.renderers.NumericRenderer.apply(this, arguments);\n               if (value == 'Outlier') {\n               td.style.background = 'lightgreen';\n               }\n               }","default":null},{"type":"text","renderer":"\n               function (instance, td, row, col, prop, value, cellProperties) {\n               Handsontable.renderers.NumericRenderer.apply(this, arguments);\n               if (value == 'Outlier') {\n               td.style.background = 'lightgreen';\n               }\n               }","default":null},{"type":"text","renderer":"\n               function (instance, td, row, col, prop, value, cellProperties) {\n               Handsontable.renderers.NumericRenderer.apply(this, arguments);\n               if (value == 'Outlier') {\n               td.style.background = 'lightgreen';\n               }\n               }","default":null},{"type":"text","renderer":"\n               function (instance, td, row, col, prop, value, cellProperties) {\n               Handsontable.renderers.NumericRenderer.apply(this, arguments);\n               if (value == 'Outlier') {\n               td.style.background = 'lightgreen';\n               }\n               }","default":null}],"width":"auto","height":"auto","debug":0,"search":false,"stretchH":"none","comments":false,"contextMenu":{"items":{"row_above":[],"row_below":[],"remove_row":[],"hsep3":{"name":"---------"},"undo":[],"redo":[],"hsep4":{"name":"---------"},"alignment":[]}}},"evals":["columns.0.renderer","columns.1.renderer","columns.2.renderer","columns.3.renderer","columns.4.renderer","columns.5.renderer","columns.6.renderer","columns.7.renderer","columns.8.renderer","columns.9.renderer","columns.10.renderer","columns.11.renderer","columns.12.renderer","columns.13.renderer"],"jsHooks":[]}</script>
+<code class="sourceCode R"><span><span class="fu"><a href="../reference/routlier_rh_sd.html">routlier_rh_sd</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">detroit</span>,sd <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></span></code></pre></div>
+<pre><code><span><span class="co">## You have  66  outliers in your dataset</span></span></code></pre>
+<div id="htmlwidget-e5c8c404fe174e4c81bd" style="width:auto;height:auto;" class="rhandsontable html-widget"></div>
+<script type="application/json" data-for="htmlwidget-e5c8c404fe174e4c81bd">{"x":{"data":[{"FTP":"260.35","UEMP":"Outlier","MAN":"Outlier","LIC":"Outlier","GR":"Outlier","CLEAR":"93.4","WM":"Outlier","NMAN":"Outlier","GOV":"Outlier","HE":"Outlier","WE":"Outlier","HOM":"Outlier","ACC":"Outlier","ASR":"306.18"},{"FTP":"269.8","UEMP":"7","MAN":"Outlier","LIC":"Outlier","GR":"Outlier","CLEAR":"88.5","WM":"Outlier","NMAN":"Outlier","GOV":"Outlier","HE":"3.09","WE":"134.02","HOM":"8.9","ACC":"Outlier","ASR":"315.16"},{"FTP":"272.04","UEMP":"5.2","MAN":"Outlier","LIC":"Outlier","GR":"Outlier","CLEAR":"Outlier","WM":"Outlier","NMAN":"Outlier","GOV":"Outlier","HE":"3.23","WE":"141.68","HOM":"Outlier","ACC":"45.31","ASR":"277.53"},{"FTP":"272.96","UEMP":"4.3","MAN":"535.8","LIC":"222.1","GR":"Outlier","CLEAR":"92","WM":"500457","NMAN":"591","GOV":"150.3","HE":"3.33","WE":"147.98","HOM":"8.89","ACC":"49.51","ASR":"Outlier"},{"FTP":"272.51","UEMP":"3.5","MAN":"576","LIC":"301.92","GR":"297.65","CLEAR":"91","WM":"482418","NMAN":"626.1","GOV":"164.3","HE":"3.46","WE":"159.85","HOM":"13.07","ACC":"Outlier","ASR":"Outlier"},{"FTP":"261.34","UEMP":"Outlier","MAN":"601.7","LIC":"391.22","GR":"367.62","CLEAR":"87.4","WM":"465029","NMAN":"659.8","GOV":"179.5","HE":"3.6","WE":"157.19","HOM":"14.57","ACC":"Outlier","ASR":"Outlier"},{"FTP":"268.89","UEMP":"4.1","MAN":"577.3","LIC":"665.56","GR":"616.54","CLEAR":"88.3","WM":"448267","NMAN":"686.2","GOV":"187.5","HE":"3.73","WE":"155.29","HOM":"21.36","ACC":"50.62","ASR":"286.11"},{"FTP":"295.99","UEMP":"3.9","MAN":"596.9","LIC":"Outlier","GR":"Outlier","CLEAR":"86.1","WM":"432109","NMAN":"699.6","GOV":"195.4","HE":"Outlier","WE":"131.75","HOM":"28.03","ACC":"51.47","ASR":"291.59"},{"FTP":"319.87","UEMP":"3.6","MAN":"Outlier","LIC":"837.6","GR":"786.23","CLEAR":"79","WM":"416533","NMAN":"729.9","GOV":"210.3","HE":"4.25","WE":"178.74","HOM":"31.49","ACC":"49.16","ASR":"320.39"},{"FTP":"341.43","UEMP":"7.1","MAN":"569.3","LIC":"794.9","GR":"713.77","CLEAR":"73.9","WM":"401518","NMAN":"757.8","GOV":"Outlier","HE":"4.47","WE":"178.3","HOM":"37.39","ACC":"45.8","ASR":"323.03"},{"FTP":"Outlier","UEMP":"Outlier","MAN":"548.8","LIC":"817.74","GR":"750.43","CLEAR":"Outlier","WM":"Outlier","NMAN":"755.3","GOV":"Outlier","HE":"Outlier","WE":"209.54","HOM":"Outlier","ACC":"44.54","ASR":"357.38"},{"FTP":"Outlier","UEMP":"7.7","MAN":"563.4","LIC":"583.17","GR":"Outlier","CLEAR":"Outlier","WM":"Outlier","NMAN":"Outlier","GOV":"Outlier","HE":"Outlier","WE":"Outlier","HOM":"Outlier","ACC":"Outlier","ASR":"Outlier"},{"FTP":"Outlier","UEMP":"6.3","MAN":"Outlier","LIC":"709.59","GR":"666.5","CLEAR":"Outlier","WM":"Outlier","NMAN":"Outlier","GOV":"Outlier","HE":"Outlier","WE":"Outlier","HOM":"Outlier","ACC":"44.17","ASR":"Outlier"}],"rClass":"data.frame","rColClasses":{"FTP":"character","UEMP":"character","MAN":"character","LIC":"character","GR":"character","CLEAR":"character","WM":"character","NMAN":"character","GOV":"character","HE":"character","WE":"character","HOM":"character","ACC":"character","ASR":"character"},"rColnames":["FTP","UEMP","MAN","LIC","GR","CLEAR","WM","NMAN","GOV","HE","WE","HOM","ACC","ASR"],"rColHeaders":["FTP","UEMP","MAN","LIC","GR","CLEAR","WM","NMAN","GOV","HE","WE","HOM","ACC","ASR"],"rRowHeaders":null,"rDataDim":[13,14],"selectCallback":false,"colHeaders":["FTP","UEMP","MAN","LIC","GR","CLEAR","WM","NMAN","GOV","HE","WE","HOM","ACC","ASR"],"rowHeaders":["1","2","3","4","5","6","7","8","9","10","11","12","13"],"columns":[{"type":"text","renderer":"\n               function (instance, td, row, col, prop, value, cellProperties) {\n               Handsontable.renderers.NumericRenderer.apply(this, arguments);\n               if (value == 'Outlier') {\n               td.style.background = 'lightgreen';\n               }\n               }","default":null},{"type":"text","renderer":"\n               function (instance, td, row, col, prop, value, cellProperties) {\n               Handsontable.renderers.NumericRenderer.apply(this, arguments);\n               if (value == 'Outlier') {\n               td.style.background = 'lightgreen';\n               }\n               }","default":null},{"type":"text","renderer":"\n               function (instance, td, row, col, prop, value, cellProperties) {\n               Handsontable.renderers.NumericRenderer.apply(this, arguments);\n               if (value == 'Outlier') {\n               td.style.background = 'lightgreen';\n               }\n               }","default":null},{"type":"text","renderer":"\n               function (instance, td, row, col, prop, value, cellProperties) {\n               Handsontable.renderers.NumericRenderer.apply(this, arguments);\n               if (value == 'Outlier') {\n               td.style.background = 'lightgreen';\n               }\n               }","default":null},{"type":"text","renderer":"\n               function (instance, td, row, col, prop, value, cellProperties) {\n               Handsontable.renderers.NumericRenderer.apply(this, arguments);\n               if (value == 'Outlier') {\n               td.style.background = 'lightgreen';\n               }\n               }","default":null},{"type":"text","renderer":"\n               function (instance, td, row, col, prop, value, cellProperties) {\n               Handsontable.renderers.NumericRenderer.apply(this, arguments);\n               if (value == 'Outlier') {\n               td.style.background = 'lightgreen';\n               }\n               }","default":null},{"type":"text","renderer":"\n               function (instance, td, row, col, prop, value, cellProperties) {\n               Handsontable.renderers.NumericRenderer.apply(this, arguments);\n               if (value == 'Outlier') {\n               td.style.background = 'lightgreen';\n               }\n               }","default":null},{"type":"text","renderer":"\n               function (instance, td, row, col, prop, value, cellProperties) {\n               Handsontable.renderers.NumericRenderer.apply(this, arguments);\n               if (value == 'Outlier') {\n               td.style.background = 'lightgreen';\n               }\n               }","default":null},{"type":"text","renderer":"\n               function (instance, td, row, col, prop, value, cellProperties) {\n               Handsontable.renderers.NumericRenderer.apply(this, arguments);\n               if (value == 'Outlier') {\n               td.style.background = 'lightgreen';\n               }\n               }","default":null},{"type":"text","renderer":"\n               function (instance, td, row, col, prop, value, cellProperties) {\n               Handsontable.renderers.NumericRenderer.apply(this, arguments);\n               if (value == 'Outlier') {\n               td.style.background = 'lightgreen';\n               }\n               }","default":null},{"type":"text","renderer":"\n               function (instance, td, row, col, prop, value, cellProperties) {\n               Handsontable.renderers.NumericRenderer.apply(this, arguments);\n               if (value == 'Outlier') {\n               td.style.background = 'lightgreen';\n               }\n               }","default":null},{"type":"text","renderer":"\n               function (instance, td, row, col, prop, value, cellProperties) {\n               Handsontable.renderers.NumericRenderer.apply(this, arguments);\n               if (value == 'Outlier') {\n               td.style.background = 'lightgreen';\n               }\n               }","default":null},{"type":"text","renderer":"\n               function (instance, td, row, col, prop, value, cellProperties) {\n               Handsontable.renderers.NumericRenderer.apply(this, arguments);\n               if (value == 'Outlier') {\n               td.style.background = 'lightgreen';\n               }\n               }","default":null},{"type":"text","renderer":"\n               function (instance, td, row, col, prop, value, cellProperties) {\n               Handsontable.renderers.NumericRenderer.apply(this, arguments);\n               if (value == 'Outlier') {\n               td.style.background = 'lightgreen';\n               }\n               }","default":null}],"width":"auto","height":"auto","debug":0,"search":false,"stretchH":"none","comments":false,"contextMenu":{"items":{"row_above":[],"row_below":[],"remove_row":[],"hsep3":{"name":"---------"},"undo":[],"redo":[],"hsep4":{"name":"---------"},"alignment":[]}}},"evals":["columns.0.renderer","columns.1.renderer","columns.2.renderer","columns.3.renderer","columns.4.renderer","columns.5.renderer","columns.6.renderer","columns.7.renderer","columns.8.renderer","columns.9.renderer","columns.10.renderer","columns.11.renderer","columns.12.renderer","columns.13.renderer"],"jsHooks":[]}</script>
 </div>
-<div id="routlier-using-routlier_formattable-we-can-find-the-outliers-in-a-data-set-and-have-the-outliers-highlighted-in-red-and-the-non-outlier-values-highlighted-in-green-" class="section level4">
-<h4 class="hasAnchor">
-<a href="#routlier-using-routlier_formattable-we-can-find-the-outliers-in-a-data-set-and-have-the-outliers-highlighted-in-red-and-the-non-outlier-values-highlighted-in-green-" class="anchor"></a>routlier:: Using routlier_formattable() we can find the <strong>Outliers</strong> in a data set and have the <strong>Outliers</strong> highlighted in red and the non-outlier values highlighted in green.</h4>
+<div class="section level4">
+<h4 id="routlier-using-routlier_formattable-we-can-find-the-outliers-in-a-dataset-and-have-the-outliers-highlighted-in-red-and-the-non-outlier-values-highlighted-in-green-">routlier:: Using routlier_formattable() we can find the
+<strong>Outliers</strong> in a dataset and have the
+<strong>Outliers</strong> highlighted in red and the non-outlier values
+highlighted in green.<a class="anchor" aria-label="anchor" href="#routlier-using-routlier_formattable-we-can-find-the-outliers-in-a-dataset-and-have-the-outliers-highlighted-in-red-and-the-non-outlier-values-highlighted-in-green-"></a>
+</h4>
 <div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="../reference/routlier_formattable.html">routlier_formattable</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">detroit</span>,sd <span class="op">=</span> <span class="fl">2</span><span class="op">)</span></code></pre></div>
-<pre><code>## You have  4  outliers in your dataset</code></pre>
-<pre><code>##  [1] "WM"    "WE"    "UEMP"  "NMAN"  "MAN"   "LIC"   "HOM"   "HE"    "GR"   
-## [10] "GOV"   "FTP"   "CLEAR" "ASR"   "ACC"  
-##  [1] "WM"    "WE"    "UEMP"  "NMAN"  "MAN"   "LIC"   "HOM"   "HE"    "GR"   
-## [10] "GOV"   "FTP"   "CLEAR" "ASR"   "ACC"</code></pre>
+<code class="sourceCode R"><span><span class="fu"><a href="../reference/routlier_formattable.html">routlier_formattable</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">detroit</span>,sd <span class="op">=</span> <span class="fl">2</span><span class="op">)</span></span></code></pre></div>
+<pre><code><span><span class="co">## You have  4  outliers in your dataset</span></span></code></pre>
+<pre><code><span><span class="co">##  [1] "WM"    "WE"    "UEMP"  "NMAN"  "MAN"   "LIC"   "HOM"   "HE"    "GR"   </span></span>
+<span><span class="co">## [10] "GOV"   "FTP"   "CLEAR" "ASR"   "ACC"  </span></span>
+<span><span class="co">##  [1] "WM"    "WE"    "UEMP"  "NMAN"  "MAN"   "LIC"   "HOM"   "HE"    "GR"   </span></span>
+<span><span class="co">## [10] "GOV"   "FTP"   "CLEAR" "ASR"   "ACC"</span></span></code></pre>
 <table class="table table table-condensed">
 <thead><tr>
 <th style="text-align:right;">
@@ -220,19 +246,19 @@ ACC
 <tbody>
 <tr>
 <td style="text-align:right;">
-<span style="color: green">558724.00</span>
+<span style="color: green">558724</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">117.18</span>
 </td>
 <td style="text-align:right;">
-<span style="color: red">11.00</span>
+<span style="color: red">11.0</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">538.10</span>
+<span style="color: green">538.1</span>
 </td>
 <td style="text-align:right;">
-<span style="color: red">455.50</span>
+<span style="color: red">455.5</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">178.50</span>
@@ -247,13 +273,13 @@ ACC
 <span style="color: green">215.98</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">133.90</span>
+<span style="color: green">133.9</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">260.35</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">93.40</span>
+<span style="color: green">93.4</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">306.18</span>
@@ -264,19 +290,19 @@ ACC
 </tr>
 <tr>
 <td style="text-align:right;">
-<span style="color: green">538584.00</span>
+<span style="color: green">538584</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">134.02</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">7.00</span>
+<span style="color: green">7.0</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">547.60</span>
+<span style="color: green">547.6</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">480.20</span>
+<span style="color: green">480.2</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">156.41</span>
@@ -291,13 +317,13 @@ ACC
 <span style="color: green">180.48</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">137.60</span>
+<span style="color: green">137.6</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">269.80</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">88.50</span>
+<span style="color: green">88.5</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">315.16</span>
@@ -308,19 +334,19 @@ ACC
 </tr>
 <tr>
 <td style="text-align:right;">
-<span style="color: green">519171.00</span>
+<span style="color: green">519171</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">141.68</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">5.20</span>
+<span style="color: green">5.2</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">562.80</span>
+<span style="color: green">562.8</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">506.10</span>
+<span style="color: green">506.1</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">198.02</span>
@@ -335,13 +361,13 @@ ACC
 <span style="color: green">209.57</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">143.60</span>
+<span style="color: green">143.6</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">272.04</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">94.40</span>
+<span style="color: green">94.4</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">277.53</span>
@@ -352,19 +378,19 @@ ACC
 </tr>
 <tr>
 <td style="text-align:right;">
-<span style="color: green">500457.00</span>
+<span style="color: green">500457</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">147.98</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">4.30</span>
+<span style="color: green">4.3</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">591.00</span>
+<span style="color: green">591.0</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">535.80</span>
+<span style="color: green">535.8</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">222.10</span>
@@ -379,13 +405,13 @@ ACC
 <span style="color: green">231.67</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">150.30</span>
+<span style="color: green">150.3</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">272.96</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">92.00</span>
+<span style="color: green">92.0</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">234.07</span>
@@ -396,19 +422,19 @@ ACC
 </tr>
 <tr>
 <td style="text-align:right;">
-<span style="color: green">482418.00</span>
+<span style="color: green">482418</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">159.85</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">3.50</span>
+<span style="color: green">3.5</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">626.10</span>
+<span style="color: green">626.1</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">576.00</span>
+<span style="color: green">576.0</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">301.92</span>
@@ -423,13 +449,13 @@ ACC
 <span style="color: green">297.65</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">164.30</span>
+<span style="color: green">164.3</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">272.51</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">91.00</span>
+<span style="color: green">91.0</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">230.84</span>
@@ -440,19 +466,19 @@ ACC
 </tr>
 <tr>
 <td style="text-align:right;">
-<span style="color: green">465029.00</span>
+<span style="color: green">465029</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">157.19</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">3.20</span>
+<span style="color: green">3.2</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">659.80</span>
+<span style="color: green">659.8</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">601.70</span>
+<span style="color: green">601.7</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">391.22</span>
@@ -467,13 +493,13 @@ ACC
 <span style="color: green">367.62</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">179.50</span>
+<span style="color: green">179.5</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">261.34</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">87.40</span>
+<span style="color: green">87.4</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">217.99</span>
@@ -484,19 +510,19 @@ ACC
 </tr>
 <tr>
 <td style="text-align:right;">
-<span style="color: green">448267.00</span>
+<span style="color: green">448267</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">155.29</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">4.10</span>
+<span style="color: green">4.1</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">686.20</span>
+<span style="color: green">686.2</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">577.30</span>
+<span style="color: green">577.3</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">665.56</span>
@@ -511,13 +537,13 @@ ACC
 <span style="color: green">616.54</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">187.50</span>
+<span style="color: green">187.5</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">268.89</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">88.30</span>
+<span style="color: green">88.3</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">286.11</span>
@@ -528,19 +554,19 @@ ACC
 </tr>
 <tr>
 <td style="text-align:right;">
-<span style="color: green">432109.00</span>
+<span style="color: green">432109</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">131.75</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">3.90</span>
+<span style="color: green">3.9</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">699.60</span>
+<span style="color: green">699.6</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">596.90</span>
+<span style="color: green">596.9</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">1131.21</span>
@@ -555,13 +581,13 @@ ACC
 <span style="color: green">1029.75</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">195.40</span>
+<span style="color: green">195.4</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">295.99</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">86.10</span>
+<span style="color: green">86.1</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">291.59</span>
@@ -572,19 +598,19 @@ ACC
 </tr>
 <tr>
 <td style="text-align:right;">
-<span style="color: green">416533.00</span>
+<span style="color: green">416533</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">178.74</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">3.60</span>
+<span style="color: green">3.6</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">729.90</span>
+<span style="color: green">729.9</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">613.50</span>
+<span style="color: green">613.5</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">837.60</span>
@@ -599,13 +625,13 @@ ACC
 <span style="color: green">786.23</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">210.30</span>
+<span style="color: green">210.3</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">319.87</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">79.00</span>
+<span style="color: green">79.0</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">320.39</span>
@@ -616,19 +642,19 @@ ACC
 </tr>
 <tr>
 <td style="text-align:right;">
-<span style="color: green">401518.00</span>
+<span style="color: green">401518</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">178.30</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">7.10</span>
+<span style="color: green">7.1</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">757.80</span>
+<span style="color: green">757.8</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">569.30</span>
+<span style="color: green">569.3</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">794.90</span>
@@ -643,13 +669,13 @@ ACC
 <span style="color: green">713.77</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">223.80</span>
+<span style="color: green">223.8</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">341.43</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">73.90</span>
+<span style="color: green">73.9</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">323.03</span>
@@ -660,19 +686,19 @@ ACC
 </tr>
 <tr>
 <td style="text-align:right;">
-<span style="color: green">387046.00</span>
+<span style="color: green">387046</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">209.54</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">8.40</span>
+<span style="color: green">8.4</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">755.30</span>
+<span style="color: green">755.3</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">548.80</span>
+<span style="color: green">548.8</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">817.74</span>
@@ -687,13 +713,13 @@ ACC
 <span style="color: green">750.43</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">227.70</span>
+<span style="color: green">227.7</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">356.59</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">63.40</span>
+<span style="color: green">63.4</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">357.38</span>
@@ -704,19 +730,19 @@ ACC
 </tr>
 <tr>
 <td style="text-align:right;">
-<span style="color: green">373095.00</span>
+<span style="color: green">373095</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">240.05</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">7.70</span>
+<span style="color: green">7.7</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">787.00</span>
+<span style="color: green">787.0</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">563.40</span>
+<span style="color: green">563.4</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">583.17</span>
@@ -731,13 +757,13 @@ ACC
 <span style="color: green">1027.38</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">230.90</span>
+<span style="color: green">230.9</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">376.69</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">62.50</span>
+<span style="color: green">62.5</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">422.07</span>
@@ -748,19 +774,19 @@ ACC
 </tr>
 <tr>
 <td style="text-align:right;">
-<span style="color: green">359647.00</span>
+<span style="color: green">359647</span>
 </td>
 <td style="text-align:right;">
 <span style="color: red">258.05</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">6.30</span>
+<span style="color: green">6.3</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">819.80</span>
+<span style="color: green">819.8</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">609.30</span>
+<span style="color: green">609.3</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">709.59</span>
@@ -775,13 +801,13 @@ ACC
 <span style="color: green">666.50</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">230.20</span>
+<span style="color: green">230.2</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">390.19</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">58.90</span>
+<span style="color: green">58.9</span>
 </td>
 <td style="text-align:right;">
 <span style="color: red">473.01</span>
@@ -793,49 +819,57 @@ ACC
 </tbody>
 </table>
 </div>
-<div id="routlier-using-routlier_mad-we-can-find-the-outliers-in-a-data-set-and-have-the-outliers-highlighted-in-red-and-the-non-outlier-values-highlighted-in-green-" class="section level4">
-<h4 class="hasAnchor">
-<a href="#routlier-using-routlier_mad-we-can-find-the-outliers-in-a-data-set-and-have-the-outliers-highlighted-in-red-and-the-non-outlier-values-highlighted-in-green-" class="anchor"></a>routlier:: Using routlier_mad() we can find the <strong>Outliers</strong> in a data set and have the <strong>Outliers</strong> highlighted in red and the non-outlier values highlighted in green.</h4>
+<div class="section level4">
+<h4 id="routlier-using-routlier_mad-we-can-find-the-outliers-in-a-dataset-and-have-the-outliers-highlighted-in-red-and-the-non-outlier-values-highlighted-in-green-">routlier:: Using routlier_mad() we can find the
+<strong>Outliers</strong> in a dataset and have the
+<strong>Outliers</strong> highlighted in red and the non-outlier values
+highlighted in green.<a class="anchor" aria-label="anchor" href="#routlier-using-routlier_mad-we-can-find-the-outliers-in-a-dataset-and-have-the-outliers-highlighted-in-red-and-the-non-outlier-values-highlighted-in-green-"></a>
+</h4>
 <div class="sourceCode" id="cb14"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="../reference/routlier_mad.html">routlier_mad</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">detroit</span>,MAD <span class="op">=</span> <span class="fl">3</span><span class="op">)</span></code></pre></div>
-<pre><code>## [1] "The MAD for column 1 is from: 329.046758 : 216.873242 and the overall MAD range is: 112.173516"
-## [1] "The MAD for column 2 is from: 12.76126 : -2.36126 and the overall MAD range is: 15.12252"
-## [1] "The MAD for column 3 is from: 713.40872 : 425.19128 and the overall MAD range is: 288.217440000001"
-## [1] "The MAD for column 4 is from: 1714.823754 : -548.483754 and the overall MAD range is: 2263.307508"
-## [1] "The MAD for column 5 is from: 2034.898942 : -801.818942 and the overall MAD range is: 2836.717884"
-## [1] "The MAD for column 6 is from: 114.0868 : 60.7132 and the overall MAD range is: 53.3736"
-## [1] "The MAD for column 7 is from: 680397.682 : 216136.318 and the overall MAD range is: 464261.364"
-## [1] "The MAD for column 8 is from: 1004.66248 : 367.73752 and the overall MAD range is: 636.924959999999"
-## [1] "The MAD for column 9 is from: 352.95816 : 22.0418400000001 and the overall MAD range is: 330.91632"
-## [1] "The MAD for column 10 is from: 6.357636 : 0.842363999999999 and the overall MAD range is: 5.515272"
-## [1] "The MAD for column 11 is from: 253.04009 : 61.3399099999999 and the overall MAD range is: 191.70018"
-## [1] "The MAD for column 12 is from: 76.824066 : -34.104066 and the overall MAD range is: 110.928132"
-## [1] "The MAD for column 13 is from: 67.016006 : 24.583994 and the overall MAD range is: 42.432012"
-## [1] "The MAD for column 14 is from: 433.60947 : 178.75053 and the overall MAD range is: 254.85894"
-## [1] "You have a total of 7 Outliers in your dataset"</code></pre>
-<pre><code>## $outliers
-## [1] 7
-## 
-## $outlier_table</code></pre>
+<code class="sourceCode R"><span><span class="fu"><a href="../reference/routlier_mad.html">routlier_mad</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">detroit</span>,MAD <span class="op">=</span> <span class="fl">3</span><span class="op">)</span></span></code></pre></div>
+<pre><code><span><span class="co">## [1] "The MAD for column 1 is from: 329.046758 : 216.873242 and the overall MAD range is: 112.173516"</span></span>
+<span><span class="co">## [1] "The MAD for column 2 is from: 12.76126 : -2.36126 and the overall MAD range is: 15.12252"</span></span>
+<span><span class="co">## [1] "The MAD for column 3 is from: 713.40872 : 425.19128 and the overall MAD range is: 288.217440000001"</span></span>
+<span><span class="co">## [1] "The MAD for column 4 is from: 1714.823754 : -548.483754 and the overall MAD range is: 2263.307508"</span></span>
+<span><span class="co">## [1] "The MAD for column 5 is from: 2034.898942 : -801.818942 and the overall MAD range is: 2836.717884"</span></span>
+<span><span class="co">## [1] "The MAD for column 6 is from: 114.0868 : 60.7132 and the overall MAD range is: 53.3736"</span></span>
+<span><span class="co">## [1] "The MAD for column 7 is from: 680397.682 : 216136.318 and the overall MAD range is: 464261.364"</span></span>
+<span><span class="co">## [1] "The MAD for column 8 is from: 1004.66248 : 367.73752 and the overall MAD range is: 636.924959999999"</span></span>
+<span><span class="co">## [1] "The MAD for column 9 is from: 352.95816 : 22.0418400000001 and the overall MAD range is: 330.91632"</span></span>
+<span><span class="co">## [1] "The MAD for column 10 is from: 6.357636 : 0.842363999999999 and the overall MAD range is: 5.515272"</span></span>
+<span><span class="co">## [1] "The MAD for column 11 is from: 253.04009 : 61.3399099999999 and the overall MAD range is: 191.70018"</span></span>
+<span><span class="co">## [1] "The MAD for column 12 is from: 76.824066 : -34.104066 and the overall MAD range is: 110.928132"</span></span>
+<span><span class="co">## [1] "The MAD for column 13 is from: 67.016006 : 24.583994 and the overall MAD range is: 42.432012"</span></span>
+<span><span class="co">## [1] "The MAD for column 14 is from: 433.60947 : 178.75053 and the overall MAD range is: 254.85894"</span></span>
+<span><span class="co">## [1] "You have a total of 7 Outliers in your dataset"</span></span></code></pre>
+<pre><code><span><span class="co">## $outliers</span></span>
+<span><span class="co">## [1] 7</span></span>
+<span><span class="co">## </span></span>
+<span><span class="co">## $outlier_table</span></span></code></pre>
 </div>
-<div id="routlier-using-routlier_quantile-we-can-find-the-outliers-in-a-data-set-and-have-the-outliers-highlighted-in-red-and-the-non-outlier-values-highlighted-in-green--we-can-look-at-either-m-mild-outlier-or-e-extreme-outliers-" class="section level4">
-<h4 class="hasAnchor">
-<a href="#routlier-using-routlier_quantile-we-can-find-the-outliers-in-a-data-set-and-have-the-outliers-highlighted-in-red-and-the-non-outlier-values-highlighted-in-green--we-can-look-at-either-m-mild-outlier-or-e-extreme-outliers-" class="anchor"></a>routlier:: Using routlier_quantile() we can find the <strong>Outliers</strong> in a data set and have the <strong>Outliers</strong> highlighted in red and the non-outlier values highlighted in green. We can look at either <strong>M</strong> mild outlier or <strong>E</strong> extreme outliers.</h4>
-<p>This approach utilizes the Tukey method by looking at the quantile ranges utilizing both the upper quartile and lowe quartile ranges.</p>
+<div class="section level4">
+<h4 id="routlier-using-routlier_quantile-we-can-find-the-outliers-in-a-dataset-and-have-the-outliers-highlighted-in-red-and-the-non-outlier-values-highlighted-in-green--we-can-look-at-either-m-mild-outlier-or-e-extreme-outliers-">routlier:: Using routlier_quantile() we can find the
+<strong>Outliers</strong> in a dataset and have the
+<strong>Outliers</strong> highlighted in red and the non-outlier values
+highlighted in green. We can look at either <strong>M</strong> mild
+outlier or <strong>E</strong> extreme outliers.<a class="anchor" aria-label="anchor" href="#routlier-using-routlier_quantile-we-can-find-the-outliers-in-a-dataset-and-have-the-outliers-highlighted-in-red-and-the-non-outlier-values-highlighted-in-green--we-can-look-at-either-m-mild-outlier-or-e-extreme-outliers-"></a>
+</h4>
+<p>This approach utilizes the Tukey method by looking at the quantile
+ranges utilizing both the upper quartile and lower quartile ranges.</p>
 <div class="sourceCode" id="cb17"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="../reference/routlier_quantile.html">routlier_quantile</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">mtcars</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">10</span>,<span class="op">]</span>,type <span class="op">=</span> <span class="fl">7</span>,outlier_type <span class="op">=</span> <span class="st">"M"</span><span class="op">)</span></code></pre></div>
-<pre><code>## [1] "The IQR for column 1 is from: 27.8875 : 13.3875 and the overall IQR range is: 14.5"
-## [1] "The IQR for column 2 is from: 8.25 : 2.25 and the overall IQR range is: 6"
-## [1] "The IQR for column 3 is from: 399.3375 : 0.437499999999943 and the overall IQR range is: 398.9"
-## [1] "The IQR for column 4 is from: 153.125 : 64.125 and the overall IQR range is: 89"
-## [1] "The IQR for column 5 is from: 5.0025 : 2.0625 and the overall IQR range is: 2.94"
-## [1] "The IQR for column 6 is from: 4.184375 : 2.199375 and the overall IQR range is: 1.985"
-## [1] "The IQR for column 7 is from: 24.12 : 12.76 and the overall IQR range is: 11.36"
-## [1] "The IQR for column 8 is from: 2.5 : -1.5 and the overall IQR range is: 4"
-## [1] "The IQR for column 9 is from: 1.875 : -1.125 and the overall IQR range is: 3"
-## [1] "The IQR for column 10 is from: 5.5 : 1.5 and the overall IQR range is: 4"
-## [1] "The IQR for column 11 is from: 8.125 : -2.875 and the overall IQR range is: 11"
-## [1] "You have a total of 3 Outliers in your dataset"</code></pre>
+<code class="sourceCode R"><span><span class="fu"><a href="../reference/routlier_quantile.html">routlier_quantile</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">mtcars</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">10</span>,<span class="op">]</span>,type <span class="op">=</span> <span class="fl">7</span>,outlier_type <span class="op">=</span> <span class="st">"M"</span><span class="op">)</span></span></code></pre></div>
+<pre><code><span><span class="co">## [1] "The IQR for column 1 is from: 27.8875 : 13.3875 and the overall IQR range is: 14.5"</span></span>
+<span><span class="co">## [1] "The IQR for column 2 is from: 8.25 : 2.25 and the overall IQR range is: 6"</span></span>
+<span><span class="co">## [1] "The IQR for column 3 is from: 399.3375 : 0.437499999999943 and the overall IQR range is: 398.9"</span></span>
+<span><span class="co">## [1] "The IQR for column 4 is from: 153.125 : 64.125 and the overall IQR range is: 89"</span></span>
+<span><span class="co">## [1] "The IQR for column 5 is from: 5.0025 : 2.0625 and the overall IQR range is: 2.94"</span></span>
+<span><span class="co">## [1] "The IQR for column 6 is from: 4.184375 : 2.199375 and the overall IQR range is: 1.985"</span></span>
+<span><span class="co">## [1] "The IQR for column 7 is from: 24.12 : 12.76 and the overall IQR range is: 11.36"</span></span>
+<span><span class="co">## [1] "The IQR for column 8 is from: 2.5 : -1.5 and the overall IQR range is: 4"</span></span>
+<span><span class="co">## [1] "The IQR for column 9 is from: 1.875 : -1.125 and the overall IQR range is: 3"</span></span>
+<span><span class="co">## [1] "The IQR for column 10 is from: 5.5 : 1.5 and the overall IQR range is: 4"</span></span>
+<span><span class="co">## [1] "The IQR for column 11 is from: 8.125 : -2.875 and the overall IQR range is: 11"</span></span>
+<span><span class="co">## [1] "You have a total of 3 Outliers in your dataset"</span></span></code></pre>
 <table class="table table table-condensed">
 <thead><tr>
 <th style="text-align:left;">
@@ -880,37 +914,37 @@ carb
 Mazda RX4
 </td>
 <td style="text-align:right;">
-<span style="color: green">21.000</span>
+<span style="color: green">21.0</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">6.000</span>
+<span style="color: green">6</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">160.000</span>
+<span style="color: green">160.0</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">110.000</span>
+<span style="color: green">110</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">3.900</span>
+<span style="color: green">3.90</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">2.620</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">16.460</span>
+<span style="color: green">16.46</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">0.000</span>
+<span style="color: green">0</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">1.000</span>
+<span style="color: green">1</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">4.000</span>
+<span style="color: green">4</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">4.000</span>
+<span style="color: green">4</span>
 </td>
 </tr>
 <tr>
@@ -918,37 +952,37 @@ Mazda RX4
 Mazda RX4 Wag
 </td>
 <td style="text-align:right;">
-<span style="color: green">21.000</span>
+<span style="color: green">21.0</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">6.000</span>
+<span style="color: green">6</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">160.000</span>
+<span style="color: green">160.0</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">110.000</span>
+<span style="color: green">110</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">3.900</span>
+<span style="color: green">3.90</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">2.875</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">17.020</span>
+<span style="color: green">17.02</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">0.000</span>
+<span style="color: green">0</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">1.000</span>
+<span style="color: green">1</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">4.000</span>
+<span style="color: green">4</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">4.000</span>
+<span style="color: green">4</span>
 </td>
 </tr>
 <tr>
@@ -956,37 +990,37 @@ Mazda RX4 Wag
 Datsun 710
 </td>
 <td style="text-align:right;">
-<span style="color: green">22.800</span>
+<span style="color: green">22.8</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">4.000</span>
+<span style="color: green">4</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">108.000</span>
+<span style="color: green">108.0</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">93.000</span>
+<span style="color: green">93</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">3.850</span>
+<span style="color: green">3.85</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">2.320</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">18.610</span>
+<span style="color: green">18.61</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">1.000</span>
+<span style="color: green">1</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">1.000</span>
+<span style="color: green">1</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">4.000</span>
+<span style="color: green">4</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">1.000</span>
+<span style="color: green">1</span>
 </td>
 </tr>
 <tr>
@@ -994,37 +1028,37 @@ Datsun 710
 Hornet 4 Drive
 </td>
 <td style="text-align:right;">
-<span style="color: green">21.400</span>
+<span style="color: green">21.4</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">6.000</span>
+<span style="color: green">6</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">258.000</span>
+<span style="color: green">258.0</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">110.000</span>
+<span style="color: green">110</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">3.080</span>
+<span style="color: green">3.08</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">3.215</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">19.440</span>
+<span style="color: green">19.44</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">1.000</span>
+<span style="color: green">1</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">0.000</span>
+<span style="color: green">0</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">3.000</span>
+<span style="color: green">3</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">1.000</span>
+<span style="color: green">1</span>
 </td>
 </tr>
 <tr>
@@ -1032,37 +1066,37 @@ Hornet 4 Drive
 Hornet Sportabout
 </td>
 <td style="text-align:right;">
-<span style="color: green">18.700</span>
+<span style="color: green">18.7</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">8.000</span>
+<span style="color: green">8</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">360.000</span>
+<span style="color: green">360.0</span>
 </td>
 <td style="text-align:right;">
-<span style="color: red">175.000</span>
+<span style="color: red">175</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">3.150</span>
+<span style="color: green">3.15</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">3.440</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">17.020</span>
+<span style="color: green">17.02</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">0.000</span>
+<span style="color: green">0</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">0.000</span>
+<span style="color: green">0</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">3.000</span>
+<span style="color: green">3</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">2.000</span>
+<span style="color: green">2</span>
 </td>
 </tr>
 <tr>
@@ -1070,37 +1104,37 @@ Hornet Sportabout
 Valiant
 </td>
 <td style="text-align:right;">
-<span style="color: green">18.100</span>
+<span style="color: green">18.1</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">6.000</span>
+<span style="color: green">6</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">225.000</span>
+<span style="color: green">225.0</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">105.000</span>
+<span style="color: green">105</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">2.760</span>
+<span style="color: green">2.76</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">3.460</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">20.220</span>
+<span style="color: green">20.22</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">1.000</span>
+<span style="color: green">1</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">0.000</span>
+<span style="color: green">0</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">3.000</span>
+<span style="color: green">3</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">1.000</span>
+<span style="color: green">1</span>
 </td>
 </tr>
 <tr>
@@ -1108,37 +1142,37 @@ Valiant
 Duster 360
 </td>
 <td style="text-align:right;">
-<span style="color: green">14.300</span>
+<span style="color: green">14.3</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">8.000</span>
+<span style="color: green">8</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">360.000</span>
+<span style="color: green">360.0</span>
 </td>
 <td style="text-align:right;">
-<span style="color: red">245.000</span>
+<span style="color: red">245</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">3.210</span>
+<span style="color: green">3.21</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">3.570</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">15.840</span>
+<span style="color: green">15.84</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">0.000</span>
+<span style="color: green">0</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">0.000</span>
+<span style="color: green">0</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">3.000</span>
+<span style="color: green">3</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">4.000</span>
+<span style="color: green">4</span>
 </td>
 </tr>
 <tr>
@@ -1146,37 +1180,37 @@ Duster 360
 Merc 240D
 </td>
 <td style="text-align:right;">
-<span style="color: green">24.400</span>
+<span style="color: green">24.4</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">4.000</span>
+<span style="color: green">4</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">146.700</span>
+<span style="color: green">146.7</span>
 </td>
 <td style="text-align:right;">
-<span style="color: red">62.000</span>
+<span style="color: red">62</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">3.690</span>
+<span style="color: green">3.69</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">3.190</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">20.000</span>
+<span style="color: green">20.00</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">1.000</span>
+<span style="color: green">1</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">0.000</span>
+<span style="color: green">0</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">4.000</span>
+<span style="color: green">4</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">2.000</span>
+<span style="color: green">2</span>
 </td>
 </tr>
 <tr>
@@ -1184,37 +1218,37 @@ Merc 240D
 Merc 230
 </td>
 <td style="text-align:right;">
-<span style="color: green">22.800</span>
+<span style="color: green">22.8</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">4.000</span>
+<span style="color: green">4</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">140.800</span>
+<span style="color: green">140.8</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">95.000</span>
+<span style="color: green">95</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">3.920</span>
+<span style="color: green">3.92</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">3.150</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">22.900</span>
+<span style="color: green">22.90</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">1.000</span>
+<span style="color: green">1</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">0.000</span>
+<span style="color: green">0</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">4.000</span>
+<span style="color: green">4</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">2.000</span>
+<span style="color: green">2</span>
 </td>
 </tr>
 <tr>
@@ -1222,37 +1256,37 @@ Merc 230
 Merc 280
 </td>
 <td style="text-align:right;">
-<span style="color: green">19.200</span>
+<span style="color: green">19.2</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">6.000</span>
+<span style="color: green">6</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">167.600</span>
+<span style="color: green">167.6</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">123.000</span>
+<span style="color: green">123</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">3.920</span>
+<span style="color: green">3.92</span>
 </td>
 <td style="text-align:right;">
 <span style="color: green">3.440</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">18.300</span>
+<span style="color: green">18.30</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">1.000</span>
+<span style="color: green">1</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">0.000</span>
+<span style="color: green">0</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">4.000</span>
+<span style="color: green">4</span>
 </td>
 <td style="text-align:right;">
-<span style="color: green">4.000</span>
+<span style="color: green">4</span>
 </td>
 </tr>
 </tbody>
@@ -1260,21 +1294,33 @@ Merc 280
 <center>
 </center>
 </div>
-<div id="preloaded-datasets" class="section level3">
-<h3 class="hasAnchor">
-<a href="#preloaded-datasets" class="anchor"></a>Preloaded Datasets:</h3>
+<div class="section level3">
+<h3 id="preloaded-datasets">Preloaded datasets:<a class="anchor" aria-label="anchor" href="#preloaded-datasets"></a>
+</h3>
 
 </div>
-<div id="homicide-in-detroit-the-role-of-firearms-" class="section level3">
-<h3 class="hasAnchor">
-<a href="#homicide-in-detroit-the-role-of-firearms-" class="anchor"></a>Homicide in Detroit: The role of Firearms.</h3>
+<div class="section level3">
+<h3 id="homicide-in-detroit-the-role-of-firearms-">Homicide in Detroit: The role of Firearms.<a class="anchor" aria-label="anchor" href="#homicide-in-detroit-the-role-of-firearms-"></a>
+</h3>
 <blockquote>
-<p>This is the data set called `DETROIT’ in the book ‘Subset selection in regression’ by Alan J. Miller published in the Chapman &amp; Hall series of monographs on Statistics &amp; Applied Probability, no. 40. The data are unusual in that a subset of three predictors can be found which gives a very much better fit to the data than the subsets found from the Efroymson stepwise algorithm, or from forward selection or backward elimination. The original data were given in appendix A of ``Regression analysis and its application: A data-oriented approach’ by Gunst &amp; Mason, Statistics textbooks and monographs no. 24, Marcel Dekker. It has caused problems because some copies of the Gunst &amp; Mason book do not contain all of the data, and because Miller does not say which variables he used as predictors and which is the dependent variable. (HOM was the dependent variable, and the predictors were FTP … WE)</p>
+<p>This is the dataset called `DETROIT’ in the book ‘Subset selection in
+regression’ by Alan J. Miller published in the Chapman &amp; Hall series
+of monographs on Statistics &amp; Applied Probability, no. 40. The data
+are unusual in that a subset of three predictors can be found which
+gives a very much better fit to the data than the subsets found from the
+Efroymson stepwise algorithm, or from forward selection or backward
+elimination. The original data were given in appendix A of ``Regression
+analysis and its application: A data-oriented approach’ by Gunst &amp;
+Mason, Statistics textbooks and monographs no. 24, Marcel Dekker. It has
+caused problems because some copies of the Gunst &amp; Mason book do not
+contain all of the data, and because Miller does not say which variables
+he used as predictors and which is the dependent variable. (HOM was the
+dependent variable, and the predictors were FTP … WE)</p>
 </blockquote>
 <p>A data frame with 13 rows and 14 variables:</p>
 <blockquote>
 <ul>
-<li>Detroit Dataset:</li>
+<li>Detroit dataset:</li>
 <li>FTP: Full-time police per 100,000 population</li>
 <li>UEMP: UEMP - % unemployed in the population</li>
 <li>MAN: MAN - number of manufacturing workers in thousands</li>
@@ -1292,59 +1338,96 @@ Merc 280
 </ul>
 </blockquote>
 <center>
-<a href="http://lib.stat.cmu.edu/datasets/detroit">Detroit Dataset</a>
+<a href="https://lib.stat.cmu.edu/datasets/detroit" class="external-link">Detroit dataset</a>
 </center>
 </div>
-<div id="student-performance-dataset" class="section level3">
-<h3 class="hasAnchor">
-<a href="#student-performance-dataset" class="anchor"></a>Student Performance Dataset:</h3>
+<div class="section level3">
+<h3 id="student-performance-dataset">Student Performance dataset:<a class="anchor" aria-label="anchor" href="#student-performance-dataset"></a>
+</h3>
 <ul>
-<li>Student Performance Data Set</li>
+<li>Student Performance dataset</li>
 </ul>
 <blockquote>
-<p>This data approach student achievement in secondary education of two Portuguese schools. The data attributes include student grades, demographic, social and school related features) and it was collected by using school reports and questionnaires. Two datasets are provided regarding the performance in two distinct subjects: Mathematics (mat) and Portuguese language (por). In [Cortez and Silva, 2008], the two datasets were modeled under binary/five-level classification and regression tasks. Important note: the target attribute G3 has a strong correlation with attributes G2 and G1. This occurs because G3 is the final year grade (issued at the 3rd period), while G1 and G2 correspond to the 1st and 2nd period grades. It is more difficult to predict G3 without G2 and G1, but such prediction is much more useful (see paper source for more details)</p>
+<p>This data approach student achievement in secondary education of two
+Portuguese schools. The data attributes include student grades,
+demographic, social and school related features) and it was collected by
+using school reports and questionnaires. Two datasets are provided
+regarding the performance in two distinct subjects: Mathematics (mat)
+and Portuguese language (por). In [Cortez and Silva, 2008], the two
+datasets were modeled under binary/five-level classification and
+regression tasks. Important note: the target attribute G3 has a strong
+correlation with attributes G2 and G1. This occurs because G3 is the
+final year grade (issued at the 3rd period), while G1 and G2 correspond
+to the 1st and 2nd period grades. It is more difficult to predict G3
+without G2 and G1, but such prediction is much more useful (see paper
+source for more details)</p>
 </blockquote>
 <ul>
 <li><p>A data frame with 392 rows and 33 variables:</p></li>
-<li><p>Attributes for both student-mat.csv (Math course) and student-por.csv (Portuguese language course) datasets:</p></li>
+<li><p>Attributes for both student-mat.csv (Math course) and
+student-por.csv (Portuguese language course) datasets:</p></li>
 </ul>
 <blockquote>
 <ul>
-<li>school - student’s school (binary: ‘GP’ - Gabriel Pereira or ‘MS’ - Mousinho da Silveira)</li>
+<li>school - student’s school (binary: ‘GP’ - Gabriel Pereira or ‘MS’ -
+Mousinho da Silveira)</li>
 <li>sex - student’s sex (binary: ‘F’ - female or ‘M’ - male)</li>
 <li>age - student’s age (numeric: from 15 to 22)</li>
-<li>address - student’s home address type (binary: ‘U’ - urban or ‘R’ - rural)</li>
-<li>famsize - family size (binary: ‘LE3’ - less or equal to 3 or ‘GT3’ - greater than 3)</li>
-<li>Pstatus - parent’s cohabitation status (binary: ‘T’ - living together or ‘A’ - apart)</li>
-<li>Medu - mother’s education (numeric: 0 - none, 1 - primary education (4th grade), 2 = 5th to 9th grade, 3 = secondary education or 4 = higher education)</li>
-<li>Fedu - father’s education (numeric: 0 - none, 1 - primary education (4th grade), 2 = 5th to 9th grade, 3 = secondary education or 4 = higher education)</li>
-<li>Mjob - mother’s job (nominal: ‘teacher’, ‘health’ care related, civil ‘services’ (e.g. administrative or police), ‘at_home’ or ‘other’)</li>
-<li>Fjob - father’s job (nominal: ‘teacher’, ‘health’ care related, civil ‘services’ (e.g. administrative or police), ‘at_home’ or ‘other’)</li>
-<li>reason - reason to choose this school (nominal: close to ‘home’, school ‘reputation’, ‘course’ preference or ‘other’)</li>
-<li>guardian - student’s guardian (nominal: ‘mother’, ‘father’ or ‘other’)</li>
-<li>traveltime - home to school travel time (numeric: 1 - &lt;15 min., 2 - 15 to 30 min., 3 - 30 min. to 1 hour, or 4 - &gt;1 hour)</li>
-<li>studytime - weekly study time (numeric: 1 - &lt;2 hours, 2 - 2 to 5 hours, 3 - 5 to 10 hours, or 4 - &gt;10 hours)</li>
-<li>failures - number of past class failures (numeric: n if 1&lt;=n&lt;3, else 4)</li>
+<li>address - student’s home address type (binary: ‘U’ - urban or ‘R’ -
+rural)</li>
+<li>famsize - family size (binary: ‘LE3’ - less or equal to 3 or ‘GT3’ -
+greater than 3)</li>
+<li>Pstatus - parent’s cohabitation status (binary: ‘T’ - living
+together or ‘A’ - apart)</li>
+<li>Medu - mother’s education (numeric: 0 - none, 1 - primary education
+(4th grade), 2 = 5th to 9th grade, 3 = secondary education or 4 = higher
+education)</li>
+<li>Fedu - father’s education (numeric: 0 - none, 1 - primary education
+(4th grade), 2 = 5th to 9th grade, 3 = secondary education or 4 = higher
+education)</li>
+<li>Mjob - mother’s job (nominal: ‘teacher’, ‘health’ care related,
+civil ‘services’ (e.g. administrative or police), ‘at_home’ or
+‘other’)</li>
+<li>Fjob - father’s job (nominal: ‘teacher’, ‘health’ care related,
+civil ‘services’ (e.g. administrative or police), ‘at_home’ or
+‘other’)</li>
+<li>reason - reason to choose this school (nominal: close to ‘home’,
+school ‘reputation’, ‘course’ preference or ‘other’)</li>
+<li>guardian - student’s guardian (nominal: ‘mother’, ‘father’ or
+‘other’)</li>
+<li>traveltime - home to school travel time (numeric: 1 - &lt;15 min., 2
+- 15 to 30 min., 3 - 30 min. to 1 hour, or 4 - &gt;1 hour)</li>
+<li>studytime - weekly study time (numeric: 1 - &lt;2 hours, 2 - 2 to 5
+hours, 3 - 5 to 10 hours, or 4 - &gt;10 hours)</li>
+<li>failures - number of past class failures (numeric: n if
+1&lt;=n&lt;3, else 4)</li>
 <li>schoolsup - extra educational support (binary: yes or no)</li>
 <li>famsup - family educational support (binary: yes or no)</li>
-<li>paid - extra paid classes within the course subject (Math or Portuguese) (binary: yes or no)</li>
+<li>paid - extra paid classes within the course subject (Math or
+Portuguese) (binary: yes or no)</li>
 <li>activities - extra-curricular activities (binary: yes or no)</li>
 <li>nursery - attended nursery school (binary: yes or no)</li>
 <li>higher - wants to take higher education (binary: yes or no)</li>
 <li>internet - Internet access at home (binary: yes or no)</li>
 <li>romantic - with a romantic relationship (binary: yes or no)</li>
-<li>famrel - quality of family relationships (numeric: from 1 - very bad to 5 - excellent)</li>
-<li>freetime - free time after school (numeric: from 1 - very low to 5 - very high)</li>
-<li>goout - going out with friends (numeric: from 1 - very low to 5 - very high)</li>
-<li>Dalc - workday alcohol consumption (numeric: from 1 - very low to 5 - very high)</li>
-<li>Walc - weekend alcohol consumption (numeric: from 1 - very low to 5 - very high)</li>
-<li>health - current health status (numeric: from 1 - very bad to 5 - very good)</li>
+<li>famrel - quality of family relationships (numeric: from 1 - very bad
+to 5 - excellent)</li>
+<li>freetime - free time after school (numeric: from 1 - very low to 5 -
+very high)</li>
+<li>goout - going out with friends (numeric: from 1 - very low to 5 -
+very high)</li>
+<li>Dalc - workday alcohol consumption (numeric: from 1 - very low to 5
+- very high)</li>
+<li>Walc - weekend alcohol consumption (numeric: from 1 - very low to 5
+- very high)</li>
+<li>health - current health status (numeric: from 1 - very bad to 5 -
+very good)</li>
 <li>absences - number of school absences (numeric: from 0 to 93)</li>
 </ul>
 </blockquote>
-
 <ul>
-<li>These grades are related with the course subject, Math or Portuguese:</li>
+<li>These grades are related with the course subject, Math or
+Portuguese:</li>
 </ul>
 <blockquote>
 <ul>
@@ -1354,43 +1437,47 @@ Merc 280
 </ul>
 </blockquote>
 <center>
-<a href="http://archive.ics.uci.edu/ml/datasets/Student+Performance">Student Dataset</a>
+<a href="https://archive.ics.uci.edu/dataset/320/student+performance" class="external-link">Student
+dataset</a>
 </center>
 <hr>
 <center>
 <strong>References:</strong>
 </center>
-<p>Citation Request: Please include this citation if you plan to use this database: P. Cortez and A. Silva. Using Data Mining to Predict Secondary School Student Performance. In A. Brito and J. Teixeira Eds., Proceedings of 5th FUture BUsiness TEChnology Conference (FUBUTEC 2008) pp. 5-12, Porto, Portugal, April, 2008, EUROSIS, ISBN 978-9077381-39-7. Available at: <a href="http://www3.dsi.uminho.pt/pcortez/student.pdf"></a></p>
+<p>Citation Request: Please include this citation if you plan to use
+this database: P. Cortez and A. Silva. Using Data Mining to Predict
+Secondary School Student Performance. In A. Brito and J. Teixeira Eds.,
+Proceedings of 5th Future Business Technology Conference (FUBUTEC 2008)
+pp. 5-12, Porto, Portugal, April, 2008, EUROSIS, ISBN 978-9077381-39-7.
+Available at: <a href="http://www3.dsi.uminho.pt/pcortez/student.pdf" class="external-link"></a></p>
 <p>Relevant Papers:</p>
-<p>P. Cortez and A. Silva. Using Data Mining to Predict Secondary School Student Performance. In A. Brito and J. Teixeira Eds., Proceedings of 5th FUture BUsiness TEChnology Conference (FUBUTEC 2008) pp. 5-12, Porto, Portugal, April, 2008, EUROSIS, ISBN 978-9077381-39-7. Available at: <a href="http://www3.dsi.uminho.pt/pcortez/student.pdf"></a></p>
-<p><a href="http://www3.dsi.uminho.pt/pcortez/Home.html%7D"></a> }</p>
+<p>P. Cortez and A. Silva. Using Data Mining to Predict Secondary School
+Student Performance. In A. Brito and J. Teixeira Eds., Proceedings of
+5th Future Business Technology Conference (FUBUTEC 2008) pp. 5-12,
+Porto, Portugal, April, 2008, EUROSIS, ISBN 978-9077381-39-7. Available
+at: <a href="http://www3.dsi.uminho.pt/pcortez/student.pdf" class="external-link uri">http://www3.dsi.uminho.pt/pcortez/student.pdf</a> Author: <a href="http://www3.dsi.uminho.pt/pcortez/Home.html" class="external-link uri">http://www3.dsi.uminho.pt/pcortez/Home.html</a></p>
 </div>
 </div>
-  </div>
-
-  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
-
-        <nav id="toc" data-toggle="toc"><h2 data-toc-skip>Contents</h2>
-    </nav>
-</div>
-
+  </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
+    </nav></aside>
 </div>
 
 
 
-      <footer><div class="copyright">
-  <p>Developed by Ben Gonzalez.</p>
+    <footer><div class="pkgdown-footer-left">
+  <p>Developed by <a href="https://rgonzo.com" class="external-link">Ben Gonzalez</a>.</p>
 </div>
 
-<div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
+<div class="pkgdown-footer-right">
+  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.9.</p>
 </div>
 
-      </footer>
+    </footer>
 </div>
 
   
 
+  
 
   </body>
 </html>

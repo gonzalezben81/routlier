@@ -1,16 +1,6 @@
-# routlier_mad
-#
-# You can learn more about package authoring with RStudio at:
-#
-#   http://r-pkgs.had.co.nz/
-#
-# Some useful keyboard shortcuts for package authoring:
-#
-#   Build and Reload Package:  'Ctrl + Shift + B'
-#   Check Package:             'Ctrl + Shift + E'
-#   Test Package:   'Ctrl + Shift + T'
-#' Routlier: Outlier in DT Table
+#' @title Returns an outlier data frame in a DT table utilizing the mean absolute deviation (MAD) method
 #'
+#' @description
 #' The Outlier(s) wil be highlighted red in the table and the other values will be highlighted greeen.
 #'
 #' \if{html}{\figure{routlier_mad.png}{options: width=100\% alt="R logo"}}

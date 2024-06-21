@@ -30,7 +30,7 @@ A data frame with 13 rows and 14 variables:
 detroit
 }
 \description{
-This is the data set called `DETROIT' in the book `Subset selection in
+This is the dataset called `DETROIT' in the book `Subset selection in
 regression' by Alan J. Miller published in the Chapman & Hall series of
 monographs on Statistics & Applied Probability, no. 40.   The data are
 unusual in that a subset of three predictors can be found which gives a

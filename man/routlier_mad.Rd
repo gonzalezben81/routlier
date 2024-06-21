@@ -2,7 +2,7 @@
 % Please edit documentation in R/routlier_mad.R
 \name{routlier_mad}
 \alias{routlier_mad}
-\title{routlier_mad}
+\title{Returns an outlier data frame in a DT table utilizing the mean absolute deviation (MAD) method}
 \usage{
 routlier_mad(data,MAD)
 }
@@ -16,9 +16,6 @@ Returns a numeric dataset from the original dataset and the outliers are highlig
 number of outliers are returned as a list object.
 }
 \description{
-Routlier: Outlier in DT Table
-}
-\details{
 The Outlier(s) wil be highlighted red in the table and the other values will be highlighted greeen.
 
 \if{html}{\figure{routlier_mad.png}{options: width=100\% alt="R logo"}}

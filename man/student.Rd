@@ -3,7 +3,7 @@
 \docType{data}
 \name{student}
 \alias{student}
-\title{Student Performance Data Set .}
+\title{Student Performance dataset .}
 \format{
 A data frame with 392 rows and 33 variables:
 \itemize{

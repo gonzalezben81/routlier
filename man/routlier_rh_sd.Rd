@@ -2,7 +2,7 @@
 % Please edit documentation in R/routlier_rh_sd.R
 \name{routlier_rh_sd}
 \alias{routlier_rh_sd}
-\title{routlier_rh_sd}
+\title{Outlier detection that returns an Rhandsontable data frame}
 \usage{
 routlier_rh_sd(data, sd)
 }
@@ -15,9 +15,6 @@ routlier_rh_sd(data, sd)
 Return's an outlier dataset from the original dataset in a rhandonstable. The user must specify the standard deviation to determine the outlier.
 }
 \description{
-Routlier: Outlier detection that returns an Rhandsontable
-}
-\details{
 The outlier will highlighted in green and the word 'Outlier' will replace the value in the cell.
 
 \if{html}{\figure{routlier_rh.png}{options: width=40\% alt="R logo"}}

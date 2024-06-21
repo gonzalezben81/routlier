@@ -58,7 +58,7 @@ routlier_simple(data = student,sd = 2)
 
 ```
 
-#### routlier:: Using routlier_dt_sd() we can find the **Outliers** in a data set and have them highlighted with a green background to make them easier to find. Here we have an interactive DT::table that gets returned. This allows us to filter and sort out data much more easily.
+#### routlier:: Using routlier_dt_sd() we can find the **Outliers** in a dataset and have them highlighted with a green background to make them easier to find. Here we have an interactive DT::table that gets returned. This allows us to filter and sort out data much more easily.
 
 ```{r}
 
@@ -66,7 +66,7 @@ routlier_dt_sd(data = detroit,sd = 1)
 ```
 
 
-#### routlier:: Using routlier_rh_sd() we can find the **Outliers** in a data set and have them highlighted with a green background to make them easier to find.
+#### routlier:: Using routlier_rh_sd() we can find the **Outliers** in a dataset and have them highlighted with a green background to make them easier to find.
 
 ```{r}
 
@@ -75,7 +75,7 @@ routlier_rh_sd(data = detroit,sd = 1)
 
 
 
-#### routlier:: Using routlier_formattable() we can find the **Outliers** in a data set and have the **Outliers** highlighted in red and the non-outlier values highlighted in green.
+#### routlier:: Using routlier_formattable() we can find the **Outliers** in a dataset and have the **Outliers** highlighted in red and the non-outlier values highlighted in green.
 
 ```{r}
 
@@ -83,7 +83,7 @@ routlier_formattable(data = detroit,sd = 2)
 ```
 
 
-#### routlier:: Using routlier_mad() we can find the **Outliers** in a data set and have the **Outliers** highlighted in red and the non-outlier values highlighted in green.
+#### routlier:: Using routlier_mad() we can find the **Outliers** in a dataset and have the **Outliers** highlighted in red and the non-outlier values highlighted in green.
 
 ```{r}
 
@@ -91,9 +91,9 @@ routlier_mad(data = detroit,MAD = 3)
 ```
 
 
-#### routlier:: Using routlier_quantile() we can find the **Outliers** in a data set and have the **Outliers** highlighted in red and the non-outlier values highlighted in green. We can look at either **M** mild outlier or **E** extreme outliers. 
+#### routlier:: Using routlier_quantile() we can find the **Outliers** in a dataset and have the **Outliers** highlighted in red and the non-outlier values highlighted in green. We can look at either **M** mild outlier or **E** extreme outliers. 
 
-This approach utilizes the Tukey method by looking at the quantile ranges utilizing both the upper quartile and lowe quartile ranges. 
+This approach utilizes the Tukey method by looking at the quantile ranges utilizing both the upper quartile and lower quartile ranges. 
 
 ```{r}
 routlier_quantile(data = mtcars[1:10,],type = 7,outlier_type = "M")
@@ -101,12 +101,12 @@ routlier_quantile(data = mtcars[1:10,],type = 7,outlier_type = "M")
 
 
 <center>
-### Preloaded Datasets:
+### Preloaded datasets:
 </center>
 
 ### Homicide in Detroit: The role of Firearms.
 
->This is the data set called `DETROIT' in the book 'Subset selection in
+>This is the dataset called `DETROIT' in the book 'Subset selection in
 regression' by Alan J. Miller published in the Chapman & Hall series of
 monographs on Statistics & Applied Probability, no. 40.   The data are
 unusual in that a subset of three predictors can be found which gives a
@@ -122,7 +122,7 @@ predictors were FTP ... WE)
 
 A data frame with 13 rows and 14 variables:
 
->* Detroit Dataset:
+>* Detroit dataset:
   + FTP: Full-time police per 100,000 population
   + UEMP: UEMP - \% unemployed in the population
   + MAN: MAN - number of manufacturing workers in thousands
@@ -138,12 +138,12 @@ A data frame with 13 rows and 14 variables:
   + ACC: ACC - Death rate in accidents per 100,000 population
   + ASR: ASR - Number of assaults per 100,000 population
 
-<center>[Detroit Dataset](http://lib.stat.cmu.edu/datasets/detroit)</center>
+<center>[Detroit dataset](https://lib.stat.cmu.edu/datasets/detroit)</center>
 
-### Student Performance Dataset:
+### Student Performance dataset:
 
 
-* Student Performance Data Set
+* Student Performance dataset
 
 >This data approach student achievement in secondary education of two Portuguese schools.
 The data attributes include student grades, demographic, social and school related features) and it was collected by using school reports and questionnaires.
@@ -195,7 +195,7 @@ while G1 and G2 correspond to the 1st and 2nd period grades. It is more difficul
  + G3 - final grade (numeric: from 0 to 20, output target)
 
 
-<center>[Student Dataset](http://archive.ics.uci.edu/ml/datasets/Student+Performance)</center>
+<center>[Student dataset](https://archive.ics.uci.edu/dataset/320/student+performance)</center>
 
 
 <hr>
@@ -204,15 +204,12 @@ while G1 and G2 correspond to the 1st and 2nd period grades. It is more difficul
 
 Citation Request:
 Please include this citation if you plan to use this database:
-P. Cortez and A. Silva. Using Data Mining to Predict Secondary School Student Performance. In A. Brito and J. Teixeira Eds., Proceedings of 5th FUture BUsiness TEChnology Conference (FUBUTEC 2008) pp. 5-12, Porto, Portugal, April, 2008, EUROSIS, ISBN 978-9077381-39-7.\cr
+P. Cortez and A. Silva. Using Data Mining to Predict Secondary School Student Performance. In A. Brito and J. Teixeira Eds., Proceedings of 5th Future Business Technology Conference (FUBUTEC 2008) pp. 5-12, Porto, Portugal, April, 2008, EUROSIS, ISBN 978-9077381-39-7.\cr
 Available at: [](http://www3.dsi.uminho.pt/pcortez/student.pdf)
 
 Relevant Papers:
 
-P. Cortez and A. Silva. Using Data Mining to Predict Secondary School Student Performance. In A. Brito and J. Teixeira Eds., Proceedings of 5th FUture BUsiness TEChnology Conference (FUBUTEC 2008) pp. 5-12, Porto, Portugal, April, 2008, EUROSIS, ISBN 978-9077381-39-7.
-Available at: [](http://www3.dsi.uminho.pt/pcortez/student.pdf)
-
-[](http://www3.dsi.uminho.pt/pcortez/Home.html})
-}
+P. Cortez and A. Silva. Using Data Mining to Predict Secondary School Student Performance. In A. Brito and J. Teixeira Eds., Proceedings of 5th Future Business Technology Conference (FUBUTEC 2008) pp. 5-12, Porto, Portugal, April, 2008, EUROSIS, ISBN 978-9077381-39-7.
+Available at: http://www3.dsi.uminho.pt/pcortez/student.pdf Author: http://www3.dsi.uminho.pt/pcortez/Home.html
 
 

@@ -1,0 +1,61 @@
+url: https://gonzalezben81.github.io/routlier/
+home:
+  title: Identify outliers in a dataset
+authors:
+  Ben Gonzalez:
+    href: https://rgonzo.com
+template:
+  bootstrap: 5
+  light-switch: true
+  bslib:
+    primary: "#0054AD"
+    border-radius: 0.5rem
+    btn-border-radius: 0.25rem
+    danger: "#A6081A"
+  includes:
+    in_header: |
+      <script defer data-domain="pkgdown.r-lib.org,all.tidyverse.org" src="https://plausible.io/js/plausible.js"></script>
+      <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-VRFTY69MGY"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-VRFTY69MGY');
+      </script>
+
+reference:
+- title: routlier
+  desc: Detecting outliers in a dataset
+  contents:
+  - routlier_simple
+- title: routlier DT table output
+  desc: Returns a DT table
+  contents:
+  - matches("dt")
+- title: routlier rhandsontable output
+  desc: Returns an rhandsontable table
+  contents:
+  - matches("rh")
+- title: routlier tukey
+  desc: Utilizes the tukey method for detecting outliers
+  contents:
+  - routlier_tukey
+- title: routlier MAD
+  desc: Utilizes the mean absolute deviation method for detecting outliers
+  contents:
+  - routlier_mad
+- title: routlier quantile
+  desc: Utilizes the quantile method for detecting outliers
+  contents:
+  - routlier_quantile
+- title: routlier formattable
+  desc: Returns an formattable table
+  contents:
+  - routlier_formattable
+- title: datasets
+  desc: datasets included with routlier
+  contents:
+  - detroit
+  - student

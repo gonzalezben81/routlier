@@ -1,15 +1,20 @@
 Package: routlier
 Type: Package
-Title: Highlights Outliers in a Dataset
+Title: Highlights outliers in a dataset
 Version: 0.1.2
-Author: Ben Gonzalez
-Maintainer: Ben Gonzalez <gonzalezben81@outlook.com>
+Authors@R: c(
+    person("Ben", "Gonzalez", , "gonzalezben393@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0008-6307-5161")))
+Maintainer: Ben Gonzalez<gonzalezben393@gmail.com>
 Description: Allows an individual to highlight outliers in a dataset. The outliers are highlighted in green and replaced with the word outlier. This allows an individual to easily identify an outlier and continue or correct the problem. The outlier that is detected is 3 standard deviations from the mean of the data that is being utilized.
-License: GPL 
-Depends: R (>= 3.1.0)
+URL: https://github.com/gonzalezben81/routlier
+BugReports: https://github.com/gonzalezben81/routlier/issues
+License: GPL-3
+Depends: R (>= 3.5.0)
 Encoding: UTF-8
 LazyData: true
-Imports: rhandsontable, dplyr, DT, formattable
+Imports: rhandsontable, dplyr, DT, formattable, qpdf
+SystemRequirements: qpdf (for optimizing PDF files)
 Suggests: knitr, rmarkdown
 VignetteBuilder: knitr
-RoxygenNote: 7.1.1
+RoxygenNote: 7.3.1

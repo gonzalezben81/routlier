@@ -9,8 +9,9 @@
 #   Build and Reload Package:  'Ctrl + Shift + B'
 #   Check Package:             'Ctrl + Shift + E'
 #   Test Package:   'Ctrl + Shift + T'
-#' Routlier: Outlier in DT Table
+#' @title Outlier(s) returned in an formattable table
 #'
+#' @description
 #' The outlier will be highlighted in green and the word 'Outlier' will replace the value in the cell.
 #'
 #' \if{html}{\figure{routlier_formattable_two.png}{options: width=100\% alt="R logo"}}

@@ -2,7 +2,7 @@
 % Please edit documentation in R/routlier_quantile.R
 \name{routlier_quantile}
 \alias{routlier_quantile}
-\title{routlier_quantile}
+\title{Returns a formattable data frame that highlights the outliers utilizing the quantile method.}
 \usage{
 routlier_quantile(data,type,outlier_type)
 }
@@ -17,9 +17,6 @@ routlier_quantile(data,type,outlier_type)
 Return's an outlier dataset from the original dataset in a formattable table. The data returned is currently the numeric data only from the dataset.
 }
 \description{
-Routlier: Formattable data frame that highlights the outliers utilizing the quantile methdod:
-}
-\details{
 The word 'Outlier' will replace the value that is an outlier in the respective cell.
 
 \if{html}{\figure{routlier_quantile_detroit.png}{options: width=60\% alt="R logo"}}

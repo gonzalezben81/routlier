@@ -2,7 +2,7 @@
 % Please edit documentation in R/routlie_rh.R
 \name{routlier_rh}
 \alias{routlier_rh}
-\title{routlier_rh}
+\title{Outlier in Rhandsontable}
 \usage{
 routlier_rh(data)
 }
@@ -13,9 +13,6 @@ routlier_rh(data)
 Return's an outlier dataset from the original dataset in an rhandonstable.
 }
 \description{
-Routlier: Outlier in Rhandsontable
-}
-\details{
 The outlier will highlighted in green and the word 'Outlier' will replace the value in the cell.
 
 \if{html}{\figure{routlier_rh.png}{options: width=40\% alt="R logo"}}

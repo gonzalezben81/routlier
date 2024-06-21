@@ -1,17 +1,7 @@
-# routlier_dt_sd
-#
-# You can learn more about package authoring with RStudio at:
-#
-#   http://r-pkgs.had.co.nz/
-#
-# Some useful keyboard shortcuts for package authoring:
-#
-#   Build and Reload Package:  'Ctrl + Shift + B'
-#   Check Package:             'Ctrl + Shift + E'
-#   Test Package:   'Ctrl + Shift + T'
-#' Routlier: Outlier in DT Table
+#' @title Returns outlier(s) in a DT table where the users specifies the standard deviation
 #'
-#' The outlier will highlighted in green and the word 'Outlier' will replace the value in the cell.
+#' @description
+#'  The outlier will highlighted in green and the word 'Outlier' will replace the value in the cell.
 #'
 #' \if{html}{\figure{routlier.png}{options: width=100\% alt="R logo"}}
 #' \if{latex}{\figure{routlier.png}{options: width=0.5in}}

@@ -2,7 +2,7 @@
 % Please edit documentation in R/routlier_dt_sd.R
 \name{routlier_dt_sd}
 \alias{routlier_dt_sd}
-\title{routlier_dt_sd}
+\title{Returns outlier(s) in a DT table where the users specifies the standard deviation}
 \usage{
 routlier_dt_sd(data, sd)
 }
@@ -15,9 +15,6 @@ routlier_dt_sd(data, sd)
 Returns an outlier dataset from the original dataset in a DT table. The user must specify the standard deviation to determine the outlier.
 }
 \description{
-Routlier: Outlier in DT Table
-}
-\details{
 The outlier will highlighted in green and the word 'Outlier' will replace the value in the cell.
 
 \if{html}{\figure{routlier.png}{options: width=100\% alt="R logo"}}

@@ -9,8 +9,9 @@
 #   Build and Reload Package:  'Ctrl + Shift + B'
 #   Check Package:             'Ctrl + Shift + E'
 #   Test Package:              'Ctrl + Shift + T'
-#' Routlier: Formattable data frame that highlights the outliers utilizing the quantile methdod:
+#' @title Returns a formattable data frame that highlights the outliers utilizing the quantile method.
 #'
+#' @description
 #' The word 'Outlier' will replace the value that is an outlier in the respective cell.
 #'
 #' \if{html}{\figure{routlier_quantile_detroit.png}{options: width=60\% alt="R logo"}}

@@ -2,7 +2,7 @@
 % Please edit documentation in R/routlier_formattable.R
 \name{routlier_formattable}
 \alias{routlier_formattable}
-\title{routlier_formattable}
+\title{Outlier(s) returned in an formattable table}
 \usage{
 routlier_formattable(data,sd)
 }
@@ -15,9 +15,6 @@ routlier_formattable(data,sd)
 Returns an outlier dataset from the original dataset in a DT table
 }
 \description{
-Routlier: Outlier in DT Table
-}
-\details{
 The outlier will be highlighted in green and the word 'Outlier' will replace the value in the cell.
 
 \if{html}{\figure{routlier_formattable_two.png}{options: width=100\% alt="R logo"}}
