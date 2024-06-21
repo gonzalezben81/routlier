@@ -1,7 +1,7 @@
 <!-- badges: start -->
 
 [![License](https://img.shields.io/badge/License-GPL--3.0-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![R-CMD-check](https://github.com/gonzalezben81/routlier/actions/workflows/check-standard.yaml/badge.svg)](https://github.com/gonzalezben81/routlier/actions/workflows/check-standard.yaml)
+[![R-CMD-check](https://github.com/gonzalezben81/routlier/actions/workflows/check-standard.yml/badge.svg)](https://github.com/gonzalezben81/routlier/actions/workflows/check-standard.yml)
 <!-- badges: end -->
 
 ## routlier
