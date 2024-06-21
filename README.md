@@ -58,7 +58,7 @@ routlier_dt_sd(data = detroit,sd = 2)
 
 routlier_rh_sd(data = iris,sd = 3)
 ```
-![routlier_mad](./man/figures/routlier_rh.png)
+![routlier_rh](./man/figures/routlier_rh.png)
 
 
 #### routlier:: Using routlier_formattable() we can find the **Outliers** in a dataset and have the **Outliers** highlighted in red and the non-outlier values highlighted in green.

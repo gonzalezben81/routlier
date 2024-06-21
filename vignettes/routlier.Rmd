@@ -9,12 +9,14 @@ vignette: >
   %\VignetteIndexEntry{routlier}
   %\VignetteIndexEntry{Using rhandsontable}
   %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEngine{rhandsontable}
   \usepackage[utf8]{inputenc}
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 library(knitr)
+library(rhandsontable)
 hook_output <- knit_hooks$get("output")
 knit_hooks$set(output = function(x, options) {
   lines <- options$output.lines
