@@ -7,20 +7,20 @@
 \format{
 A data frame with 13 rows and 14 variables:
 \itemize{
-  \item FTP: Full-time police per 100,000 population
-  \item UEMP: UEMP - \% unemployed in the population
-  \item MAN: MAN - number of manufacturing workers in thousands
-  \item LIC: LIC - Number of handgun licences per 100,000 population
-  \item GR: GR - Number of handgun registrations per 100,000 population
-  \item CLEAR: CLEAR - \% homicides cleared by arrests
-  \item WM: WM - Number of white males in the population
-  \item NMAN: NMAN - Number of non-manufacturing workers in thousands
-  \item GOV: GOV - Number of government workers in thousands
-  \item HE: HE - Average hourly earnings
-  \item WE: WE - Average weekly earnings:
-  \item HOM: HOM - Number of homicides per 100,000 of population
-  \item ACC: ACC - Death rate in accidents per 100,000 population
-  \item ASR: ASR - Number of assaults per 100,000 population
+\item FTP: Full-time police per 100,000 population
+\item UEMP: UEMP - \\% unemployed in the population
+\item MAN: MAN - number of manufacturing workers in thousands
+\item LIC: LIC - Number of handgun licences per 100,000 population
+\item GR: GR - Number of handgun registrations per 100,000 population
+\item CLEAR: CLEAR - \\% homicides cleared by arrests
+\item WM: WM - Number of white males in the population
+\item NMAN: NMAN - Number of non-manufacturing workers in thousands
+\item GOV: GOV - Number of government workers in thousands
+\item HE: HE - Average hourly earnings
+\item WE: WE - Average weekly earnings:
+\item HOM: HOM - Number of homicides per 100,000 of population
+\item ACC: ACC - Death rate in accidents per 100,000 population
+\item ASR: ASR - Number of assaults per 100,000 population
 }
 }
 \source{
@@ -30,7 +30,7 @@ A data frame with 13 rows and 14 variables:
 detroit
 }
 \description{
-This is the dataset called `DETROIT' in the book `Subset selection in
+This is the dataset called \verb{DETROIT' in the book }Subset selection in
 regression' by Alan J. Miller published in the Chapman & Hall series of
 monographs on Statistics & Applied Probability, no. 40.   The data are
 unusual in that a subset of three predictors can be found which gives a

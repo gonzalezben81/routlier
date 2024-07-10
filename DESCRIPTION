@@ -12,9 +12,10 @@ BugReports: https://github.com/gonzalezben81/routlier/issues
 License: GPL-3
 Depends: R (>= 3.5.0)
 Encoding: UTF-8
-Imports: rhandsontable, dplyr, DT, formattable, qpdf
+Imports: rhandsontable, dplyr, DT, formattable
 SystemRequirements: qpdf (for optimizing PDF files)
 Suggests: knitr, rmarkdown
 VignetteBuilder: knitr
 LazyData: true
 RoxygenNote: 7.3.1
+Roxygen: list(markdown = TRUE)
