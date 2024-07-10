@@ -3,7 +3,7 @@ pkgdown: 2.0.9
 pkgdown_sha: ~
 articles:
   routlier: routlier.html
-last_built: 2024-07-10T03:44Z
+last_built: 2024-07-10T03:50Z
 urls:
   reference: https://gonzalezben81.github.io/routlier/reference
   article: https://gonzalezben81.github.io/routlier/articles

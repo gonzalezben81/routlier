@@ -73,7 +73,7 @@ routlier_dt_sd(data = detroit,sd = 1)
 
 ```{r}
 
-routlier_rh_sd(data = detroit,sd = 1)
+routlier_rh_sd(data = iris,sd = 3)
 ```
 
 
