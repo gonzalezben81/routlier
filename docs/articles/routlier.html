@@ -166,12 +166,13 @@ outliers</strong> when we set the <strong>sd</strong> argument equal to
 <span><span class="va">...</span></span></code></pre>
 </div>
 <div class="section level4">
-<h4 id="routlier-using-routlier_dt_sd-we-can-find-the-outliers-in-a-dataset-and-have-them-highlighted-with-a-green-background-to-make-them-easier-to-find--here-we-have-an-interactive-dttable-that-gets-returned--this-allows-us-to-filter-and-sort-out-data-much-more-easily-">routlier:: Using routlier_dt_sd() we can find the
-<strong>Outliers</strong> in a dataset and have them highlighted with a
-green background to make them easier to find. Here we have an
-interactive DT::table that gets returned. This allows us to filter and
-sort out data much more easily.<a class="anchor" aria-label="anchor" href="#routlier-using-routlier_dt_sd-we-can-find-the-outliers-in-a-dataset-and-have-them-highlighted-with-a-green-background-to-make-them-easier-to-find--here-we-have-an-interactive-dttable-that-gets-returned--this-allows-us-to-filter-and-sort-out-data-much-more-easily-"></a>
+<h4 id="routlier_dt_sd">routlier_dt_sd<a class="anchor" aria-label="anchor" href="#routlier_dt_sd"></a>
 </h4>
+<p>Using routlier_dt_sd() we can find the <strong>Outliers</strong> in a
+dataset and have them highlighted with a green background to make them
+easier to find. Here we have an interactive DT::table that gets
+returned. This allows us to filter and sort out data much more
+easily.</p>
 <div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/routlier_dt_sd.html">routlier_dt_sd</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">detroit</span>,sd <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></span></code></pre></div>
 <pre><code><span><span class="co">## You have  66  outliers in your dataset</span></span></code></pre>
@@ -179,10 +180,11 @@ sort out data much more easily.<a class="anchor" aria-label="anchor" href="#rout
 <script type="application/json" data-for="htmlwidget-ac96cb3ee4656e2e9ec3">{"x":{"filter":"none","vertical":false,"extensions":["Buttons"],"editable":{"target":"cell","disable":{"columns":null},"numeric":[],"date":[]},"data":[["1","2","3","4","5","6","7","8","9","10","11","12","13"],["260.35","269.8","272.04","272.96","272.51","261.34","268.89","295.99","319.87","341.43","Outlier","Outlier","Outlier"],["Outlier","7","5.2","4.3","3.5","Outlier","4.1","3.9","3.6","7.1","Outlier","7.7","6.3"],["Outlier","Outlier","Outlier","535.8","576","601.7","577.3","596.9","Outlier","569.3","548.8","563.4","Outlier"],["Outlier","Outlier","Outlier","222.1","301.92","391.22","665.56","Outlier","837.6","794.9","817.74","583.17","709.59"],["Outlier","Outlier","Outlier","Outlier","297.65","367.62","616.54","Outlier","786.23","713.77","750.43","Outlier","666.5"],["93.4","88.5","Outlier","92","91","87.4","88.3","86.1","79","73.9","Outlier","Outlier","Outlier"],["Outlier","Outlier","Outlier","500457","482418","465029","448267","432109","416533","401518","Outlier","Outlier","Outlier"],["Outlier","Outlier","Outlier","591","626.1","659.8","686.2","699.6","729.9","757.8","755.3","Outlier","Outlier"],["Outlier","Outlier","Outlier","150.3","164.3","179.5","187.5","195.4","210.3","Outlier","Outlier","Outlier","Outlier"],["Outlier","3.09","3.23","3.33","3.46","3.6","3.73","Outlier","4.25","4.47","Outlier","Outlier","Outlier"],["Outlier","134.02","141.68","147.98","159.85","157.19","155.29","131.75","178.74","178.3","209.54","Outlier","Outlier"],["Outlier","8.9","Outlier","8.89","13.07","14.57","21.36","28.03","31.49","37.39","Outlier","Outlier","Outlier"],["Outlier","Outlier","45.31","49.51","Outlier","Outlier","50.62","51.47","49.16","45.8","44.54","Outlier","44.17"],["306.18","315.16","277.53","Outlier","Outlier","Outlier","286.11","291.59","320.39","323.03","357.38","Outlier","Outlier"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>FTP<\/th>\n      <th>UEMP<\/th>\n      <th>MAN<\/th>\n      <th>LIC<\/th>\n      <th>GR<\/th>\n      <th>CLEAR<\/th>\n      <th>WM<\/th>\n      <th>NMAN<\/th>\n      <th>GOV<\/th>\n      <th>HE<\/th>\n      <th>WE<\/th>\n      <th>HOM<\/th>\n      <th>ACC<\/th>\n      <th>ASR<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"initComplete":"function(settings, json) {\n$(this.api().table().header()).css({'background-color': 'lightblue', 'color': 'black'});\n}","pageLength":10,"lengthMenu":[5,10,15,20,25,30,35,40,45,50],"dom":"lBftrip","keys":true,"buttons":["copy","csv","excel","pdf","print"],"extend":"excel","filename":"outlier.xls","columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"FTP","targets":1},{"name":"UEMP","targets":2},{"name":"MAN","targets":3},{"name":"LIC","targets":4},{"name":"GR","targets":5},{"name":"CLEAR","targets":6},{"name":"WM","targets":7},{"name":"NMAN","targets":8},{"name":"GOV","targets":9},{"name":"HE","targets":10},{"name":"WE","targets":11},{"name":"HOM","targets":12},{"name":"ACC","targets":13},{"name":"ASR","targets":14}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : null});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : null});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : null});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : null});\nvar value=data[5]; $(this.api().cell(row, 5).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : null});\nvar value=data[6]; $(this.api().cell(row, 6).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : null});\nvar value=data[7]; $(this.api().cell(row, 7).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : null});\nvar value=data[8]; $(this.api().cell(row, 8).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : null});\nvar value=data[9]; $(this.api().cell(row, 9).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : null});\nvar value=data[10]; $(this.api().cell(row, 10).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : null});\nvar value=data[11]; $(this.api().cell(row, 11).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : null});\nvar value=data[12]; $(this.api().cell(row, 12).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : null});\nvar value=data[13]; $(this.api().cell(row, 13).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : null});\nvar value=data[14]; $(this.api().cell(row, 14).node()).css({'background':value == \"0\" ? \"white\" : value == \"Outlier\" ? \"lightgreen\" : null});\n}"},"selection":{"mode":"multiple","selected":null,"target":"row","selectable":null}},"evals":["options.initComplete","options.rowCallback"],"jsHooks":[]}</script>
 </div>
 <div class="section level4">
-<h4 id="routlier-using-routlier_rh_sd-we-can-find-the-outliers-in-a-dataset-and-have-them-highlighted-with-a-green-background-to-make-them-easier-to-find-">routlier:: Using routlier_rh_sd() we can find the
-<strong>Outliers</strong> in a dataset and have them highlighted with a
-green background to make them easier to find.<a class="anchor" aria-label="anchor" href="#routlier-using-routlier_rh_sd-we-can-find-the-outliers-in-a-dataset-and-have-them-highlighted-with-a-green-background-to-make-them-easier-to-find-"></a>
+<h4 id="routlier_rh_sd">routlier_rh_sd<a class="anchor" aria-label="anchor" href="#routlier_rh_sd"></a>
 </h4>
+<p>Using routlier_rh_sd() we can find the <strong>Outliers</strong> in a
+dataset and have them highlighted with a green background to make them
+easier to find.</p>
 <!---
 # ```{r, echo=FALSE,fig.cap="Rhandsontable outliers.",render=TRUE}
 # library(routlier)
@@ -191,11 +193,12 @@ green background to make them easier to find.<a class="anchor" aria-label="ancho
 --->
 </div>
 <div class="section level4">
-<h4 id="routlier-using-routlier_formattable-we-can-find-the-outliers-in-a-dataset-and-have-the-outliers-highlighted-in-red-and-the-non-outlier-values-highlighted-in-green-">routlier:: Using routlier_formattable() we can find the
+<h4 id="routlier_formattable">routlier_formattable<a class="anchor" aria-label="anchor" href="#routlier_formattable"></a>
+</h4>
+<p>Using routlier_formattable() we can find the
 <strong>Outliers</strong> in a dataset and have the
 <strong>Outliers</strong> highlighted in red and the non-outlier values
-highlighted in green.<a class="anchor" aria-label="anchor" href="#routlier-using-routlier_formattable-we-can-find-the-outliers-in-a-dataset-and-have-the-outliers-highlighted-in-red-and-the-non-outlier-values-highlighted-in-green-"></a>
-</h4>
+highlighted in green.</p>
 <div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/routlier_formattable.html">routlier_formattable</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">detroit</span>,sd <span class="op">=</span> <span class="fl">2</span><span class="op">)</span></span></code></pre></div>
 <pre><code><span><span class="co">## You have  4  outliers in your dataset</span></span></code></pre>
@@ -825,11 +828,11 @@ ACC
 </table>
 </div>
 <div class="section level4">
-<h4 id="routlier-using-routlier_mad-we-can-find-the-outliers-in-a-dataset-and-have-the-outliers-highlighted-in-red-and-the-non-outlier-values-highlighted-in-green-">routlier:: Using routlier_mad() we can find the
-<strong>Outliers</strong> in a dataset and have the
-<strong>Outliers</strong> highlighted in red and the non-outlier values
-highlighted in green.<a class="anchor" aria-label="anchor" href="#routlier-using-routlier_mad-we-can-find-the-outliers-in-a-dataset-and-have-the-outliers-highlighted-in-red-and-the-non-outlier-values-highlighted-in-green-"></a>
+<h4 id="routlier_mad">routlier_mad<a class="anchor" aria-label="anchor" href="#routlier_mad"></a>
 </h4>
+<p>Using routlier_mad() we can find the <strong>Outliers</strong> in a
+dataset and have the <strong>Outliers</strong> highlighted in red and
+the non-outlier values highlighted in green.</p>
 <div class="sourceCode" id="cb12"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/routlier_mad.html">routlier_mad</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">detroit</span>,MAD <span class="op">=</span> <span class="fl">3</span><span class="op">)</span></span></code></pre></div>
 <pre><code><span><span class="co">## [1] "The MAD for column 1 is from: 329.046758 : 216.873242 and the overall MAD range is: 112.173516"</span></span>
@@ -853,12 +856,13 @@ highlighted in green.<a class="anchor" aria-label="anchor" href="#routlier-using
 <span><span class="co">## $outlier_table</span></span></code></pre>
 </div>
 <div class="section level4">
-<h4 id="routlier-using-routlier_quantile-we-can-find-the-outliers-in-a-dataset-and-have-the-outliers-highlighted-in-red-and-the-non-outlier-values-highlighted-in-green--we-can-look-at-either-m-mild-outlier-or-e-extreme-outliers-">routlier:: Using routlier_quantile() we can find the
-<strong>Outliers</strong> in a dataset and have the
-<strong>Outliers</strong> highlighted in red and the non-outlier values
-highlighted in green. We can look at either <strong>M</strong> mild
-outlier or <strong>E</strong> extreme outliers.<a class="anchor" aria-label="anchor" href="#routlier-using-routlier_quantile-we-can-find-the-outliers-in-a-dataset-and-have-the-outliers-highlighted-in-red-and-the-non-outlier-values-highlighted-in-green--we-can-look-at-either-m-mild-outlier-or-e-extreme-outliers-"></a>
+<h4 id="routlier_quantile">routlier_quantile<a class="anchor" aria-label="anchor" href="#routlier_quantile"></a>
 </h4>
+<p>Using routlier_quantile() we can find the <strong>Outliers</strong>
+in a dataset and have the <strong>Outliers</strong> highlighted in red
+and the non-outlier values highlighted in green. We can look at either
+<strong>M</strong> mild outlier or <strong>E</strong> extreme
+outliers.</p>
 <p>This approach utilizes the Tukey method by looking at the quantile
 ranges utilizing both the upper quartile and lower quartile ranges.</p>
 <div class="sourceCode" id="cb15"><pre class="downlit sourceCode r">
