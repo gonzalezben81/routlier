@@ -41,6 +41,19 @@
 #'
 routlier_tukey <- function(data,type,outlier_type){
 
+  # Check if the DT namespace is available
+  if (!requireNamespace("DT", quietly = TRUE)) {
+    stop("Package 'DT' is required but not installed.")
+  }
+  # Check if the dplyr namespace is available
+  if (!requireNamespace("dplyr", quietly = TRUE)) {
+    stop("Package 'dplyr' is required but not installed.")
+  }
+  # Check if the rhandsontable namespace is available
+  if (!requireNamespace("rhandsontable", quietly = TRUE)) {
+    stop("Package 'rhandsontable' is required but not installed.")
+  }
+
   ###Subset all of the data that is numeric
   original <- data[,sapply(data,is.numeric)]
   data <- data[,sapply(data,is.numeric)]

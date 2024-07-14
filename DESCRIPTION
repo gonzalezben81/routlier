@@ -16,12 +16,7 @@ Imports:
     rhandsontable,
     dplyr,
     DT,
-    formattable,
-    jsonlite,
-    htmlwidgets (>= 0.3.3),
-    magrittr,
-    methods, 
-    utils
+    formattable
 SystemRequirements: qpdf (for optimizing PDF files)
 Suggests:
     knitr,

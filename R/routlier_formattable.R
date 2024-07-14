@@ -35,10 +35,23 @@
 #' @export
 utils::globalVariables(c("."))
 
+
+
 routlier_formattable <- function(data,sd){
-  # require(rhandsontable,quietly = TRUE)
-  # require(DT,quietly = TRUE)
-  # require(dplyr,quietly = TRUE)
+
+  # Check if the DT namespace is available
+  if (!requireNamespace("DT", quietly = TRUE)) {
+    stop("Package 'DT' is required but not installed.")
+  }
+  # Check if the dplyr namespace is available
+  if (!requireNamespace("dplyr", quietly = TRUE)) {
+    stop("Package 'dplyr' is required but not installed.")
+  }
+  # Check if the rhandsontable namespace is available
+  if (!requireNamespace("rhandsontable", quietly = TRUE)) {
+    stop("Package 'rhandsontable' is required but not installed.")
+  }
+
   ##Removes all columns that are not numeric from the dataset
   original_set <- data
   original <- data[,order(names(data))]
