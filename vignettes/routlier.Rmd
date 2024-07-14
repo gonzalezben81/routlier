@@ -2,14 +2,10 @@
 title: "routlier"
 author: "Ben Gonzalez"
 date: "`r Sys.Date()`"
-output: 
-  rmarkdown::html_vignette:
-  html_document:
+output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{routlier}
-  %\VignetteIndexEntry{Using rhandsontable}
   %\VignetteEngine{knitr::rmarkdown}
-  %\VignetteEngine{rhandsontable}
   \usepackage[utf8]{inputenc}
 ---
 
@@ -39,7 +35,6 @@ knit_hooks$set(output = function(x, options) {
 })
 ``` 
 
-
 ## routlier
 
 routlier is a package that is built to look for outliers in a dataset. The functions allow a user to look for outliers that are 'x' number of deviations away from the mean in the data for a particular column. The number of 'Outliers' in a dataset will be returned. Additionally any Outlier value will now be replaced with the word 'Outlier' in the dataset. 
@@ -66,15 +61,18 @@ routlier_simple(data = student,sd = 2)
 ```{r}
 
 routlier_dt_sd(data = detroit,sd = 1)
+
 ```
 
 
 #### routlier:: Using routlier_rh_sd() we can find the **Outliers** in a dataset and have them highlighted with a green background to make them easier to find.
 
-```{r}
-
-routlier_rh_sd(data = iris,sd = 3)
-```
+<!---
+# ```{r, echo=FALSE,fig.cap="Rhandsontable outliers.",render=TRUE}
+# library(routlier)
+# routlier_rh_sd(data = detroit,sd = 1)
+# ```
+--->
 
 
 

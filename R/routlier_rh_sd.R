@@ -25,7 +25,6 @@
 #' @title routlier_rh_sd
 #' @usage routlier_rh_sd(data, sd)
 #' @import dplyr
-#' @import DT
 #' @import rhandsontable
 #' @examples
 #'
@@ -41,9 +40,8 @@
 
 routlier_rh_sd <- function(data,sd){
 
-  # require(rhandsontable,quietly = TRUE)
-  # require(DT,quietly = TRUE)
-  # require(dplyr,quietly = TRUE)
+  require(rhandsontable,quietly = TRUE)
+  require(dplyr,quietly = TRUE)
 
   ##Removes all columns that are not numeric from the dataset
   original <- data[,order(names(data))]

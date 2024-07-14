@@ -12,9 +12,24 @@ BugReports: https://github.com/gonzalezben81/routlier/issues
 License: GPL-3
 Depends: R (>= 3.5.0)
 Encoding: UTF-8
-Imports: rhandsontable, dplyr, DT, formattable
+Imports:
+    rhandsontable,
+    dplyr,
+    DT,
+    formattable,
+    jsonlite,
+    htmlwidgets (>= 0.3.3),
+    magrittr,
+    methods, 
+    utils
 SystemRequirements: qpdf (for optimizing PDF files)
-Suggests: knitr, rmarkdown
+Suggests:
+    knitr,
+    rmarkdown,
+    shiny (>= 0.13),
+    miniUI (>= 0.1.1),
+    rstudioapi (>= 0.6),
+    htmltools
 VignetteBuilder: knitr
 LazyData: true
 RoxygenNote: 7.3.1

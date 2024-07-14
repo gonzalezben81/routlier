@@ -12,7 +12,7 @@
 #' @title Outlier(s) returned in an formattable table
 #'
 #' @description
-#' The outlier will be highlighted in green and the word 'Outlier' will replace the value in the cell.
+#' The outlier(s) will be highlighted in red.
 #'
 #' \if{html}{\figure{routlier_formattable_two.png}{options: width=100\% alt="R logo"}}
 #' \if{latex}{\figure{routlier_fromattable_two.png}{options: width=0.5in}}

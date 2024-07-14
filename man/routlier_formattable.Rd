@@ -15,7 +15,7 @@ routlier_formattable(data,sd)
 Returns an outlier dataset from the original dataset in a DT table
 }
 \description{
-The outlier will be highlighted in green and the word 'Outlier' will replace the value in the cell.
+The outlier will be highlighted in red.
 
 \if{html}{\figure{routlier_formattable_two.png}{options: width=100\% alt="R logo"}}
 \if{latex}{\figure{routlier_fromattable_two.png}{options: width=0.5in}}
