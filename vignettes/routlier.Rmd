@@ -35,7 +35,7 @@ knit_hooks$set(output = function(x, options) {
 })
 ``` 
 
-## routlier
+### routlier
 
 routlier is a package that is built to look for outliers in a dataset. The functions allow a user to look for outliers that are 'x' number of deviations away from the mean in the data for a particular column. The number of 'Outliers' in a dataset will be returned. Additionally any Outlier value will now be replaced with the word 'Outlier' in the dataset. 
 
@@ -46,7 +46,7 @@ routlier::routlier_simple(data = detroit,sd = 1)
 
 ```
 
-## routlier:: Example with both quantitative and qualitative data
+#### routlier:: Example with both quantitative and qualitative data
 
 Here we will utilize the student dataset that is included in the **routlier** package. This dataset has both quantitative and qualitative data in it. You can see we have **274 outliers** when we set the **sd** argument equal to **2**.
 
@@ -101,11 +101,11 @@ routlier_quantile(data = mtcars[1:10,],type = 7,outlier_type = "M")
 ```
 
 
-<center>
-### Preloaded datasets:
+<!---<center>
+#### Preloaded datasets:
 </center>
 
-### Homicide in Detroit: The role of Firearms.
+#### Homicide in Detroit: The role of Firearms.
 
 >This is the dataset called `DETROIT' in the book 'Subset selection in
 regression' by Alan J. Miller published in the Chapman & Hall series of
@@ -141,7 +141,7 @@ A data frame with 13 rows and 14 variables:
 
 <center>[Detroit dataset](https://lib.stat.cmu.edu/datasets/detroit)</center>
 
-### Student Performance dataset:
+#### Student Performance dataset:
 
 
 * Student Performance dataset
@@ -213,4 +213,4 @@ Relevant Papers:
 P. Cortez and A. Silva. Using Data Mining to Predict Secondary School Student Performance. In A. Brito and J. Teixeira Eds., Proceedings of 5th Future Business Technology Conference (FUBUTEC 2008) pp. 5-12, Porto, Portugal, April, 2008, EUROSIS, ISBN 978-9077381-39-7.
 Available at: http://www3.dsi.uminho.pt/pcortez/student.pdf Author: http://www3.dsi.uminho.pt/pcortez/Home.html
 
-
+--->
