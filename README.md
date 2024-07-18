@@ -2,6 +2,10 @@
 
 [![License](https://img.shields.io/badge/License-GPL--3.0-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![R-CMD-check](https://github.com/gonzalezben81/routlier/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/gonzalezben81/routlier/actions/workflows/R-CMD-check.yaml)
+![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/gonzalezben81/routlier/total)
+![GitHub Release](https://img.shields.io/github/v/release/gonzalezben81/routlier)
+![GitHub R package version](https://img.shields.io/github/r-package/v/gonzalezben81/routlier)
+![](https://img.shields.io/badge/package-blue?style=for-the-badge&logo=R)
 <!-- badges: end -->
 
 
