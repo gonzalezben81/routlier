@@ -9,7 +9,7 @@ Maintainer: Ben Gonzalez<gonzalezben393@gmail.com>
 Description: Allows an individual to highlight outliers in a dataset. The outliers are highlighted in green and replaced with the word outlier. This allows an individual to easily identify an outlier and continue or correct the problem. The outlier that is detected is 3 standard deviations from the mean of the data that is being utilized.
 URL: https://github.com/gonzalezben81/routlier
 BugReports: https://github.com/gonzalezben81/routlier/issues
-License: GPL-3.0
+License: GPL-3
 Depends: R (>= 3.5.0)
 Encoding: UTF-8
 Imports:
